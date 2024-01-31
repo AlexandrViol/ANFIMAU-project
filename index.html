@@ -20,7 +20,10 @@
                         href="./"
                         class="navigation__logo"
                     >
-                        <img src="img/Logo_dark.svg" alt="ANFIMAU INDUSTRY SOLUTIONS" />
+                        <img
+                            src="img/Logo_dark.svg"
+                            alt="ANFIMAU INDUSTRY SOLUTIONS"
+                        />
                     </a>
                     <input
                         class="navigation__toggle"
@@ -79,8 +82,28 @@
         <header>
             <div class="container">
                 <h1>Big on Data Science & AI</h1>
-                <p>We provide comprehensive services to help businesses thrive in the digital age. With a fully distributed remote team of over 30 highly qualified engineers, we collaborate.</p>
+                <p>
+                    We provide comprehensive services to help businesses thrive
+                    in the digital age. With a fully distributed remote team of
+                    over 30 highly qualified engineers, we collaborate.
+                </p>
             </div>
         </header>
+        <div class="test">123</div>
     </body>
+
+    <script>
+        var minOffset = 50;
+        window.onscroll = function () {
+            let has_class = document.body.classList.contains("is_scrolled");
+
+            if (minOffset < document.documentElement.scrollTop) {
+                if (!has_class) {
+                    document.body.classList.add("is_scrolled");
+                }
+            } else if (has_class) {
+                document.body.classList.remove("is_scrolled");
+            }
+        };
+    </script>
 </html>

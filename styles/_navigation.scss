@@ -7,6 +7,7 @@
     z-index: 10;
     width: 100%;
     border-bottom: 1px solid $bluePrimary;
+    transition: $transition;
 
     .container {
         @include lg {
@@ -69,17 +70,17 @@
         }
     }
 
-    &__logo {
-        font-family: "IBMPlexMonoRSemiBold", sans-serif;
-        font-size: 32px;
-        line-height: normal;
-        color: $textPrimary;
-        white-space: nowrap;
+    // &__logo {
+    //     font-family: "IBMPlexMonoRSemiBold", sans-serif;
+    //     font-size: 32px;
+    //     line-height: normal;
+    //     color: $textPrimary;
+    //     white-space: nowrap;
 
-        @include sm {
-            font-size: 20px;
-        }
-    }
+    //     @include sm {
+    //         font-size: 20px;
+    //     }
+    // }
 
     &__right-section {
         @include md {
@@ -107,7 +108,7 @@
         font-size: 16px;
         line-height: normal;
         transition: $transition;
-        color: $textPrimary;
+        color: $white;
 
         @include lg {
             margin-right: 0;
@@ -131,17 +132,17 @@
         }
     }
 
-    &__line {
-        width: 20px;
-        height: 1px;
-        background-color: $textPrimary;
-        margin-bottom: 6px;
-        display: block;
+    // &__line {
+    //     width: 20px;
+    //     height: 1px;
+    //     background-color: $textPrimary;
+    //     margin-bottom: 6px;
+    //     display: block;
 
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
+    //     &:last-child {
+    //         margin-bottom: 0;
+    //     }
+    // }
 
     &__toggle {
         display: none;
@@ -171,4 +172,8 @@
             display: block;
         }
     }
+}
+
+.is_scrolled .navigation {
+    background: linear-gradient(286deg, rgba(76, 83, 88, 0.45) -32.3%, #111112 26.78%, rgba(17, 17, 18, 0.96) 63.17%, rgba(76, 83, 88, 0.45) 131.64%), #24272B;
 }
