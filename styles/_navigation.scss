@@ -1,12 +1,10 @@
 .navigation {
     position: fixed;
-    // background-color: $white;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
     width: 100%;
-    border-bottom: 1px solid $bluePrimary;
     transition: $transition;
 
     .container {
@@ -17,9 +15,9 @@
 
     &__content-wrapper {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         padding: 20px 0;
+        transition: $transition;
 
         @include lg {
             position: initial;
@@ -32,7 +30,9 @@
 
     &__links-wrapper {
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        width: 100%;
 
         @include lg {
             width: 100vw;
@@ -58,7 +58,10 @@
 
     &__left-section {
         display: flex;
-        gap: 40px;
+        gap: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.20);
+        padding: 16px 40px;
+        border-radius: 40px;
 
         @include lg {
             flex-direction: column;
@@ -70,45 +73,38 @@
         }
     }
 
-    // &__logo {
-    //     font-family: "IBMPlexMonoRSemiBold", sans-serif;
-    //     font-size: 32px;
-    //     line-height: normal;
-    //     color: $textPrimary;
-    //     white-space: nowrap;
-
-    //     @include sm {
-    //         font-size: 20px;
-    //     }
-    // }
+    &__logo {
+        margin-right: 40px;
+    }
 
     &__right-section {
         @include md {
             padding-bottom: 32px;
         }
 
-        & button {
-            margin-left: 48px;
-            border: 1px solid $bluePrimary;
-            background-color: $white;
-            color:  $bluePrimary;
+        // & button {
+        //     margin-left: 48px;
+        //     border: 1px solid $bluePrimary;
+        //     background-color: $white;
+        //     color:  $bluePrimary;
 
-            &:hover {
-                background-color: $bluePrimary;
-                color: $white;
-            }
+        //     &:hover {
+        //         background-color: $bluePrimary;
+        //         color: $white;
+        //     }
 
-            @include lg {
-                display: none;
-            }
-        }
+        //     @include lg {
+        //         display: none;
+        //     }
+        // }
     }
 
     &__link {
-        font-size: 16px;
+        font-family: "PoppinsRegular", sans-serif;
+        font-size: 14px;
         line-height: normal;
         transition: $transition;
-        color: $white;
+        color: $white60;
 
         @include lg {
             margin-right: 0;
@@ -128,7 +124,7 @@
         }
 
         &:hover {
-            color: $bluePrimary;
+            color: $white;
         }
     }
 
@@ -176,4 +172,8 @@
 
 .is_scrolled .navigation {
     background: linear-gradient(286deg, rgba(76, 83, 88, 0.45) -32.3%, #111112 26.78%, rgba(17, 17, 18, 0.96) 63.17%, rgba(76, 83, 88, 0.45) 131.64%), #24272B;
+
+    &__content-wrapper {
+        padding: 10px 0;
+    }
 }

@@ -147,6 +147,17 @@ h4 {
   margin: 0 auto;
 }
 
+button {
+  font-family: "PTSansBold", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  background-color: #1E63EC;
+  color: #FFF;
+  padding: 13px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
 .navigation {
   position: fixed;
   top: 0;
@@ -154,7 +165,6 @@ h4 {
   right: 0;
   z-index: 10;
   width: 100%;
-  border-bottom: 1px solid #1E63EC;
   transition: all 0.2s ease-in-out;
 }
 @media (max-width: 1280px) {
@@ -164,9 +174,9 @@ h4 {
 }
 .navigation__content-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  transition: all 0.2s ease-in-out;
 }
 @media (max-width: 1280px) {
   .navigation__content-wrapper {
@@ -180,7 +190,9 @@ h4 {
 }
 .navigation__links-wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 @media (max-width: 1280px) {
   .navigation__links-wrapper {
@@ -207,7 +219,10 @@ h4 {
 }
 .navigation__left-section {
   display: flex;
-  gap: 40px;
+  gap: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 16px 40px;
+  border-radius: 40px;
 }
 @media (max-width: 1280px) {
   .navigation__left-section {
@@ -219,31 +234,20 @@ h4 {
     margin: 0 auto;
   }
 }
+.navigation__logo {
+  margin-right: 40px;
+}
 @media (max-width: 1024px) {
   .navigation__right-section {
     padding-bottom: 32px;
   }
 }
-.navigation__right-section button {
-  margin-left: 48px;
-  border: 1px solid #1E63EC;
-  background-color: #FFF;
-  color: #1E63EC;
-}
-.navigation__right-section button:hover {
-  background-color: #1E63EC;
-  color: #FFF;
-}
-@media (max-width: 1280px) {
-  .navigation__right-section button {
-    display: none;
-  }
-}
 .navigation__link {
-  font-size: 16px;
+  font-family: "PoppinsRegular", sans-serif;
+  font-size: 14px;
   line-height: normal;
   transition: all 0.2s ease-in-out;
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.6);
 }
 @media (max-width: 1280px) {
   .navigation__link {
@@ -264,7 +268,7 @@ h4 {
   }
 }
 .navigation__link:hover {
-  color: #1E63EC;
+  color: #FFF;
 }
 .navigation__toggle {
   display: none;
@@ -295,11 +299,24 @@ h4 {
 .is_scrolled .navigation {
   background: linear-gradient(286deg, rgba(76, 83, 88, 0.45) -32.3%, #111112 26.78%, rgba(17, 17, 18, 0.96) 63.17%, rgba(76, 83, 88, 0.45) 131.64%), #24272B;
 }
+.is_scrolled .navigation__content-wrapper {
+  padding: 10px 0;
+}
 
 header {
   width: 100%;
   height: 100dvh;
   background: linear-gradient(286deg, rgba(76, 83, 88, 0.45) -32.3%, #111112 26.78%, rgba(17, 17, 18, 0.96) 63.17%, rgba(76, 83, 88, 0.45) 131.64%), #24272B;
+}
+header .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .container p {
+  color: #FFF;
 }
 
 .test {

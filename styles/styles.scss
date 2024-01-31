@@ -1,5 +1,6 @@
 $textPrimary: #111112;
 $white: #FFF;
+$white60: rgba(255, 255, 255, 0.60);
 $gray1: #F2F2F5;
 $gray2: #DFDFEB;
 $bluePrimary: #1E63EC;
@@ -15,9 +16,21 @@ header {
     width: 100%;
     height: 100dvh;
     background: linear-gradient(286deg, rgba(76, 83, 88, 0.45) -32.3%, #111112 26.78%, rgba(17, 17, 18, 0.96) 63.17%, rgba(76, 83, 88, 0.45) 131.64%), #24272B;
+
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            color: $white;
+        }
+    }
 }
 
 .test {
     height: 50dvh;
-    
+
 }
