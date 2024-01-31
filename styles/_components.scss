@@ -1,16 +1,42 @@
 .container {
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+section {
+  padding: var(--section-spacing) 0;
 }
 
 button {
-    font-family: "PTSansBold", sans-serif;
-    font-size: 16px;
-    line-height: normal;
-    background-color: $bluePrimary;
-    color: $white;
-    padding: 13px 24px;
-    border-radius: 50px;
-    cursor: pointer;
+  --btn-ff: var(--ff-primary-bold);
+  --btn-fz: var(--fz-primary);
+  --btn-clr: var(--clr-text-primary);
+  --btn-lh: normal;
+  --btn-bg: transparent;
+
+  font-family: var(--btn-ff);
+  font-size: var(--btn-fz);
+  color: var(--btn-clr);
+  line-height: var(--btn-lh);
+  background-color: var(--btn-bg);
+  min-width: 10ch;
+  min-height: 46px;
+  padding: 0.8125em 1.5em;
+  border-radius: 3.125em;
+  cursor: pointer;
+
+  &.contact-btn {
+    --btn-clr: var(--clr-white);
+    --btn-bg: var(--clr-blue-primary);
+  }
+
+  &.read-more-light-btn {
+    --btn-bg: var(--clr-gray1);
+  }
+
+  &.read-more-dark-btn {
+    --btn-clr: var(--clr-white);
+    --btn-bg: var(--clr-white05);
+  }
 }

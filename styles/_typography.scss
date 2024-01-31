@@ -1,43 +1,44 @@
 @font-face {
-  font-family: 'PoppinsRegular';
+  font-family: "PoppinsRegular";
   src: url("../fonts/Poppins-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: 'PoppinsSemibold';
+  font-family: "PoppinsSemibold";
   src: url("../fonts/Poppins-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
-  font-family: 'PoppinsBold';
+  font-family: "PoppinsBold";
   src: url("../fonts/Poppins-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: 'PTSansRegular';
+  font-family: "PTSansRegular";
   src: url("../fonts/PTSans-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: 'PTSansBold';
+  font-family: "PTSansBold";
   src: url("../fonts/PTSans-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 
 html {
-  font-family: 'PTSansRegular', sans-serif;
-  font-size: 16px;
-  line-height: 25px;
-  color: $textPrimary;
+  font-family: var(--ff-primary-regular);
+  font-size: var(--fz-primary);
+  line-height: var(--line-height);
+  color: var(--clr-text-primary);
 }
 
-h1, h2 {
-  font-family: 'PoppinsBold', sans-serif;
+h1,
+h2 {
+  font-family: var(--ff-secondary-bold);
   font-size: 44px;
   line-height: 59px;
   color: $white;
@@ -54,7 +55,7 @@ h1, h2 {
 }
 
 h3 {
-  font-family: 'PoppinsSemibold', sans-serif;
+  font-family: var(--ff-secondary-semiBold);
   font-size: 28px;
   line-height: 38px;
 
@@ -69,7 +70,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'PoppinsSemibold', sans-serif;
+  font-family: var(--ff-secondary-semiBold);
   font-size: 18px;
   line-height: normal;
 }

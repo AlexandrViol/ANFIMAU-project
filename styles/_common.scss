@@ -1,16 +1,16 @@
 $transition: all 0.2s ease-in-out;
 
 $MEDIA: (
-        m: 320px,
-        xm: 375px,
-        xlm: 568px,
-        sm: 768px,
-        md: 1024px,
-        lg: 1280px,
-        xl: 1366px,
-        xll: 1440px,
-        hd: 1920px,
-        xhd: 2560px,
+  m: 320px,
+  xm: 375px,
+  xlm: 568px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1280px,
+  xl: 1366px,
+  xll: 1440px,
+  hd: 1920px,
+  xhd: 2560px,
 );
 
 @mixin m {

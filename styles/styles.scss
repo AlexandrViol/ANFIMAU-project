@@ -1,36 +1,70 @@
-$textPrimary: #111112;
-$white: #FFF;
-$white60: rgba(255, 255, 255, 0.60);
-$gray1: #F2F2F5;
-$gray2: #DFDFEB;
-$bluePrimary: #1E63EC;
-$backgroundDark: #24272B;
+:root {
+  --ff-primary-regular: "PTSansRegular", sans-serif;
+  --ff-primary-bold: "PTSansBold", sans-serif;
+  --ff-secondary-regular: "PoppinsRegular", sans-serif;
+  --ff-secondary-semiBold: "PoppinsSemibold", sans-serif;
+  --ff-secondary-bold: "PoppinsBold", sans-serif;
 
-@import './resetBrowserStyles';
-@import './common';
-@import './typography';
-@import './components';
-@import './navigation';
+  --fz-primary: 16px;
+  --line-height: 25px;
+
+  --clr-text-primary: #111112;
+  --clr-gray1: #f2f2f5;
+  --clr-gray2: #dfdfeb;
+  --clr-white: #fff;
+  --clr-white05: rgba(255, 255, 255, 0.05);
+  --clr-white60: rgba(255, 255, 255, 0.6);
+  --clr-blue-primary: #1e63ec;
+
+  --clr-background-primary: #fff;
+  --clr-background-secondary: #24272b;
+
+  --section-spacing: 80px;
+
+  // need to think is it a good idea
+  --text-gap: 20px;
+  --title-gap: 40px;
+}
+
+$textPrimary: #111112;
+$white: #fff;
+$white60: rgba(255, 255, 255, 0.6);
+$gray1: #f2f2f5;
+$gray2: #dfdfeb;
+$bluePrimary: #1e63ec;
+$backgroundDark: #24272b;
+
+@import "./resetBrowserStyles";
+@import "./common";
+@import "./typography";
+@import "./components";
+@import "./navigation";
 
 header {
-    width: 100%;
-    height: 100dvh;
-    background: linear-gradient(286deg, rgba(76, 83, 88, 0.45) -32.3%, #111112 26.78%, rgba(17, 17, 18, 0.96) 63.17%, rgba(76, 83, 88, 0.45) 131.64%), #24272B;
+  width: 100%;
+  height: 100dvh;
+  background: linear-gradient(
+      286deg,
+      rgba(76, 83, 88, 0.45) -32.3%,
+      #111112 26.78%,
+      rgba(17, 17, 18, 0.96) 63.17%,
+      rgba(76, 83, 88, 0.45) 131.64%
+    ),
+    #24272b;
 
-    .container {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-        p {
-            color: $white;
-        }
+    p {
+      color: $white;
     }
+  }
 }
 
 .test {
-    height: 50dvh;
-
+  height: 50dvh;
 }
