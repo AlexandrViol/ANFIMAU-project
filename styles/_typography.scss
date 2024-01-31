@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'PoppinsRegular';
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'PoppinsSemibold';
+  src: url("../fonts/Poppins-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url("../fonts/Poppins-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'PTSansRegular';
+  src: url("../fonts/PTSans-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'PTSansBold';
+  src: url("../fonts/PTSans-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+html {
+  font-family: 'PTSansRegular', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: $textPrimary;
+}
+
+h1, h2 {
+  font-family: 'PoppinsBold', sans-serif;
+  font-size: 44px;
+  line-height: 59px;
+  color: $white;
+
+  // @include md {
+  //   font-size: 42px;
+  //   line-height: 52px;
+  // }
+  // @include sm {
+  //   font-size: 32px;
+  //   line-height: 38px;
+  //   text-align: center;
+  // }
+}
+
+h3 {
+  font-family: 'PoppinsSemibold', sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+
+  // @include md {
+  //   font-size: 22px;
+  //   line-height: 26px;
+  // }
+  // @include sm {
+  //   font-size: 20px;
+  //   line-height: 24px;
+  // }
+}
+
+h4 {
+  font-family: 'PoppinsSemibold', sans-serif;
+  font-size: 18px;
+  line-height: normal;
+}

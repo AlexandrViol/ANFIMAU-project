@@ -1,3 +1,15 @@
+$textPrimary: #111112;
+$white: #FFF;
+$gray1: #F2F2F5;
+$gray2: #DFDFEB;
+$bluePrimary: #1E63EC;
+$backgroundDark: #24272B;
+
+@import './resetBrowserStyles';
+@import './common';
+@import './typography';
+@import './navigation';
+
 body {
-    background-color: aquamarine;
+    
 }

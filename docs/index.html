@@ -12,5 +12,75 @@
             rel="stylesheet"
         />
     </head>
-    <body>ANFIMAU</body>
+    <body>
+        <nav class="navigation">
+            <div class="container">
+                <div class="navigation__content-wrapper">
+                    <a
+                        href="./"
+                        class="navigation__logo"
+                    >
+                        BeSol Grupp
+                    </a>
+                    <input
+                        class="navigation__toggle"
+                        id="navigation__toggle"
+                        type="checkbox"
+                    />
+                    <label
+                        class="navigation__button"
+                        for="navigation__toggle"
+                    >
+                        <div class="navigation__line"></div>
+                        <div class="navigation__line"></div>
+                        <div class="navigation__line"></div>
+                    </label>
+                    <div class="navigation__links-wrapper">
+                        <div class="navigation__left-section">
+                            <a
+                                onClick="closeNavigation()"
+                                class="navigation__link"
+                                href="#aboutUs"
+                            >
+                                About us
+                            </a>
+                            <a
+                                onClick="closeNavigation()"
+                                class="navigation__link"
+                                href="#expertise"
+                            >
+                                Our expertise
+                            </a>
+                            <a
+                                onClick="closeNavigation()"
+                                class="navigation__link"
+                                href="#caseStudies"
+                            >
+                                Case studies
+                            </a>
+                            <a
+                                onClick="closeNavigation()"
+                                class="navigation__link"
+                                href="#reviews"
+                            >
+                                Reviews
+                            </a>
+                            <a
+                                onClick="closeNavigation()"
+                                class="navigation__link"
+                                href="#team"
+                            >
+                                Team
+                            </a>
+                        </div>
+                        <div class="navigation__right-section">
+                            <a href="#feedback">
+                                <button>Contact us</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </body>
 </html>
