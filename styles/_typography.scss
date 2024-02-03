@@ -43,6 +43,15 @@ h2 {
   line-height: 59px;
   color: var(--clr-white);
 
+  @include md {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  &.title-black {
+    color: var(--clr-text-primary);
+  }
+
   // @include md {
   //   font-size: 42px;
   //   line-height: 52px;
