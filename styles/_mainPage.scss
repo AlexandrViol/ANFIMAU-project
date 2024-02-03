@@ -1,5 +1,7 @@
 .header {
   width: 100%;
+  // maybe should change to 100svh?
+  // content is jumping on mobile devices
   height: 100dvh;
   background: linear-gradient(
       286deg,
@@ -56,52 +58,172 @@
   }
 }
 
-.test {
-  height: 50dvh;
+.info-block__main {
+  &-inner {
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--primary-gap) * 3);
+
+    @include md {
+      flex-direction: column;
+      gap: var(--primary-gap);
+    }
+  }
+
+  &-image {
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      @include md {
+        width: 100%;
+      }
+      @include xlm {
+        max-height: 387px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--primary-gap);
+    max-width: 544px;
+
+    @include md {
+      max-width: 100%;
+    }
+  }
+
+  &--reversed {
+    @include md {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-title {
+    &.mobile-title {
+      margin-bottom: var(--primary-gap);
+      @include before-md {
+        display: none;
+      }
+    }
+    &.desktop-title {
+      @include md {
+        display: none;
+      }
+    }
+  }
+
+  &-btn {
+    align-self: flex-start;
+    @include before-xlm {
+      margin-top: var(--primary-gap);
+    }
+  }
 }
 
 .services {
-    h2 {
-        color: var(--clr-text-primary);
-        text-align: center;
-        margin-bottom: var(--title-gap);
+  h2 {
+    color: var(--clr-text-primary);
+    text-align: center;
+    margin-bottom: var(--title-gap);
+  }
+
+  &__swiper-slide {
+    color: var(--clr-text-primary);
+    border-radius: 20px;
+    border: 1px solid var(--clr-gray2);
+    padding: 32px;
+    background: var(--clr-gray1);
+    cursor: pointer;
+    transition: $transition;
+
+    &:after {
+      content: url(../img/arror_link_icon.svg);
+      position: absolute;
+      right: 32px;
+      top: 32px;
+      opacity: 0;
+      transition: $transition;
+    }
+
+    &:hover {
+      border: 1px solid var(--clr-blue-primary);
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  @media (min-width: 1280px) {
+    &__swiper-wrapper {
+      display: flex;
+      flex-wrap: wrap;
     }
 
     &__swiper-slide {
-        color: var(--clr-text-primary);
-        border-radius: 20px;
-        border: 1px solid var(--clr-gray2);
-        padding: 32px;
-        background: var(--clr-gray1);
-        cursor: pointer;
-        transition: $transition;
+      // padding: 10px;
+    }
+  }
+}
 
-        &:after {
-            content: url(../img/arror_link_icon.svg);
-            position: absolute;
-            right: 32px;
-            top: 32px;
-            opacity: 0;
-            transition: $transition;
-        }
+.stack__main {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
 
-        &:hover {
-            border: 1px solid var(--clr-blue-primary);
+  @include xlm {
+    padding: 24px 0;
+  }
 
-            &:after {
-                opacity: 1;
-            }
-        }
+  &-inner {
+    display: flex;
+    gap: calc(var(--primary-gap) * 4);
+    animation: horizontal-loop 15s linear infinite alternate;
+
+    img {
+      min-width: auto;
     }
 
-    @media (min-width: 1280px) {
-        &__swiper-wrapper {
-            display: flex;        
-            flex-wrap: wrap;            
-        }
-    
-        &__swiper-slide {
-            // padding: 10px;
-        }
+    @include xlm {
+      gap: calc(var(--primary-gap) * 2);
+      animation: horizontal-loop-mobile 15s linear infinite alternate;
     }
+  }
+}
+
+.fade {
+  --fade-clr: #1e293b;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    var(--fade-clr),
+    transparent 30%,
+    transparent 70%,
+    var(--fade-clr)
+  );
+  inset: 0;
+  pointer-events: none;
+}
+
+@keyframes horizontal-loop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
+
+@keyframes horizontal-loop-mobile {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

@@ -2,10 +2,20 @@
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
-section {
-  padding: var(--section-spacing) 0;
+.section-small {
+  padding: var(--section-spacing-small) 0;
+}
+
+.section-big {
+  padding: var(--section-spacing-big) 0;
+}
+
+.bg-dark {
+  color: var(--clr-white);
+  background-color: var(--clr-background-secondary);
 }
 
 button {
@@ -25,6 +35,14 @@ button {
   padding: 0.8125em 1.5em;
   border-radius: 3.125em;
   cursor: pointer;
+
+  @include md {
+    --btn-fz: 18px;
+  }
+
+  @include xlm {
+    width: 100%;
+  }
 
   &.contact-btn {
     --btn-clr: var(--clr-white);

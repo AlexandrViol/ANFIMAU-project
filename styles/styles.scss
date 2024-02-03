@@ -1,3 +1,5 @@
+@import "./common";
+
 :root {
   --ff-primary-regular: "PTSansRegular", sans-serif;
   --ff-primary-bold: "PTSansBold", sans-serif;
@@ -22,9 +24,15 @@
   --section-spacing-small: 80px;
   --section-spacing-big: 160px;
 
-  // need to think is it a good idea
-  --text-gap: 20px;
-  --title-gap: 40px;
+  @include md {
+    --section-spacing-small: 24px;
+    --section-spacing-big: 56px;
+  }
+
+  --primary-gap: 20px;
+  @include md {
+    --primary-gap: 16px;
+  }
 }
 
 $textPrimary: #111112;
@@ -36,7 +44,6 @@ $bluePrimary: #1e63ec;
 $backgroundDark: #24272b;
 
 @import "./resetBrowserStyles";
-@import "./common";
 @import "./typography";
 @import "./components";
 @import "./navigation";
