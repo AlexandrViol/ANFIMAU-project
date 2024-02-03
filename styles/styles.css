@@ -1,3 +1,4 @@
+@import "./swiper-bundle.css";
 :root {
   --ff-primary-regular: "PTSansRegular", sans-serif;
   --ff-primary-bold: "PTSansBold", sans-serif;
@@ -354,6 +355,115 @@ button.read-more-dark-btn {
   padding: 10px 0;
 }
 
+.caseStudies__title {
+  margin: 0 0 12px;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .caseStudies__title {
+    margin: 0 0 24px;
+  }
+}
+.caseStudies__subtitle {
+  text-align: left;
+  max-width: 470px;
+}
+.caseStudies__swiper-buttons {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+@media (max-width: 1280px) {
+  .caseStudies__swiper-buttons {
+    display: none;
+  }
+}
+.caseStudies__swiper-slide {
+  border-radius: 12px;
+  border: 1px solid black;
+  width: 100%;
+  transition: background-size 0.6s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: 100%;
+}
+@media (max-width: 768px) {
+  .caseStudies__swiper-slide {
+    background-size: 110%;
+    width: calc(100% - 32px) !important;
+  }
+}
+.caseStudies__swiper-slide:hover {
+  background-size: 104%;
+}
+@media (max-width: 768px) {
+  .caseStudies__swiper-slide:hover {
+    background-size: 110%;
+  }
+}
+.caseStudies__swiper-slide:hover .caseStudies__link-arrow svg circle {
+  fill: blue;
+}
+.caseStudies__swiper-text-wrapper {
+  padding: 20px 24px;
+  background-color: black;
+  border-radius: 0 0 12px 12px;
+}
+@media (max-width: 768px) {
+  .caseStudies__swiper-text-wrapper {
+    padding: 12px 16px 16px;
+  }
+}
+.caseStudies__swiper-text-wrapper h3 {
+  color: white;
+  margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  .caseStudies__swiper-text-wrapper h3 {
+    margin-bottom: 8px;
+  }
+}
+.caseStudies__slide-text {
+  color: white;
+}
+@media (max-width: 768px) {
+  .caseStudies__slide-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.caseStudies__swiper {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  overflow: inherit;
+}
+@media (max-width: 768px) {
+  .caseStudies__swiper {
+    margin-top: 24px;
+  }
+}
+.caseStudies__swiper-wrapper {
+  height: 400px;
+}
+.caseStudies__link-arrow {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+@media (max-width: 768px) {
+  .caseStudies__link-arrow {
+    top: 16px;
+    right: 16px;
+  }
+}
+.caseStudies__link-arrow svg circle {
+  transition: all 0.2s ease-in-out;
+}
+
 .header {
   width: 100%;
   height: 100dvh;
@@ -400,6 +510,41 @@ button.read-more-dark-btn {
 
 .test {
   height: 50dvh;
+}
+
+.services h2 {
+  color: var(--clr-text-primary);
+  text-align: center;
+  margin-bottom: var(--title-gap);
+}
+.services__swiper-slide {
+  color: var(--clr-text-primary);
+  border-radius: 20px;
+  border: 1px solid var(--clr-gray2);
+  padding: 32px;
+  background: var(--clr-gray1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.services__swiper-slide:after {
+  content: url(../img/arror_link_icon.svg);
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.services__swiper-slide:hover {
+  border: 1px solid var(--clr-blue-primary);
+}
+.services__swiper-slide:hover:after {
+  opacity: 1;
+}
+@media (min-width: 1280px) {
+  .services__swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
