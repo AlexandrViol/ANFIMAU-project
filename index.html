@@ -45,7 +45,7 @@
               <a
                 onClick="closeNavigation()"
                 class="navigation__link"
-                href="#caseStudies"
+                href="#services"
               >
                 Services
               </a>
@@ -76,34 +76,90 @@
           qualified engineers, we collaborate.
         </p>
         <div class="header__items-wrapper">
-            <div class="header__item">
-                <p class="header__item-title">30</p>
-                <p class="header__item-subtitle">Qualified Engineers</p>
-            </div>
-            <div class="header__item">
-                <p class="header__item-title">20</p>
-                <p class="header__item-subtitle">Years of Experience</p>
-            </div>
+          <div class="header__item">
+            <p class="header__item-title">30</p>
+            <p class="header__item-subtitle">Qualified Engineers</p>
+          </div>
+          <div class="header__item">
+            <p class="header__item-title">20</p>
+            <p class="header__item-subtitle">Years of Experience</p>
+          </div>
         </div>
       </div>
     </header>
     <section class="test">
       <button class="read-more-light-btn">Read more</button>
     </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="swiper services__swiper">
+          <div class="swiper-wrapper services__swiper-wrapper">
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <div class="services__swiper-text-wrapper">
+                <h3>Fragmented nature of healthcare data</h3>
+                <p class="services__slide-text">
+                  Healthcare information was scattered across different systems,
+                  making it difficult for providers to access and share
+                  comprehensive patient records...
+                </p>
+              </div>
+            </a>
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <div class="services__swiper-text-wrapper">
+                <h3>Analysis of virtual machines</h3>
+                <p class="services__slide-text">
+                  Our client, GEA Group AG, utilizes MS Azure as its
+                  infrastructure provider and needs an immense amount of cloud
+                  resources/services worth millions of dollars...
+                </p>
+              </div>
+            </a>
+            <a class="swiper-slide services__swiper-slide modal3__open" href="#">
+              <div class="services__swiper-text-wrapper">
+                <h3>Migration from AWS to Azure</h3>
+                <p class="services__slide-text">
+                  A client requested a solution migration from AWS to Azure.
+                  This involved transferring multiple microservices, database,
+                  and storage (from S3 to ...
+                </p>
+              </div>
+            </a>
+            <a class="swiper-slide services__swiper-slide modal4__open" href="#">
+              <div class="services__swiper-text-wrapper">
+                <h3>Electricity Auctions Carl Zeiss AG</h3>
+                <p class="services__slide-text">
+                  Our client wanted to re-write an existing application written
+                  in VB.NET into an application based on modern technologies:
+                  Cloud Based, Service-Oriented ...
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 
-  <script>
-    var minOffset = 50;
-    window.onscroll = function () {
-      let has_class = document.body.classList.contains("is_scrolled");
+  <script src="scripts/header_is_scrolled.js"></script>
+  <script type="module">
+    import Swiper from "/scripts/swiper-bundle.esm.browser.min.js";
 
-      if (minOffset < document.documentElement.scrollTop) {
-        if (!has_class) {
-          document.body.classList.add("is_scrolled");
-        }
-      } else if (has_class) {
-        document.body.classList.remove("is_scrolled");
-      }
-    };
+    const services__swiper = new Swiper(".services__swiper", {
+      enabled: true,
+      speed: 400,
+      spaceBetween: 20,
+      direction: "horizontal",
+      slidesPerView: 1,
+      freeMode: true,
+      breakpoints: {
+        1280: {
+          spaceBetween: 0,
+          enabled: false,
+          slidesPerView: 3,
+        },
+      },
+    });
   </script>
 </html>
