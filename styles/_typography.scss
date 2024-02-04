@@ -68,10 +68,11 @@ h3 {
   font-size: 28px;
   line-height: 38px;
 
-  // @include md {
-  //   font-size: 22px;
-  //   line-height: 26px;
-  // }
+  @include md {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  
   // @include sm {
   //   font-size: 20px;
   //   line-height: 24px;
