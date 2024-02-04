@@ -15,7 +15,14 @@
 
 .bg-dark {
   color: var(--clr-white);
-  background-color: var(--clr-background-secondary);
+  background: linear-gradient(
+      286deg,
+      rgba(76, 83, 88, 0.45) -32.3%,
+      #111112 26.78%,
+      rgba(17, 17, 18, 0.96) 63.17%,
+      rgba(76, 83, 88, 0.45) 131.64%
+    ),
+    #24272b;
 }
 
 button {
