@@ -37,6 +37,12 @@ $MEDIA: (
   }
 }
 
+@mixin before-sm {
+  @media (min-width: map_get($MEDIA, sm)) {
+    @content;
+  }
+}
+
 @mixin sm {
   @media (max-width: map_get($MEDIA, sm)) {
     @content;
@@ -51,6 +57,12 @@ $MEDIA: (
 
 @mixin before-md {
   @media (min-width: map_get($MEDIA, md)) {
+    @content;
+  }
+}
+
+@mixin before-lg {
+  @media (min-width: map_get($MEDIA, lg)) {
     @content;
   }
 }
