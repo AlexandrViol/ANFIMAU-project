@@ -25,6 +25,10 @@
     #24272b;
 }
 
+.bg-gray {
+  background-color: var(--clr-gray1);
+}
+
 button {
   --btn-ff: var(--ff-primary-bold);
   --btn-fz: var(--fz-primary);
@@ -63,5 +67,77 @@ button {
   &.read-more-dark-btn {
     --btn-clr: var(--clr-white);
     --btn-bg: var(--clr-white05);
+  }
+}
+
+.feature {
+  &__container {
+    display: flex;
+    @include before-md {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @include md {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    & > div {
+      @include before-md {
+        flex: 0 1 calc(50% - 10px);
+      }
+    }
+  }
+
+  &-item {
+    background-color: var(--clr-gray1);
+    border: 1px solid var(--clr-gray2);
+    border-radius: 20px;
+    padding: 32px;
+
+    @include md {
+      padding: 24px;
+    }
+  }
+
+  &-item__inner {
+    display: flex;
+    gap: 20px;
+
+    @include md {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  &-icon {
+    flex-shrink: 0;
+    align-self: flex-start;
+    width: 60px;
+    aspect-ratio: 1;
+    position: relative;
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-gray2);
+    border-radius: 12px;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &-title {
+  }
+
+  &-text {
   }
 }
