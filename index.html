@@ -31,7 +31,7 @@
               <a
                 onClick="closeNavigation()"
                 class="navigation__link"
-                href="#about-us"
+                href="./about-us.html"
               >
                 About
               </a>
@@ -68,6 +68,13 @@
     </nav>
 
     <header class="header">
+      <video autoplay muted loop id="backgroundVideo">
+        <source
+          src="./video/Background_Webm (Desktop).webm"
+          type="video/webm"
+        />
+        <source src="./video/Background_MP4 (Desktop).mp4" type="video/mp4" />
+      </video>
       <div class="container header__container">
         <h1>Big on Data Science & AI</h1>
         <p class="header__subtitle">
@@ -170,50 +177,94 @@
         <div class="swiper services__swiper">
           <div class="swiper-wrapper services__swiper-wrapper">
             <a class="swiper-slide services__swiper-slide" href="#">
-              <div class="services__swiper-text-wrapper">
-                <h3>Fragmented nature of healthcare data</h3>
-                <p class="services__slide-text">
-                  Healthcare information was scattered across different systems,
-                  making it difficult for providers to access and share
-                  comprehensive patient records...
-                </p>
-              </div>
+              <img
+                src="./img/main-page/services-icons/software-icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>Software architecture <br />and design</h3>
+              <p class="services__slide-text">
+                Architecture development and integration according to your
+                needs, custom-made data management solutions in distributed
+                environments.
+              </p>
             </a>
             <a class="swiper-slide services__swiper-slide" href="#">
-              <div class="services__swiper-text-wrapper">
-                <h3>Analysis of virtual machines</h3>
-                <p class="services__slide-text">
-                  Our client, GEA Group AG, utilizes MS Azure as its
-                  infrastructure provider and needs an immense amount of cloud
-                  resources/services worth millions of dollars...
-                </p>
-              </div>
+              <img
+                src="./img/main-page/services-icons/cloud-icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>Cloud <br />development</h3>
+              <p class="services__slide-text">
+                We help you adopt Cloud computing principles, focusing on Azure
+                and AWS, to address business challenges, optimize expenditures,
+                and design cloud solutions.
+              </p>
             </a>
-            <a
-              class="swiper-slide services__swiper-slide modal3__open"
-              href="#"
-            >
-              <div class="services__swiper-text-wrapper">
-                <h3>Migration from AWS to Azure</h3>
-                <p class="services__slide-text">
-                  A client requested a solution migration from AWS to Azure.
-                  This involved transferring multiple microservices, database,
-                  and storage (from S3 to ...
-                </p>
-              </div>
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <img
+                src="./img/main-page/services-icons/devops_icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>DevOps <br />services</h3>
+              <p class="services__slide-text">
+                Enhance development with DevOps practices. Leverage process
+                optimization techniques, utilizing tools like Terraform, Azure
+                DevOps, and others.
+              </p>
             </a>
-            <a
-              class="swiper-slide services__swiper-slide modal4__open"
-              href="#"
-            >
-              <div class="services__swiper-text-wrapper">
-                <h3>Electricity Auctions Carl Zeiss AG</h3>
-                <p class="services__slide-text">
-                  Our client wanted to re-write an existing application written
-                  in VB.NET into an application based on modern technologies:
-                  Cloud Based, Service-Oriented ...
-                </p>
-              </div>
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <img
+                src="./img/main-page/services-icons/custom_icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>Custom software <br />development</h3>
+              <p class="services__slide-text">
+                Develop and deliver cutting-edge solutions, including upgrading,
+                migrating, and reengineering legacy systems.
+              </p>
+            </a>
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <img
+                src="./img/main-page/services-icons/business-icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>Business <br />analysis</h3>
+              <p class="services__slide-text">
+                Our BA services include gathering of information, developing use
+                cases for complete solution development, and designing data
+                flows.
+              </p>
+            </a>
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <img
+                src="./img/main-page/services-icons/data-icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>Data <br />& analytics</h3>
+              <p class="services__slide-text">
+                Organizations that can effectively collect, manage, and analyze
+                their data are better equipped to make informed decisions, drive
+                innovation, and gain a competitive edge.
+              </p>
+            </a>
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <img
+                src="./img/main-page/services-icons/process-icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>Process management <br />& coaching</h3>
+              <p class="services__slide-text">
+                We empower organizations with the adoption of Agile
+                methodologies, including Kanban, Scrum, and other facilitation
+                methods at the department level.
+              </p>
             </a>
           </div>
         </div>
@@ -257,7 +308,223 @@
     </section>
 
     <section class="certifications section-big">
-      <h2 class="title-black">Certifications</h2>
+      <div class="container certifications__container">
+        <div class="certifications__left-part">
+          <h2>Certifications</h2>
+          <div class="swiper certifications__swiper">
+            <div class="swiper-wrapper certifications__swiper-wrapper">
+              <div class="swiper-slide certifications__swiper-slide">
+                <img
+                  class="img-thumbnail certifications__img"
+                  src="./img/certifications/cert-azure-architect 2.png"
+                  alt="Microsoft Certified expert: Azure Solutions Architect"
+                  loading="lazy"
+                />
+                <p>Microsoft Certified expert: Azure Solutions Architect</p>
+              </div>
+              <div class="swiper-slide certifications__swiper-slide">
+                <img
+                  class="img-thumbnail certifications__img"
+                  src="./img/certifications/cert-azure-devops 2.png"
+                  alt="Microsoft Certified: DevOps Engineer Expert"
+                  loading="lazy"
+                />
+                <p>Microsoft Certified: DevOps Engineer Expert</p>
+              </div>
+              <div class="swiper-slide certifications__swiper-slide">
+                <img
+                  class="img-thumbnail certifications__img"
+                  src="./img/certifications/cert-hashicorp-terraform 2.png"
+                  alt="Microsoft Certified Expert: HashiCorp Cloud Engineer: Terraform Associate"
+                  loading="lazy"
+                />
+                <p>
+                  Microsoft Certified Expert: HashiCorp Cloud Engineer:
+                  Terraform Associate
+                </p>
+              </div>
+              <div class="swiper-slide certifications__swiper-slide">
+                <img
+                  class="img-thumbnail certifications__img"
+                  src="./img/certifications/cert-aws-architect 2.png"
+                  alt="AWS Certified Solutions: Architect - Associate"
+                  loading="lazy"
+                />
+                <p>AWS Certified Solutions: Architect - Associate</p>
+              </div>
+              <div class="swiper-slide certifications__swiper-slide">
+                <img
+                  class="img-thumbnail certifications__img"
+                  src="./img/certifications/cert-aws-sysops 2.png"
+                  alt="AWS Certified SysOps Engineer - Associate"
+                  loading="lazy"
+                />
+                <p>AWS Certified SysOps Engineer - Associate</p>
+              </div>
+              <div class="swiper-slide certifications__swiper-slide">
+                <img
+                  class="img-thumbnail certifications__img"
+                  src="./img/certifications/cert-scrum-psm1 2.png"
+                  alt="Professional Scrum Master"
+                  loading="lazy"
+                />
+                <p>Professional Scrum Master</p>
+              </div>
+              <div class="swiper-slide certifications__swiper-slide">
+                <img
+                  class="img-thumbnail certifications__img"
+                  src="./img/certifications/cert-scrum-pspo1 2.png"
+                  alt="Professional Scrum Product Owner"
+                  loading="lazy"
+                />
+                <p>Professional Scrum Product Owner</p>
+              </div>
+              <div class="swiper-slide certifications__swiper-slide">
+                <img
+                  class="img-thumbnail certifications__img"
+                  src="./img/certifications/cert-scrum-sps 2.png"
+                  alt="Scaled Professional Scrum"
+                  loading="lazy"
+                />
+                <p>Scaled Professional Scrum</p>
+              </div>
+              <div class="swiper-slide certifications__swiper-slide">
+                <img
+                  class="img-thumbnail certifications__img"
+                  src="./img/certifications/cert-coursera-nn-1 2.png"
+                  alt="Neural Networks and Deep Learning"
+                  loading="lazy"
+                />
+                <p>Neural Networks and Deep Learning</p>
+              </div>
+              <div class="swiper-slide certifications__swiper-slide">
+                <img
+                  class="img-thumbnail certifications__img"
+                  src="./img/certifications/cert-coursera-nn-2 2.png"
+                  alt="Structuring Machine Learning Projects"
+                  loading="lazy"
+                />
+                <p>Structuring Machine Learning Projects</p>
+              </div>
+              <div class="swiper-slide certifications__swiper-slide">
+                <img
+                  class="img-thumbnail certifications__img"
+                  src="./img/certifications/cert-coursera-nn-3 2.png"
+                  alt="Improving Deep Neural Networks"
+                  loading="lazy"
+                />
+                <p>Improving Deep Neural Networks</p>
+              </div>
+              <div class="swiper-slide certifications__swiper-slide">
+                <img
+                  class="img-thumbnail certifications__img"
+                  src="./img/certifications/cert-coursera-nn-4 2.png"
+                  alt="Convolutional Neural Networks"
+                  loading="lazy"
+                />
+                <p>Convolutional Neural Networks</p>
+              </div>
+            </div>
+            <div class="swiper-buttons">
+              <div class="swiper-button-prev">
+                <svg
+                  width="49"
+                  height="48"
+                  viewBox="0 0 49 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="48.666"
+                    width="48"
+                    height="48"
+                    rx="24"
+                    transform="rotate(90 48.666 0)"
+                    fill="#F1F2F7"
+                  />
+                  <path
+                    d="M17.166 27L24.666 19.5L32.166 27"
+                    stroke="#1C2321"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next">
+                <svg
+                  width="49"
+                  height="48"
+                  viewBox="0 0 49 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="48.666"
+                    width="48"
+                    height="48"
+                    rx="24"
+                    transform="rotate(90 48.666 0)"
+                    fill="#F1F2F7"
+                  />
+                  <path
+                    d="M17.166 27L24.666 19.5L32.166 27"
+                    stroke="#1C2321"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="certifications__bottom-part">
+          <div class="certifications__bottom-item">
+            <img
+              src="./img/main-page/certifications-logos/aws-sysops.png"
+              alt="SysOps Administrator Associate"
+            />
+          </div>
+          <div class="certifications__bottom-item">
+            <img
+              src="./img/main-page/certifications-logos/aws-solutions.png"
+              alt="Solutions Architect Associate"
+            />
+          </div>
+          <div class="certifications__bottom-item">
+            <img
+              src="./img/main-page/certifications-logos/sps.png"
+              alt="Scaled Professional Scrum"
+            />
+          </div>
+          <div class="certifications__bottom-item">
+            <img
+              src="./img/main-page/certifications-logos/psm.png"
+              alt="Professional Scrum Master"
+            />
+          </div>
+          <div class="certifications__bottom-item">
+            <img
+              src="./img/main-page/certifications-logos/pspo.png"
+              alt="Professional Scrum Product Owner"
+            />
+          </div>
+          <div class="certifications__bottom-item">
+            <img
+              src="./img/main-page/certifications-logos/microsoft-azure.png"
+              alt="Microsoft Certified Expert: Azure Solutions Architect"
+            />
+          </div>
+          <div class="certifications__bottom-item">
+            <img
+              src="./img/main-page/certifications-logos/microsoft-expert.png"
+              alt="Microsoft Certified: DevOps Engineer Expert"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="industries section-small bg-dark">
@@ -303,8 +570,41 @@
       </div>
     </section>
 
-    <section class="case-studies section-big">
-      <h2 class="title-black">Case studies</h2>
+    <section class="reviews section-small">
+      <h2 class="title-black">Reviews</h2>
+      <script type="text/javascript" src="/scripts/widget.js" async=""></script>
+      <div
+        class="clutch-widget"
+        data-url="https://widget.clutch.co"
+        data-widget-type="4"
+        data-height="auto"
+        data-nofollow="true"
+        data-expandifr="true"
+        data-scale="100"
+        data-reviews="2290504"
+        data-clutchcompany-id="2290057"
+        style="
+          transform: scale(1);
+          margin-bottom: 0px;
+          transform-origin: 0px 0px;
+        "
+      >
+        <iframe
+          id="iframe-0.2123631595992801"
+          width="100%"
+          src="https://widget.clutch.co/widgets/get/4?ref_domain=anfimau.de&amp;uid=2290057&amp;rel_nofollow=true&amp;reviews=2290504&amp;ref_path=/"
+          height="600px"
+          scrolling="no"
+          style="
+            border: none;
+            overflow: hidden;
+            display: block;
+            height: 610px;
+            border-radius: 20px;
+          "
+          title="[iFrameSizer]iframe-0.2123631595992801:0:0:mouseleave:589:12524"
+        ></iframe>
+      </div>
     </section>
 
     <section class="history__main section-big">
@@ -435,7 +735,7 @@
               <ul>
                 <div>
                   <li>
-                    <a href="#">About us</a>
+                    <a href="./about-us.html">About us</a>
                   </li>
                   <li>
                     <a href="#">History</a>
@@ -531,7 +831,21 @@
                 </div>
               </div>
               <div class="reviews-widget">
-                <img src="./img/main-page/temp-img-rating.png" alt="" />
+                <!-- <img src="./img/main-page/temp-img-rating.png" alt="" /> -->
+                <iframe
+                  id="iframe-0.7169971132432307"
+                  width="100%"
+                  src="https://widget.clutch.co/widgets/get/2?ref_domain=anfimau.de&amp;uid=2290057&amp;rel_nofollow=true&amp;ref_path=/"
+                  height="45px"
+                  scrolling="no"
+                  style="
+                    border: none;
+                    overflow: hidden;
+                    display: block;
+                    height: 50px;
+                  "
+                  title="[iFrameSizer]iframe-0.7169971132432307:0:0:mouseleave:1003:4132"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -539,7 +853,65 @@
         </nav>
       </div>
     </footer>
+
+    <div class="modal">
+      <div class="modal__content-wrapper">
+        <div class="modal__text"></div>
+        <img class="modal__image" />
+        <div class="modal__close">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.166 18.1664L29.8333 29.8336"
+              stroke="#1932E0"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M29.834 18.1664L18.1667 29.8336"
+              stroke="#1932E0"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <rect
+              x="1"
+              y="1"
+              width="46"
+              height="46"
+              rx="23"
+              stroke="#1932E0"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
   </body>
+
+  <script>
+    const modalEle = document.querySelector(".modal");
+    const modalImage = document.querySelector(".modal__image");
+    const captionText = document.querySelector(".modal__text");
+    Array.from(document.querySelectorAll(".img-thumbnail")).forEach((item) => {
+      item.addEventListener("click", (event) => {
+        modalEle.style.display = "block";
+        modalImage.src = event.target.src;
+      });
+    });
+
+    document.querySelector(".modal__close").addEventListener("click", () => {
+      modalEle.style.display = "none";
+      captionText.innerHTML = "";
+      modalImage.src = "";
+    });
+  </script>
 
   <script src="scripts/header_is_scrolled.js"></script>
   <script type="module">
@@ -557,6 +929,33 @@
           spaceBetween: 0,
           enabled: false,
           slidesPerView: 3,
+        },
+      },
+    });
+
+    const certifications__swiper = new Swiper(".certifications__swiper", {
+      speed: 400,
+      spaceBetween: 0,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      slidesPerView: "auto",
+      direction: "horizontal",
+
+      breakpoints: {
+        1280: {
+          spaceBetween: 20,
+          enabled: false,
+          slidesPerView: 4,
+        },
+        650: {
+          freeMode: false,
         },
       },
     });

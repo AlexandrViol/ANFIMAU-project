@@ -1,8 +1,6 @@
 .header {
   width: 100%;
-  // maybe should change to 100svh?
-  // content is jumping on mobile devices
-  height: 100dvh;
+  height: 90vh;
   background: linear-gradient(
       286deg,
       rgba(76, 83, 88, 0.45) -32.3%,
@@ -12,6 +10,15 @@
     ),
     #24272b;
 
+  #backgroundVideo {
+    position: absolute;
+    object-fit: cover;
+    width: 100vw;
+    height: 90vh;
+    top: 0;
+    left: 0;
+  }
+
   &__container {
     height: 100%;
     display: flex;
@@ -19,6 +26,7 @@
     align-items: center;
     flex-direction: column;
     padding-bottom: 40px;
+    z-index: 2;
   }
 
   &__subtitle {
@@ -129,7 +137,7 @@
   h2 {
     color: var(--clr-text-primary);
     text-align: center;
-    margin-bottom: var(--title-gap);
+    margin-bottom: 40px;
   }
 
   &__swiper-slide {
@@ -140,6 +148,16 @@
     background: var(--clr-gray1);
     cursor: pointer;
     transition: $transition;
+    height: 364px;
+    max-width: 400px;
+
+    &:not(:nth-child(3n + 3)) {
+      margin-right: 20px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
 
     &:after {
       content: url(../img/arror_link_icon.svg);
@@ -157,6 +175,19 @@
         opacity: 1;
       }
     }
+  }
+
+  &__slide-icon {
+    margin-bottom: 56px;
+  }
+
+  &__slide-text {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 12px;
   }
 
   @media (min-width: 1280px) {
@@ -228,6 +259,21 @@
   }
 }
 
+.certifications {
+  h2 {
+    color: var(--clr-text-primary);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__container {
+
+    @include lg {
+      flex-direction: column;
+    }
+  }
+}
+
 .industries {
   &__container {
     display: grid;
@@ -283,6 +329,37 @@
       margin-top: auto;
       grid-column: auto;
       grid-row: 2 / 3;
+    }
+  }
+}
+
+.reviews {
+  background-color: var(--clr-gray1);
+
+  h2 {
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+
+  .clutch-widget {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+
+    &:before {
+      content: url(../img/main-page/dots-background.svg);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-100%, -50%);
+    }
+
+    &:after {
+      content: url(../img/main-page/dots-background.svg);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(100%, -50%);
     }
   }
 }
