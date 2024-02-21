@@ -22,6 +22,12 @@
   --clr-background-primary: #fff;
   --clr-background-secondary: #24272b;
 
+  // ----HEADER----//
+  --header-height: 95px;
+  @include md {
+    --header-height: 68px;
+  }
+
   --section-spacing-small: 80px;
   --section-spacing-big: 160px;
 
@@ -52,3 +58,4 @@ $backgroundDark: #24272b;
 @import "./swiperCustom";
 
 @import "./mainPage";
+@import "./aboutPage";
