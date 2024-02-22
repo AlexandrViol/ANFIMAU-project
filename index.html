@@ -568,10 +568,15 @@
         </div>
 
         <div class="industries-image">
-          <img
-            src="./img/main-page/industries-image.svg"
-            alt="industries image"
-          />
+          <dotlottie-player
+            src="./animations/Industries.json"
+            background="transparent"
+            speed="1"
+            direction="1"
+            playMode="normal"
+            loop
+            autoplay
+          ></dotlottie-player>
         </div>
       </div>
     </section>
@@ -900,6 +905,11 @@
       </div>
     </div>
   </body>
+
+  <script
+    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+    type="module"
+  ></script>
 
   <script>
     const modalEle = document.querySelector(".modal");
