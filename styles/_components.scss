@@ -33,7 +33,7 @@ button {
   --btn-ff: var(--ff-primary-bold);
   --btn-fz: var(--fz-primary);
   --btn-clr: var(--clr-text-primary);
-  --btn-lh: normal;
+  --btn-lh: 20.7px;
   --btn-bg: transparent;
 
   font-family: var(--btn-ff);
@@ -53,6 +53,7 @@ button {
 
   @include xlm {
     width: 100%;
+    --btn-lh: 27px;
   }
 
   &.contact-btn {
@@ -88,6 +89,20 @@ button {
         flex: 0 1 calc(50% - 10px);
       }
     }
+
+    &.large-gap {
+      gap: 60px;
+
+      @include xlm {
+        gap: 16px;
+      }
+
+      & > div {
+        @include before-md {
+          flex: 0 1 calc(50% - 30px);
+        }
+      }
+    }
   }
 
   &-item {
@@ -108,6 +123,10 @@ button {
     @include md {
       flex-direction: column;
       gap: 24px;
+    }
+
+    &.row {
+      flex-direction: row;
     }
   }
 
@@ -136,6 +155,9 @@ button {
   }
 
   &-title {
+    &.short {
+      max-width: 220px;
+    }
   }
 
   &-text {
@@ -461,5 +483,87 @@ button {
         stroke: white;
       }
     }
+  }
+}
+
+.accordion {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  border: 1px solid var(--clr-gray2);
+  border-radius: 12px;
+  background: var(--clr-gray1);
+
+  @include xlm {
+    margin-bottom: 16px;
+  }
+
+  &[open] > .accordion-title:before {
+    transform: rotate(180deg);
+  }
+
+  &[open] .accordion-title ~ * {
+    animation: sweep 0.5s ease-in-out;
+  }
+}
+
+.accordion-title {
+  --control-arrow-size: 40px;
+
+  font-size: 18px;
+  line-height: 27px;
+  font-family: var(--ff-secondary-semiBold);
+
+  display: block;
+  padding: 16px calc(18px + var(--control-arrow-size)) 17px 16px;
+  position: relative;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    width: var(--control-arrow-size);
+    height: var(--control-arrow-size);
+    color: transparent;
+
+    background: url("../img/arrow.svg") no-repeat 50% 50%;
+    border-radius: 50%;
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-gray2);
+    transition: transform 0.5s;
+
+    position: absolute;
+    top: 10px;
+    right: 16px;
+  }
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::-moz-list-bullet {
+    list-style-type: none;
+  }
+
+  &::marker {
+    display: none;
+  }
+
+  & ~ * {
+    padding: 0 16px 16px;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

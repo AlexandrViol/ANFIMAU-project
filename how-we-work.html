@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ANFIMAU</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link href="styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="container">
+        <div class="navigation__content-wrapper">
+          <a href="./" class="navigation__logo">
+            <img src="img/Logo_dark.svg" alt="ANFIMAU INDUSTRY SOLUTIONS" />
+          </a>
+          <input
+            class="navigation__toggle"
+            id="navigation__toggle"
+            type="checkbox"
+          />
+          <label class="navigation__button" for="navigation__toggle">
+            <div class="navigation__line"></div>
+            <div class="navigation__line"></div>
+            <div class="navigation__line"></div>
+          </label>
+          <div class="navigation__links-wrapper">
+            <div class="navigation__left-section">
+              <a
+                onClick="closeNavigation()"
+                class="navigation__link"
+                href="./about-us.html"
+              >
+                About
+              </a>
+              <a
+                onClick="closeNavigation()"
+                class="navigation__link"
+                href="#how-we-work"
+              >
+                How we work
+              </a>
+              <a
+                onClick="closeNavigation()"
+                class="navigation__link"
+                href="#services"
+              >
+                Services
+              </a>
+              <a
+                onClick="closeNavigation()"
+                class="navigation__link"
+                href="#reviews"
+              >
+                Case studies
+              </a>
+            </div>
+            <div class="navigation__right-section">
+              <a href="#feedback">
+                <button class="contact-btn">Contact us</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="how-we-work__header">
+      <div class="container how-we-work__header-container">
+        <h1 class="how-we-work__header-title">
+          Custom software development for your business to thrive
+        </h1>
+        <p class="how-we-work__header-subtitle">
+          Your improvement and success are under the control of our
+          professionals. With 20+ years of experience in IT, we embrace software
+          development and human-centric innovation to deliver exceptional
+          solutions tailored to your needs.
+        </p>
+
+        <button class="contact-btn how-we-work__btn">Contact us</button>
+      </div>
+    </header>
+
+    <section class="our-expertise section-big">
+      <div class="container our-expertise__container">
+        <div class="our-expertise__header">
+          <h2 class="title-black">Our expertise</h2>
+          <p class="our-expertise__subtitle">
+            As a company with professionals in every tech domain, we offer a
+            range of solutions tailored to your needs.
+          </p>
+        </div>
+
+        <div class="swiper services__swiper">
+          <div class="swiper-wrapper services__swiper-wrapper">
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <img
+                src="./img/main-page/services-icons/software-icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>Software architecture <br />and design</h3>
+              <p class="services__slide-text">
+                Architecture development and integration according to your
+                needs, custom-made data management solutions in distributed
+                environments.
+              </p>
+            </a>
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <img
+                src="./img/main-page/services-icons/cloud-icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>Cloud <br />development</h3>
+              <p class="services__slide-text">
+                We help you adopt Cloud computing principles, focusing on Azure
+                and AWS, to address business challenges, optimize expenditures,
+                and design cloud solutions.
+              </p>
+            </a>
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <img
+                src="./img/main-page/services-icons/devops_icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>DevOps <br />services</h3>
+              <p class="services__slide-text">
+                Enhance development with DevOps practices. Leverage process
+                optimization techniques, utilizing tools like Terraform, Azure
+                DevOps, and others.
+              </p>
+            </a>
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <img
+                src="./img/main-page/services-icons/custom_icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>Custom software <br />development</h3>
+              <p class="services__slide-text">
+                Develop and deliver cutting-edge solutions, including upgrading,
+                migrating, and reengineering legacy systems.
+              </p>
+            </a>
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <img
+                src="./img/main-page/services-icons/business-icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>Business <br />analysis</h3>
+              <p class="services__slide-text">
+                Our BA services include gathering of information, developing use
+                cases for complete solution development, and designing data
+                flows.
+              </p>
+            </a>
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <img
+                src="./img/main-page/services-icons/data-icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>Data <br />& analytics</h3>
+              <p class="services__slide-text">
+                Organizations that can effectively collect, manage, and analyze
+                their data are better equipped to make informed decisions, drive
+                innovation, and gain a competitive edge.
+              </p>
+            </a>
+            <a class="swiper-slide services__swiper-slide" href="#">
+              <img
+                src="./img/main-page/services-icons/process-icon.svg"
+                alt="icon"
+                class="services__slide-icon"
+              />
+              <h3>Process management <br />& coaching</h3>
+              <p class="services__slide-text">
+                We empower organizations with the adoption of Agile
+                methodologies, including Kanban, Scrum, and other facilitation
+                methods at the department level.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section section-big">
+      <div class="container timeline-section__container">
+        <div class="timeline-section__left">
+          <h2 class="title-black">Steps of our cooperation</h2>
+          <p>Since you contact us and till the successful end.</p>
+        </div>
+
+        <div class="timeline-section__right">
+          <div class="timeline-section__item">
+            <div class="timeline-section__number">
+              <div class="number">
+                <div class="number-inner">
+                  <span>1</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-section__panel">
+              <div class="timeline__number">
+                <div class="number">
+                  <div class="number-inner">
+                    <span>1</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Meeting</h3>
+              <p>
+                We discuss your expectations of our work and get your approval.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-section__item">
+            <div class="timeline-section__number">
+              <div class="number">
+                <div class="number-inner">
+                  <span>2</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-section__panel">
+              <div class="timeline__number">
+                <div class="number">
+                  <div class="number-inner">
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Variants of solution</h3>
+              <p>Our team elaborates on the ways to achieve your aim.</p>
+            </div>
+          </div>
+          <div class="timeline-section__item">
+            <div class="timeline-section__number">
+              <div class="number">
+                <div class="number-inner">
+                  <span>3</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-section__panel">
+              <div class="timeline__number">
+                <div class="number">
+                  <div class="number-inner">
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Composition</h3>
+              <p>
+                We analyze the time and tools required to achieve your goals.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-section__item">
+            <div class="timeline-section__number">
+              <div class="number">
+                <div class="number-inner">
+                  <span>4</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-section__panel">
+              <div class="timeline__number">
+                <div class="number">
+                  <div class="number-inner">
+                    <span>4</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Development</h3>
+              <p>
+                We develop a custom software solution according to your business
+                needs.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-section__item">
+            <div class="timeline-section__number">
+              <div class="number">
+                <div class="number-inner">
+                  <span>5</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-section__panel">
+              <div class="timeline__number">
+                <div class="number">
+                  <div class="number-inner">
+                    <span>5</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Deployment</h3>
+              <p>
+                The next step is to implement the solution according to the
+                plan.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-section__item">
+            <div class="timeline-section__number">
+              <div class="number">
+                <div class="number-inner">
+                  <span>6</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-section__panel last-panel">
+              <div class="timeline__number">
+                <div class="number">
+                  <div class="number-inner">
+                    <span>6</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Monitoring and support</h3>
+              <p>
+                We provide post-implementation support and are ready to help you
+                with whatever you need.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cooperate-section section-small bg-gray">
+      <div class="container cooperate-section__container">
+        <div class="cooperate-section__header">
+          <h2 class="title-black">Cooperate with Us</h2>
+          <p class="cooperate-section__subtitle">
+            When you choose Anfimau Industry Solutions GmbH, you are partnering
+            with a team of professionals dedicated to delivering excellence in
+            every aspect of our work.
+          </p>
+        </div>
+
+        <div class="feature__container large-gap">
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/people.svg"
+                alt="feature people icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">Augmentation and dedicated teams</h3>
+              <p class="feature-text">
+                Set a project goal and let our company take care of everything
+                within a specified time and budget.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/point.svg"
+                alt="feature point icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title short">Project-based team</h3>
+              <p class="feature-text">
+                Set a project goal and let our company take care of everything
+                within a specified time and budget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section section-big">
+      <div class="container timeline-section__container">
+        <div class="timeline-section__left">
+          <h2 class="title-black">Scrum methodology</h2>
+          <p>
+            We are one team. We communicate daily to update you on the work done
+            toward your aim.
+          </p>
+        </div>
+
+        <div class="timeline-section__right">
+          <div class="timeline-section__item">
+            <div class="timeline-section__number">
+              <div class="number">
+                <div class="number-inner">
+                  <span>1</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-section__panel">
+              <div class="timeline__number">
+                <div class="number">
+                  <div class="number-inner">
+                    <span>1</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Backlog development</h3>
+            </div>
+          </div>
+          <div class="timeline-section__item">
+            <div class="timeline-section__number">
+              <div class="number">
+                <div class="number-inner">
+                  <span>2</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-section__panel">
+              <div class="timeline__number">
+                <div class="number">
+                  <div class="number-inner">
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Backlog release</h3>
+            </div>
+          </div>
+          <div class="timeline-section__item">
+            <div class="timeline-section__number">
+              <div class="number">
+                <div class="number-inner">
+                  <span>3</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-section__panel">
+              <div class="timeline__number">
+                <div class="number">
+                  <div class="number-inner">
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Sprint work</h3>
+              <p>
+                We analyze the time and tools required to achieve your goals.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-section__item">
+            <div class="timeline-section__number">
+              <div class="number">
+                <div class="number-inner">
+                  <span>4</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-section__panel last-panel">
+              <div class="timeline__number">
+                <div class="number">
+                  <div class="number-inner">
+                    <span>4</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Project deliverable</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us">
+      <div class="container">
+        <div class="why-us__header">
+          <h2 class="title-black">Why choose us</h2>
+          <p>Your trustworthy technology partner since 2004.</p>
+        </div>
+        <div class="feature__container">
+          <div class="feature-item">
+            <div class="feature-item__inner">
+              <div class="feature-icon">
+                <img
+                  src="./img/feature-icons/medal.svg"
+                  alt="feature medal icon"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature-title">Strong expertise</h3>
+                <p class="feature-text">
+                  Our company was founded with 20+ years of expertise in IT.
+                  Experienced leader - experienced staff.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__inner">
+              <div class="feature-icon">
+                <img
+                  src="./img/feature-icons/rocket.svg"
+                  alt="feature rocket icon"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature-title">Dedication</h3>
+                <p class="feature-text">
+                  Our company consists of 30+ professionals ready to come up
+                  with solutions to your aim. We value our clients and are eager
+                  to help.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__inner">
+              <div class="feature-icon">
+                <img
+                  src="./img/feature-icons/update-frame.svg"
+                  alt="feature update-frame icon"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature-title">Scrum workflow</h3>
+                <p class="feature-text">
+                  We follow Scrum and other methodologies in projects. Our team
+                  keeps in touch daily to track the progress.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__inner">
+              <div class="feature-icon">
+                <img
+                  src="./img/feature-icons/location.svg"
+                  alt="feature location icon"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature-title">Numerous locations</h3>
+                <p class="feature-text">
+                  We’ve got top talent across Europe, and we can converge
+                  efforts from numerous locations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__inner">
+              <div class="feature-icon">
+                <img
+                  src="./img/feature-icons/shield-check.svg"
+                  alt="feature shield check icon"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature-title">Responsibility</h3>
+                <p class="feature-text">
+                  We take care of our product and maintain it even after the
+                  deployment. Our team ensures the quality stays on the same
+                  level.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__inner">
+              <div class="feature-icon">
+                <img
+                  src="./img/feature-icons/chart.svg"
+                  alt="feature chart icon"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature-title">Constant improvement</h3>
+                <p class="feature-text">
+                  We never stop enhancing our knowledge within the industry.
+                  Several certificates can prove our dedication to high quality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section section-big">
+      <div class="container faq-section__container">
+        <h2 class="title-black faq-section__title">FAQ</h2>
+        <details class="accordion">
+          <summary class="accordion-title">
+            Should businesses go digital?
+          </summary>
+          <p>
+            Definitely yes, nowadays it might be hard to hold on to the same
+            positions on the market without modernizing your business processes
+            to meet shifting business and market requirements. Digital
+            transformation can help businesses save costs and upgrade
+            productivity. Moreover, it lowers potential errors by eliminating
+            time-consuming manual data entry and human inefficiencies.
+          </p>
+        </details>
+        <details class="accordion">
+          <summary class="accordion-title">
+            What are the advantages of a digital business?
+          </summary>
+          <p>
+            Definitely yes, nowadays it might be hard to hold on to the same
+            positions on the market without modernizing your business processes
+            to meet shifting business and market requirements. Digital
+            transformation can help businesses save costs and upgrade
+            productivity. Moreover, it lowers potential errors by eliminating
+            time-consuming manual data entry and human inefficiencies.
+          </p>
+        </details>
+        <details class="accordion">
+          <summary class="accordion-title">
+            How do I digitalize my business?
+          </summary>
+          <p>
+            Definitely yes, nowadays it might be hard to hold on to the same
+            positions on the market without modernizing your business processes
+            to meet shifting business and market requirements. Digital
+            transformation can help businesses save costs and upgrade
+            productivity. Moreover, it lowers potential errors by eliminating
+            time-consuming manual data entry and human inefficiencies.
+          </p>
+        </details>
+        <details class="accordion">
+          <summary class="accordion-title">
+            What are the benefits of software development as a service (SDaaS)?
+          </summary>
+          <p>
+            Definitely yes, nowadays it might be hard to hold on to the same
+            positions on the market without modernizing your business processes
+            to meet shifting business and market requirements. Digital
+            transformation can help businesses save costs and upgrade
+            productivity. Moreover, it lowers potential errors by eliminating
+            time-consuming manual data entry and human inefficiencies.
+          </p>
+        </details>
+        <details class="accordion">
+          <summary class="accordion-title">
+            What are the benefits of IT services?
+          </summary>
+          <p>
+            Definitely yes, nowadays it might be hard to hold on to the same
+            positions on the market without modernizing your business processes
+            to meet shifting business and market requirements. Digital
+            transformation can help businesses save costs and upgrade
+            productivity. Moreover, it lowers potential errors by eliminating
+            time-consuming manual data entry and human inefficiencies.
+          </p>
+        </details>
+        <details class="accordion">
+          <summary class="accordion-title">
+            What project methodologies do you use in software development?
+          </summary>
+          <p>
+            Definitely yes, nowadays it might be hard to hold on to the same
+            positions on the market without modernizing your business processes
+            to meet shifting business and market requirements. Digital
+            transformation can help businesses save costs and upgrade
+            productivity. Moreover, it lowers potential errors by eliminating
+            time-consuming manual data entry and human inefficiencies.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <footer class="footer bg-footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <div class="footer-nav__top">
+            <div class="col about-us__col">
+              <a href="#about-us">
+                <h5 class="col-title">About</h5>
+              </a>
+              <ul>
+                <div>
+                  <li>
+                    <a href="./about-us.html">About us</a>
+                  </li>
+                  <li>
+                    <a href="#">History</a>
+                  </li>
+                  <li>
+                    <a href="#">Technologies</a>
+                  </li>
+                  <li>
+                    <a href="#">Industries</a>
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <a href="#">Certifications</a>
+                  </li>
+                  <li>
+                    <a href="#">Reference Letters</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col services__col">
+              <a href="#services">
+                <h5 class="col-title">Services</h5>
+              </a>
+              <ul>
+                <div>
+                  <li>
+                    <a href="#">Software architecture and design</a>
+                  </li>
+                  <li>
+                    <a href="#">Cloud development</a>
+                  </li>
+                  <li>
+                    <a href="#">Dev ops</a>
+                  </li>
+                  <li>
+                    <a href="#">Custom software development</a>
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <a href="#">Business analysis</a>
+                  </li>
+                  <li>
+                    <a href="#">Data &#38; analytics</a>
+                  </li>
+                  <li>
+                    <a href="#">Process management &#38; coaching</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col how-we-work__col">
+              <a href="#how-we-work">
+                <h5 class="col-title">How we work</h5>
+              </a>
+            </div>
+            <div class="col reviews__col">
+              <a href="#reviews">
+                <h5 class="col-title">Reviews</h5>
+              </a>
+            </div>
+          </div>
+          <div class="footer-nav__bottom">
+            <div class="col column-first">
+              <img
+                class="footer-logo"
+                src="./img/Logo_dark.svg"
+                alt="ANFIMAU INDUSTRY SOLUTIONS"
+              />
+              <ul>
+                <div class="info">
+                  <li>
+                    <a href="#">Site notice</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy policy</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col column-second">
+              <div class="social-media__wrapper">
+                <h5 class="col-title">Social media</h5>
+                <div class="footer__social-media">
+                  <a href="#" class="icon">
+                    <img src="./img/xing-logo.svg" alt="xing logo" />
+                  </a>
+                  <a href="#" class="icon">
+                    <img src="./img/linkedin-logo.svg" alt="linkedin logo" />
+                  </a>
+                </div>
+              </div>
+              <div class="reviews-widget">
+                <!-- <img src="./img/main-page/temp-img-rating.png" alt="" /> -->
+                <iframe
+                  id="iframe-0.7169971132432307"
+                  width="100%"
+                  src="https://widget.clutch.co/widgets/get/2?ref_domain=anfimau.de&amp;uid=2290057&amp;rel_nofollow=true&amp;ref_path=/"
+                  height="45px"
+                  scrolling="no"
+                  style="
+                    border: none;
+                    overflow: hidden;
+                    display: block;
+                    height: 50px;
+                  "
+                  title="[iFrameSizer]iframe-0.7169971132432307:0:0:mouseleave:1003:4132"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <p class="copy">Copyright &copy; 2024 Mikhail Anfimau</p>
+        </nav>
+      </div>
+    </footer>
+  </body>
+
+  <script
+    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+    type="module"
+  ></script>
+
+  <script>
+    const modalEle = document.querySelector(".modal");
+    const modalImage = document.querySelector(".modal__image");
+    const captionText = document.querySelector(".modal__text");
+    Array.from(document.querySelectorAll(".img-thumbnail")).forEach((item) => {
+      item.addEventListener("click", (event) => {
+        modalEle.style.display = "block";
+        modalImage.src = event.target.src;
+      });
+    });
+
+    document.querySelector(".modal__close").addEventListener("click", () => {
+      modalEle.style.display = "none";
+      captionText.innerHTML = "";
+      modalImage.src = "";
+    });
+  </script>
+
+  <script src="scripts/header_is_scrolled.js"></script>
+  <script type="module">
+    import Swiper from "./scripts/swiper-bundle.esm.browser.min.js";
+
+    const services__swiper = new Swiper(".services__swiper", {
+      enabled: true,
+      speed: 400,
+      spaceBetween: 20,
+      direction: "horizontal",
+      slidesPerView: 1,
+      freeMode: true,
+      breakpoints: {
+        1280: {
+          spaceBetween: 0,
+          enabled: false,
+          slidesPerView: 3,
+        },
+      },
+    });
+
+    const certifications__swiper = new Swiper(".certifications__swiper", {
+      speed: 400,
+      spaceBetween: 0,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      slidesPerView: "auto",
+      direction: "horizontal",
+
+      breakpoints: {
+        1280: {
+          spaceBetween: 20,
+          enabled: false,
+          slidesPerView: 4,
+        },
+        650: {
+          freeMode: false,
+        },
+      },
+    });
+  </script>
+</html>
+<!-- //to delete -->
