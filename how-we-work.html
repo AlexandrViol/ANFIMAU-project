@@ -38,7 +38,7 @@
               <a
                 onClick="closeNavigation()"
                 class="navigation__link"
-                href="#how-we-work"
+                href="./how-we-work.html"
               >
                 How we work
               </a>
@@ -740,7 +740,7 @@
               </ul>
             </div>
             <div class="col how-we-work__col">
-              <a href="#how-we-work">
+              <a href="./how-we-work.html">
                 <h5 class="col-title">How we work</h5>
               </a>
             </div>
@@ -810,24 +810,6 @@
     type="module"
   ></script>
 
-  <script>
-    const modalEle = document.querySelector(".modal");
-    const modalImage = document.querySelector(".modal__image");
-    const captionText = document.querySelector(".modal__text");
-    Array.from(document.querySelectorAll(".img-thumbnail")).forEach((item) => {
-      item.addEventListener("click", (event) => {
-        modalEle.style.display = "block";
-        modalImage.src = event.target.src;
-      });
-    });
-
-    document.querySelector(".modal__close").addEventListener("click", () => {
-      modalEle.style.display = "none";
-      captionText.innerHTML = "";
-      modalImage.src = "";
-    });
-  </script>
-
   <script src="scripts/header_is_scrolled.js"></script>
   <script type="module">
     import Swiper from "./scripts/swiper-bundle.esm.browser.min.js";
@@ -847,33 +829,5 @@
         },
       },
     });
-
-    const certifications__swiper = new Swiper(".certifications__swiper", {
-      speed: 400,
-      spaceBetween: 0,
-      freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      slidesPerView: "auto",
-      direction: "horizontal",
-
-      breakpoints: {
-        1280: {
-          spaceBetween: 20,
-          enabled: false,
-          slidesPerView: 4,
-        },
-        650: {
-          freeMode: false,
-        },
-      },
-    });
   </script>
 </html>
-<!-- //to delete -->
