@@ -1,170 +1,170 @@
-.caseStudies {
-    &__title {
-        margin: 0 0 12px;
-        text-align: left;
-        @include sm {
-            margin: 0 0 24px;
-        }
-    }
+// .caseStudies {
+//     &__title {
+//         margin: 0 0 12px;
+//         text-align: left;
+//         @include sm {
+//             margin: 0 0 24px;
+//         }
+//     }
 
-    &__subtitle {
-        text-align: left;
-        max-width: 470px;
-    }
+//     &__subtitle {
+//         text-align: left;
+//         max-width: 470px;
+//     }
 
-    &__swiper-buttons {
-        display: flex;
-        position: absolute;
-        top: 50px;
-        right: 0;
+//     &__swiper-buttons {
+//         display: flex;
+//         position: absolute;
+//         top: 50px;
+//         right: 0;
 
-        @include lg {
-            display: none;
-        }
-    }
+//         @include lg {
+//             display: none;
+//         }
+//     }
 
-    &__swiper-slide {
-        border-radius: 12px;
-        border: 1px solid black;
-        width: 100%;
-        transition: background-size 0.6s ease-in-out;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        background-size: 100%;
+//     &__swiper-slide {
+//         border-radius: 12px;
+//         border: 1px solid black;
+//         width: 100%;
+//         transition: background-size 0.6s ease-in-out;
+//         cursor: pointer;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: flex-end;
+//         background-size: 100%;
 
-        @include sm {
-            background-size: 110%;
-            width: calc(100% - 32px) !important;
-        }
+//         @include sm {
+//             background-size: 110%;
+//             width: calc(100% - 32px) !important;
+//         }
 
-        &:hover {
-            background-size: 104%;
+//         &:hover {
+//             background-size: 104%;
 
-            @include sm {
-                background-size: 110%;
-            }
+//             @include sm {
+//                 background-size: 110%;
+//             }
 
-            .caseStudies__link-arrow svg circle {
-                fill: blue;
-            }
-        }
+//             .caseStudies__link-arrow svg circle {
+//                 fill: blue;
+//             }
+//         }
 
-        // &:nth-child(1) {
-        //     background-image: url(../img/case1_img.png);
-        // }
+//         // &:nth-child(1) {
+//         //     background-image: url(../img/case1_img.png);
+//         // }
 
-        // &:nth-child(2) {
-        //     background-image: url(../img/case2_img.png);
-        // }
+//         // &:nth-child(2) {
+//         //     background-image: url(../img/case2_img.png);
+//         // }
 
-        // &:nth-child(3) {
-        //     background-image: url(../img/case3_img.png);
-        //     background-position-y: -2px;
-        // }
+//         // &:nth-child(3) {
+//         //     background-image: url(../img/case3_img.png);
+//         //     background-position-y: -2px;
+//         // }
 
-        // &:nth-child(4) {
-        //     background-image: url(../img/case4_img.png);
-        // }
-    }
+//         // &:nth-child(4) {
+//         //     background-image: url(../img/case4_img.png);
+//         // }
+//     }
 
-    &__swiper-text-wrapper {
-        padding: 20px 24px;
-        background-color: black;
-        border-radius: 0 0 12px 12px;
+//     &__swiper-text-wrapper {
+//         padding: 20px 24px;
+//         background-color: black;
+//         border-radius: 0 0 12px 12px;
 
-        @include sm {
-            padding: 12px 16px 16px;
-        }
+//         @include sm {
+//             padding: 12px 16px 16px;
+//         }
 
-        h3 {
-            color: white;
-            margin-bottom: 16px;
+//         h3 {
+//             color: white;
+//             margin-bottom: 16px;
 
-            @include sm {
-                margin-bottom: 8px;
-            }
-        }
-    }
+//             @include sm {
+//                 margin-bottom: 8px;
+//             }
+//         }
+//     }
 
-    &__slide-text {
-        color: white;
+//     &__slide-text {
+//         color: white;
 
-        @include sm {
-            font-size: 14px;
-            line-height: 20px;
-        }
-    }
+//         @include sm {
+//             font-size: 14px;
+//             line-height: 20px;
+//         }
+//     }
 
-    &__swiper {
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
-        overflow: inherit;
+//     &__swiper {
+//         margin-top: 40px;
+//         display: flex;
+//         align-items: center;
+//         overflow: inherit;
 
-        @include sm {
-            margin-top: 24px;
-        }
-    }
+//         @include sm {
+//             margin-top: 24px;
+//         }
+//     }
 
-    &__swiper-wrapper {
-        height: 400px;
-    }
+//     &__swiper-wrapper {
+//         height: 400px;
+//     }
 
-    &__link-arrow {
-        position: absolute;
-        top: 24px;
-        right: 24px;
+//     &__link-arrow {
+//         position: absolute;
+//         top: 24px;
+//         right: 24px;
 
-        @include sm {
-            top: 16px;
-            right: 16px;
-        }
+//         @include sm {
+//             top: 16px;
+//             right: 16px;
+//         }
 
-        & svg circle {
-            transition: $transition;
-        }
-    }
+//         & svg circle {
+//             transition: $transition;
+//         }
+//     }
 
-    // .swiper-button-prev2,
-    // .swiper-button-next2 {
-    //     position: relative !important;
-    //     top: 0 !important;
-    //     left: 0 !important;
-    //     right: 0 !important;
-    //     width: auto;
-    //     height: auto;
-    //     margin: 0;
-    //     transform: none !important;
-    //     cursor: pointer;
+//     .swiper-button-prev2,
+//     .swiper-button-next2 {
+//         position: relative !important;
+//         top: 0 !important;
+//         left: 0 !important;
+//         right: 0 !important;
+//         width: auto;
+//         height: auto;
+//         margin: 0;
+//         transform: none !important;
+//         cursor: pointer;
 
-    //     & svg circle,
-    //     & svg path {
-    //         transition: $transition;
-    //     }
-    // }
+//         & svg circle,
+//         & svg path {
+//             transition: $transition;
+//         }
+//     }
 
-    // .swiper-button-prev2 {
-    //     transform: rotate(0deg) !important;
-    //     margin-right: 8px;
-    // }
+//     .swiper-button-prev2 {
+//         transform: rotate(0deg) !important;
+//         margin-right: 8px;
+//     }
 
-    // .swiper-button-next2 {
-    //     transform: rotate(180deg) translateY(6px) !important;
-    // }
+//     .swiper-button-next2 {
+//         transform: rotate(180deg) translateY(6px) !important;
+//     }
 
-    // .swiper-button-prev2:hover,
-    // .swiper-button-next2:hover {
-    //     & svg {
-    //         & circle {
-    //             fill: $main;
-    //             stroke: $white;
-    //         }
+//     .swiper-button-prev2:hover,
+//     .swiper-button-next2:hover {
+//         & svg {
+//             & circle {
+//                 fill: $main;
+//                 stroke: $white;
+//             }
 
-    //         & path {
-    //             stroke: $white;
-    //         }
-    //     }
-    // }
-}
+//             & path {
+//                 stroke: $white;
+//             }
+//         }
+//     }
+// }

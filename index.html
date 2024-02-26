@@ -70,10 +70,13 @@
     <header class="header">
       <video autoplay muted loop id="backgroundVideo">
         <source
-          src="./video/Background_Webm (Desktop).webm"
+          src="./video/Background 3.0 WEBM(Desktop).webm"
           type="video/webm"
         />
-        <source src="./video/Background_MP4 (Desktop).mp4" type="video/mp4" />
+        <source
+          src="./video/Background 3.0 MP4 (Desktop).mp4"
+          type="video/mp4"
+        />
       </video>
       <div class="container header__container">
         <h1>Big on Data Science & AI</h1>
@@ -102,7 +105,11 @@
         </h2>
         <div class="info-block__main-inner">
           <div class="info-block__main-image">
-            <img src="./img/main-page/about-us-img.avif" alt="" />
+            <img
+              src="./img/main-page/about-us-img.avif"
+              alt="img"
+              loading="lazy"
+            />
           </div>
           <div class="info-block__main-content">
             <h2 class="info-block__main-title title-black desktop-title">
@@ -165,7 +172,11 @@
             </button>
           </div>
           <div class="info-block__main-image">
-            <img src="./img/main-page/how-we-work.svg" alt="" />
+            <img
+              src="./img/main-page/how-we-work.png"
+              alt="img"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -425,59 +436,6 @@
                 <p>Convolutional Neural Networks</p>
               </div>
             </div>
-            <div class="swiper-buttons">
-              <div class="swiper-button-prev">
-                <svg
-                  width="49"
-                  height="48"
-                  viewBox="0 0 49 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="48.666"
-                    width="48"
-                    height="48"
-                    rx="24"
-                    transform="rotate(90 48.666 0)"
-                    fill="#F1F2F7"
-                  />
-                  <path
-                    d="M17.166 27L24.666 19.5L32.166 27"
-                    stroke="#1C2321"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next">
-                <svg
-                  width="49"
-                  height="48"
-                  viewBox="0 0 49 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="48.666"
-                    width="48"
-                    height="48"
-                    rx="24"
-                    transform="rotate(90 48.666 0)"
-                    fill="#F1F2F7"
-                  />
-                  <path
-                    d="M17.166 27L24.666 19.5L32.166 27"
-                    stroke="#1C2321"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </div>
           </div>
         </div>
         <div class="certifications__bottom-part">
@@ -485,48 +443,56 @@
             <img
               src="./img/main-page/certifications-logos/aws-sysops.png"
               alt="SysOps Administrator Associate"
+              loading="lazy"
             />
           </div>
           <div class="certifications__bottom-item">
             <img
               src="./img/main-page/certifications-logos/aws-solutions.png"
               alt="Solutions Architect Associate"
+              loading="lazy"
             />
           </div>
           <div class="certifications__bottom-item">
             <img
               src="./img/main-page/certifications-logos/sps.png"
               alt="Scaled Professional Scrum"
+              loading="lazy"
             />
           </div>
           <div class="certifications__bottom-item">
             <img
               src="./img/main-page/certifications-logos/psm.png"
               alt="Professional Scrum Master"
+              loading="lazy"
             />
           </div>
           <div class="certifications__bottom-item">
             <img
               src="./img/main-page/certifications-logos/pspo.png"
               alt="Professional Scrum Product Owner"
+              loading="lazy"
             />
           </div>
           <div class="certifications__bottom-item">
             <img
               src="./img/main-page/certifications-logos/terraform.png"
               alt="Microsoft Certified Expert: HashiCorp Cloud Engineer: Terraform Associate"
+              loading="lazy"
             />
           </div>
           <div class="certifications__bottom-item">
             <img
               src="./img/main-page/certifications-logos/microsoft-azure.png"
               alt="Microsoft Certified Expert: Azure Solutions Architect"
+              loading="lazy"
             />
           </div>
           <div class="certifications__bottom-item">
             <img
               src="./img/main-page/certifications-logos/microsoft-expert.png"
               alt="Microsoft Certified: DevOps Engineer Expert"
+              loading="lazy"
             />
           </div>
         </div>
@@ -566,7 +532,6 @@
             </p>
           </div>
         </div>
-
         <div class="industries-image">
           <dotlottie-player
             src="./animations/Industries.json"
@@ -581,9 +546,213 @@
       </div>
     </section>
 
+    <section class="case-studies section-small">
+      <div class="container case-studies__container">
+        <h2 class="case-studies__title">Case studies</h2>
+        <p class="case-studies__subtitle">
+          We are well-versed in the dynamic world of development across a
+          variety of industries.
+        </p>
+        <div>
+          <div class="swiper case-studies__swiper">
+            <div class="swiper-wrapper case-studies__swiper-wrapper">
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/electrical.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>
+                  Electrical grid control center, replacement of legacy scada
+                  systems
+                </p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/algorithmic.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>
+                  Algorithmic and manual power trading platform to boost
+                  efficiency
+                </p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/gas.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Gas Logistics, supplies, capacity planning</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/electricity.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Electricity auctions</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/finops.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>FinOps Solutions, cloud infrastructure cost optimization</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/healthcare-information.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>
+                  Healthcare information management system to streamline
+                  clinical workflows
+                </p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/improving.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Improving customer engagement</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/data.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Data landscape consolidation</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/brand.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Brand tracking analytical product</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/healthcare-monitoring.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Healthcare monitoring system modernization</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/data-source.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Data source on-boarding as a service</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/road.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Road safety improvement</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/cloudera.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Cloudera data platform migration</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/healthcare-information.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>
+                  Healthcare information management system to streamline
+                  clinical workflows
+                </p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/data-intelligence.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Data intelligence system migration</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-buttons case-studies__swiper-buttons">
+            <div class="swiper-button-prev">
+              <svg
+                width="49"
+                height="48"
+                viewBox="0 0 49 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="48.666"
+                  width="48"
+                  height="48"
+                  rx="24"
+                  transform="rotate(90 48.666 0)"
+                  fill="#F1F2F7"
+                />
+                <path
+                  d="M17.166 27L24.666 19.5L32.166 27"
+                  stroke="#1C2321"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg
+                width="49"
+                height="48"
+                viewBox="0 0 49 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="48.666"
+                  width="48"
+                  height="48"
+                  rx="24"
+                  transform="rotate(90 48.666 0)"
+                  fill="#F1F2F7"
+                />
+                <path
+                  d="M17.166 27L24.666 19.5L32.166 27"
+                  stroke="#1C2321"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
     <section class="reviews section-small">
       <h2 class="title-black">Reviews</h2>
-      <script type="text/javascript" src="/scripts/widget.js" async=""></script>
+      <script
+        type="text/javascript"
+        src="https://widget.clutch.co/static/js/widget.js"
+      ></script>
       <div
         class="clutch-widget"
         data-url="https://widget.clutch.co"
@@ -592,37 +761,21 @@
         data-nofollow="true"
         data-expandifr="true"
         data-scale="100"
-        data-reviews="2290504"
+        data-scale="100"
+        data-reviews="2293397,2290504"
         data-clutchcompany-id="2290057"
-        style="
-          transform: scale(1);
-          margin-bottom: 0px;
-          transform-origin: 0px 0px;
-        "
-      >
-        <iframe
-          id="iframe-0.2123631595992801"
-          width="100%"
-          src="https://widget.clutch.co/widgets/get/4?ref_domain=anfimau.de&amp;uid=2290057&amp;rel_nofollow=true&amp;reviews=2290504&amp;ref_path=/"
-          height="600px"
-          scrolling="no"
-          style="
-            border: none;
-            overflow: hidden;
-            display: block;
-            height: 610px;
-            border-radius: 20px;
-          "
-          title="[iFrameSizer]iframe-0.2123631595992801:0:0:mouseleave:589:12524"
-        ></iframe>
-      </div>
+      ></div>
     </section>
 
     <section class="history__main section-big">
       <div class="container history__main__container">
         <h2 class="history__main__title title-black">History</h2>
         <div class="history__main-image">
-          <img src="./img/main-page/CEO-photo.png" alt="CEO of the company" />
+          <img
+            src="./img/main-page/CEO-photo.png"
+            alt="CEO of the company"
+            loading="lazy"
+          />
           <div class="image-label">
             <div class="image-label__inner">
               <h3>Mikhail Anfimau, CEO and Founder</h3>
@@ -683,7 +836,11 @@
           <h4>Anfimau Industry Solutions GmbH</h4>
           <p>Managing director: Mikhail Anfimau</p>
           <div class="contact-us__image">
-            <img src="./img/main-page/contact-us.webp" alt="contact us" />
+            <img
+              src="./img/main-page/contact-us.webp"
+              alt="contact us"
+              loading="lazy"
+            />
           </div>
         </div>
         <address class="contact-us__content">
@@ -801,7 +958,7 @@
               </ul>
             </div>
             <div class="col how-we-work__col">
-              <a href="#how-we-work">
+              <a href="./how-we-work.html">
                 <h5 class="col-title">How we work</h5>
               </a>
             </div>
@@ -843,20 +1000,20 @@
               </div>
               <div class="reviews-widget">
                 <!-- <img src="./img/main-page/temp-img-rating.png" alt="" /> -->
-                <iframe
-                  id="iframe-0.7169971132432307"
-                  width="100%"
-                  src="https://widget.clutch.co/widgets/get/2?ref_domain=anfimau.de&amp;uid=2290057&amp;rel_nofollow=true&amp;ref_path=/"
-                  height="45px"
-                  scrolling="no"
-                  style="
-                    border: none;
-                    overflow: hidden;
-                    display: block;
-                    height: 50px;
-                  "
-                  title="[iFrameSizer]iframe-0.7169971132432307:0:0:mouseleave:1003:4132"
-                ></iframe>
+                <script
+                  type="text/javascript"
+                  src="https://widget.clutch.co/static/js/widget.js"
+                ></script>
+                <div
+                  class="clutch-widget"
+                  data-url="https://widget.clutch.co"
+                  data-widget-type="2"
+                  data-height="45"
+                  data-nofollow="true"
+                  data-expandifr="true"
+                  data-scale="100"
+                  data-clutchcompany-id="2290057"
+                ></div>
               </div>
             </div>
           </div>
@@ -953,15 +1110,7 @@
       speed: 400,
       spaceBetween: 0,
       freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      slidesPerView: "auto",
+      slidesPerView: 1,
       direction: "horizontal",
 
       breakpoints: {
@@ -970,11 +1119,34 @@
           enabled: false,
           slidesPerView: 4,
         },
-        650: {
-          freeMode: false,
+      },
+    });
+
+    const caseStudies__swiper = new Swiper(".case-studies__swiper", {
+      speed: 400,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      direction: "horizontal",
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      slidesPerView: 1,
+      grid: {
+        rows: 1,
+      },
+      slidesPerGroup: 1,
+      breakpoints: {
+        1280: {
+          slidesPerView: 4,
+          grid: {
+            rows: 2,
+          },
+          slidesPerGroup: 4,
         },
       },
     });
   </script>
 </html>
-<!-- //to delete -->
