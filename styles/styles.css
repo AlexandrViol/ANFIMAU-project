@@ -93,7 +93,8 @@ ol {
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 img {
@@ -386,6 +387,7 @@ button.read-more-dark-btn {
   transform: translateY(-50%);
   display: block;
   top: 50%;
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 1280px) {
@@ -709,7 +711,8 @@ button.read-more-dark-btn {
 }
 .header #backgroundVideo {
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100vw;
   height: 90vh;
   top: 0;
@@ -781,7 +784,8 @@ button.read-more-dark-btn {
 @media (max-width: 568px) {
   .info-block__main-image img {
     max-height: 387px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .info-block__main-content {
@@ -2137,6 +2141,4 @@ button.read-more-dark-btn {
     margin-bottom: 40px;
     text-align: center;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
