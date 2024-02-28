@@ -11,6 +11,7 @@
   --line-height: 25px;
 
   --clr-text-primary: #111112;
+  --clr-text-secondary: #8b8b9a;
   --clr-gray1: #f2f2f5;
   --clr-gray2: #dfdfeb;
   --clr-white: #fff;
@@ -21,6 +22,14 @@
 
   --clr-background-primary: #fff;
   --clr-background-secondary: #24272b;
+  --clr-background-gradient: linear-gradient(
+      286deg,
+      rgba(76, 83, 88, 0.45) -32.3%,
+      #111112 26.78%,
+      rgba(17, 17, 18, 0.96) 63.17%,
+      rgba(76, 83, 88, 0.45) 131.64%
+    ),
+    #24272b;
 
   // ----HEADER----//
   --header-height: 95px;
@@ -60,3 +69,4 @@
 @import "./mainPage";
 @import "./aboutPage";
 @import "./howWeWorkPage";
+@import "./ourTeam";

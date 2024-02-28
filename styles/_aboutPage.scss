@@ -1,14 +1,7 @@
 .header-about {
   width: 100%;
   height: 90svh;
-  background: linear-gradient(0deg, #141517, #141517),
-    radial-gradient(
-        60.41% 213.39% at 101.22% -5.87%,
-        rgba(76, 83, 88, 0.7) 0%,
-        #191b1d 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-
+  background: var(--clr-background-gradient);
   @include sm {
     height: 100%;
   }
