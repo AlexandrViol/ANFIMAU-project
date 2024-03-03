@@ -102,3 +102,59 @@ html {
   scroll-padding-top: 70px;
   overflow-x: hidden;
 }
+
+.container {
+  width: 100%;
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section-small {
+  padding: var(--section-spacing-small) 0;
+}
+
+.section-big {
+  padding: var(--section-spacing-big) 0;
+}
+
+.bg-dark {
+  color: var(--clr-white);
+  background: var(--clr-background-gradient);
+}
+
+.bg-gray {
+  background-color: var(--clr-gray1);
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.text-white60 {
+  color: var(--clr-white60);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.elem-center {
+  margin-inline: auto;
+}
+
+.width480 {
+  max-width: 480px;
+}
+
+.width546 {
+  max-width: 546px;
+}
+
+.width690 {
+  max-width: 690px;
+}
+
+.width720 {
+  max-width: 720px;
+}
