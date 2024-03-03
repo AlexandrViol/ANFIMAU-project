@@ -1,0 +1,23 @@
+.services {
+  &-section {
+    &__header {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+
+      @include before-xlm {
+        align-items: center;
+      }
+      @include xlm {
+        margin-bottom: 16px;
+      }
+    }
+
+    &__subtitle {
+      @include before-xlm {
+        text-align: center;
+      }
+    }
+  }
+}
