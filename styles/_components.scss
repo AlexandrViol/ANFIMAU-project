@@ -491,7 +491,7 @@ button {
 .modal {
   display: none;
   position: fixed;
-  z-index: 11;
+  z-index: 21;
   left: 0;
   top: 0;
   width: 100%;
@@ -504,12 +504,18 @@ button {
   &__content-wrapper {
     margin: auto;
     transform: translateY(-50%);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     top: 50%;
     width: fit-content;
-    @include lg {
-      max-height: 90vh;
-    }
+    max-height: 90vh;
+    height: 100%;
+    border-radius: 4px;
+    // @include lg {
+    //   max-height: 90vh;
+    // }
   }
   &__content-wrapper,
   #caption {
@@ -519,6 +525,8 @@ button {
   &__image {
     width: 100%;
     max-width: 990px;
+    max-height: 100%;
+    border-radius: 4px;
   }
   &__close {
     position: absolute;
