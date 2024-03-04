@@ -29,6 +29,11 @@ html {
   background-color: var(--clr-gray1);
 }
 
+.rotate180 {
+  rotate: 180deg;
+  transform-origin: 0 0;
+}
+
 .pt-0 {
   padding-top: 0;
 }
@@ -59,6 +64,10 @@ html {
 
 .width720 {
   max-width: 720px;
+}
+
+.width800 {
+  max-width: 800px;
 }
 
 :root {
@@ -330,7 +339,17 @@ button.read-more-dark-btn {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  margin-bottom: 60px;
+}
+@media (min-width: 568px) {
+  .gray-section__header:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 568px) {
+  .gray-section__header {
+    text-align: center;
+    margin-inline: auto;
+  }
 }
 @media (max-width: 568px) {
   .gray-section__header {
@@ -681,6 +700,42 @@ button.read-more-dark-btn {
 @media (max-width: 568px) {
   .stack-icon img {
     width: 45px;
+  }
+}
+
+.faq-section__container .accordion:last-child {
+  margin-bottom: 0;
+}
+.faq-section__title {
+  margin-bottom: 16px;
+}
+@media (min-width: 568px) {
+  .faq-section__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+.dots-bg {
+  position: relative;
+  pointer-events: none;
+}
+@media (min-width: 1280px) {
+  .dots-bg::before, .dots-bg::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/dots.svg);
+  }
+  .dots-bg::before {
+    background-position: left;
+  }
+  .dots-bg::after {
+    background-position: right;
   }
 }
 
@@ -2343,19 +2398,6 @@ button.read-more-dark-btn {
   margin-bottom: 40px;
 }
 
-.faq-section__container .accordion:last-child {
-  margin-bottom: 0;
-}
-.faq-section__title {
-  margin-bottom: 16px;
-}
-@media (min-width: 568px) {
-  .faq-section__title {
-    margin-bottom: 40px;
-    text-align: center;
-  }
-}
-
 .our-team__header {
   background: var(--clr-background-gradient);
 }
@@ -2481,10 +2523,11 @@ button.read-more-dark-btn {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 40px;
 }
 @media (min-width: 568px) {
   .services-section__header {
+    margin: 0 auto 40px;
+    text-align: center;
     align-items: center;
   }
 }
