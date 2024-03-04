@@ -67,9 +67,19 @@
         </div>
       </div>
     </nav>
-
+    
     <header class="header">
       <video autoplay muted loop id="backgroundVideo">
+        <source
+          src="./video/Background_Webm (Mobile).webm"
+          type="video/webm"
+          media="(max-width: 568px)"
+        />
+        <source
+          src="./video/Background_MP4 (Mobile).mp4"
+          type="video/mp4"
+          media="(max-width: 568px)"
+        />
         <source
           src="./video/Background 3.0 WEBM(Desktop).webm"
           type="video/webm"
@@ -96,6 +106,9 @@
             <p class="header__item-subtitle">Years of Experience</p>
           </div>
         </div>
+        <a href="#feedback" class="header__contact-btn">
+          <button class="contact-btn">Contact us</button>
+        </a>
       </div>
     </header>
 
@@ -748,6 +761,96 @@
       </div>
     </section>
 
+    <section class="reference section-small">
+      <div class="container reference__container">
+        <h2 class="title-black">Reference letters</h2>
+        <div class="swiper reference__swiper">
+          <div class="swiper-wrapper reference__swiper-wrapper">
+            <div class="swiper-slide reference__swiper-slide">
+              <img
+                class="img-thumbnail reference__img"
+                src="./img/main-page/reference-letters/2019-09-27-lufthansa-reference-page-1 2.jpg"
+                alt="HD., Head of IT Infrastructure, Deutsche Lufthansa AG"
+                loading="lazy"
+              />
+              <p>HD., Head of IT Infrastructure, Deutsche Lufthansa AG</p>
+            </div>
+            <div class="swiper-slide reference__swiper-slide">
+              <img
+                class="img-thumbnail reference__img"
+                src="./img/main-page/reference-letters/2018-06-30-letter-of-reference-leo-burnett-1 2.jpg"
+                alt="BW., groupe client leader, publicis communications GK., business director - PMI global digital, Leo Burnett"
+                loading="lazy"
+              />
+              <p>
+                BW., groupe client leader, publicis communications GK., business
+                director - PMI global digital, Leo Burnett
+              </p>
+            </div>
+            <div class="swiper-slide reference__swiper-slide">
+              <img
+                class="img-thumbnail reference__img"
+                src="./img/main-page/reference-letters/2018-07-04-letter-of-recommendation-science-soft-1 2.jpg"
+                alt="NK., CEO, Science Soft Inc."
+                loading="lazy"
+              />
+              <p>NK., CEO, Science Soft Inc.</p>
+            </div>
+            <div class="swiper-slide reference__swiper-slide">
+              <img
+                class="img-thumbnail reference__img"
+                src="./img/main-page/reference-letters/2018-06-11-letter-of-reference-leo-burnett-sam-gooby 2.jpg"
+                alt="SG., Lead Business Analyst, Leo Burnett GmbH"
+                loading="lazy"
+              />
+              <p>SG., Lead Business Analyst, Leo Burnett GmbH</p>
+            </div>
+            <div class="swiper-slide reference__swiper-slide">
+              <img
+                class="img-thumbnail reference__img"
+                src="./img/main-page/reference-letters/2016-12-06-letter-of-reference-leo-burnett-marco-randi 2.jpg"
+                alt="MR.,Head of Technology, Leo Burnett GmbH"
+                loading="lazy"
+              />
+              <p>MR.,Head of Technology, Leo Burnett GmbH</p>
+            </div>
+            <div class="swiper-slide reference__swiper-slide">
+              <img
+                class="img-thumbnail reference__img"
+                src="./img/main-page/reference-letters/2016-08-05-letter-of-reference-leo-burnett-uladzimir-palkhouski 2.jpg"
+                alt="UP.,Technical Solution Architect, Leo Burnett GmbH"
+                loading="lazy"
+              />
+              <p>UP.,Technical Solution Architect, Leo Burnett GmbH</p>
+            </div>
+            <div class="swiper-slide reference__swiper-slide">
+              <img
+                class="img-thumbnail reference__img"
+                src="./img/main-page/reference-letters/2014-09-19-letter-of-reference-science-soft-maxim-saplin 2.jpg"
+                alt="MS.,Microsoft Technologies Department Manager, Science Soft Inc."
+                loading="lazy"
+              />
+              <p>
+                MS.,Microsoft Technologies Department Manager, Science Soft Inc.
+              </p>
+            </div>
+            <div class="swiper-slide reference__swiper-slide">
+              <img
+                class="img-thumbnail reference__img"
+                src="./img/main-page/reference-letters/2012-11-28-letter-of-reference-kaspersky-lab-maxim-dorofeev 2.jpg"
+                alt="MD.,Head of IT Engineering, Kaspersky Lab"
+                loading="lazy"
+              />
+              <p>MD.,Head of IT Engineering, Kaspersky Lab</p>
+            </div>
+          </div>
+        </div>
+        <button class="reference__main-btn read-more-light-btn">
+          Read more
+        </button>
+      </div>
+    </section>
+
     <section class="reviews section-small">
       <h2 class="title-black">Reviews</h2>
       <script
@@ -933,7 +1036,9 @@
               <ul>
                 <div>
                   <li>
-                    <a href="/software-architecture-and-design.html">Software architecture and design</a>
+                    <a href="/software-architecture-and-design.html"
+                      >Software architecture and design</a
+                    >
                   </li>
                   <li>
                     <a href="#">Cloud development</a>
@@ -1000,7 +1105,6 @@
                 </div>
               </div>
               <div class="reviews-widget">
-                <!-- <img src="./img/main-page/temp-img-rating.png" alt="" /> -->
                 <script
                   type="text/javascript"
                   src="https://widget.clutch.co/static/js/widget.js"
@@ -1068,6 +1172,22 @@
     src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
     type="module"
   ></script>
+
+  <script>
+    document
+      .querySelector(".navigation__button")
+      .addEventListener("click", () => {
+        if (document.getElementById("navigation__toggle").checked) {
+          document.querySelector("html").style.overflow = "auto";
+        } else {
+          document.querySelector("html").style.overflow = "hidden";
+        }
+      });
+    function closeNavigation() {
+      document.getElementById("navigation__toggle").checked = false;
+      document.querySelector("html").style.overflow = "auto";
+    }
+  </script>
 
   <script>
     const modalEle = document.querySelector(".modal");
@@ -1146,6 +1266,22 @@
             rows: 2,
           },
           slidesPerGroup: 4,
+        },
+      },
+    });
+
+    const reference__swiper = new Swiper(".reference__swiper", {
+      speed: 400,
+      spaceBetween: 0,
+      freeMode: true,
+      slidesPerView: 1,
+      direction: "horizontal",
+
+      breakpoints: {
+        1280: {
+          spaceBetween: 20,
+          enabled: false,
+          slidesPerView: 4,
         },
       },
     });
