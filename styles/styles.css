@@ -50,6 +50,10 @@ html {
   margin-inline: auto;
 }
 
+.width380 {
+  max-width: 380px;
+}
+
 .width480 {
   max-width: 480px;
 }
@@ -64,6 +68,10 @@ html {
 
 .width720 {
   max-width: 720px;
+}
+
+.width768 {
+  max-width: 768px;
 }
 
 .width800 {
@@ -167,7 +175,8 @@ ol {
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 img {
@@ -337,22 +346,20 @@ button.read-more-dark-btn {
 .gray-section__header {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 16px;
 }
 @media (min-width: 568px) {
+  .gray-section__header {
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+  }
   .gray-section__header:not(:last-child) {
     margin-bottom: 60px;
   }
 }
-@media (min-width: 568px) {
-  .gray-section__header {
-    text-align: center;
-    margin-inline: auto;
-  }
-}
 @media (max-width: 568px) {
-  .gray-section__header {
+  .gray-section__header:not(:last-child) {
     margin-bottom: 16px;
   }
 }
@@ -706,15 +713,21 @@ button.read-more-dark-btn {
 .faq-section__container .accordion:last-child {
   margin-bottom: 0;
 }
-.faq-section__title {
+.faq-section__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin-bottom: 16px;
 }
 @media (min-width: 568px) {
-  .faq-section__title {
+  .faq-section__header {
+    gap: 16px;
     margin-bottom: 40px;
     text-align: center;
+    align-items: center;
   }
 }
+
 .dots-bg {
   position: relative;
   pointer-events: none;
@@ -763,6 +776,7 @@ button.read-more-dark-btn {
   align-items: center;
   justify-content: center;
   top: 50%;
+  width: -moz-fit-content;
   width: fit-content;
   max-height: 90vh;
   height: 100%;
@@ -1115,7 +1129,8 @@ button.read-more-dark-btn {
 }
 .header #backgroundVideo {
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100vw;
   height: 90vh;
   top: 0;
@@ -1199,7 +1214,8 @@ button.read-more-dark-btn {
 @media (max-width: 568px) {
   .info-block__main-image img {
     max-height: 387px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .info-block__main-content {
@@ -2482,7 +2498,8 @@ button.read-more-dark-btn {
 .card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-header__subtitle {
@@ -2540,6 +2557,4 @@ button.read-more-dark-btn {
   .services-section__subtitle {
     text-align: center;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
