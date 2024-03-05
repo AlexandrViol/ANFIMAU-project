@@ -44,22 +44,21 @@ button {
   &__header {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 16px;
 
     @include before-xlm {
+      align-items: center;
+      text-align: center;
+      margin-inline: auto;
       &:not(:last-child) {
         margin-bottom: 60px;
       }
     }
 
-    @include before-xlm {
-      text-align: center;
-      margin-inline: auto;
-    }
-
     @include xlm {
-      margin-bottom: 16px;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
     }
   }
   &__subtitle {
@@ -448,15 +447,17 @@ button {
     }
   }
 
-  &__title {
+  &__header {
+    display: flex;
+    flex-direction: column;
     @include before-xlm {
+      gap: 16px;
       margin-bottom: 40px;
       text-align: center;
+      align-items: center;
     }
+    gap: 8px;
     margin-bottom: 16px;
-  }
-
-  &__subtitle {
   }
 }
 
