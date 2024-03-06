@@ -167,6 +167,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: var(--clr-background-primary);
+  overflow: hidden;
 }
 
 ul,
@@ -175,8 +176,7 @@ ol {
 }
 
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 img {
@@ -776,7 +776,6 @@ button.read-more-dark-btn {
   align-items: center;
   justify-content: center;
   top: 50%;
-  width: -moz-fit-content;
   width: fit-content;
   max-height: 90vh;
   height: 100%;
@@ -1129,8 +1128,7 @@ button.read-more-dark-btn {
 }
 .header #backgroundVideo {
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100vw;
   height: 90vh;
   top: 0;
@@ -1214,8 +1212,7 @@ button.read-more-dark-btn {
 @media (max-width: 568px) {
   .info-block__main-image img {
     max-height: 387px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 .info-block__main-content {
@@ -1257,6 +1254,9 @@ button.read-more-dark-btn {
   }
 }
 
+.services .container {
+  overflow: hidden;
+}
 .services h2 {
   color: var(--clr-text-primary);
   text-align: center;
@@ -1359,6 +1359,9 @@ button.read-more-dark-btn {
   100% {
     transform: translateX(-100%);
   }
+}
+.certifications .container {
+  overflow: hidden;
 }
 .certifications h2 {
   color: var(--clr-text-primary);
@@ -1526,6 +1529,9 @@ button.read-more-dark-btn {
   }
 }
 
+.case-studies .container {
+  overflow: hidden;
+}
 .case-studies__title {
   color: var(--clr-text-primary);
   text-align: center;
@@ -1647,6 +1653,9 @@ button.read-more-dark-btn {
   .case-studies .swiper-pagination-bullet {
     display: none;
   }
+}
+.reference .container {
+  overflow: hidden;
 }
 .reference h2 {
   text-align: center;
@@ -2056,7 +2065,7 @@ button.read-more-dark-btn {
     width: 100%;
   }
   .footer-nav__bottom .col:nth-child(2) {
-    max-width: 494px;
+    max-width: 340px;
     width: 100%;
   }
 }
@@ -2067,6 +2076,7 @@ button.read-more-dark-btn {
 }
 .footer-nav__bottom .col:nth-child(2) .reviews-widget {
   align-self: center;
+  max-width: 186px;
 }
 @media (max-width: 1024px) {
   .footer-nav__bottom .col.column-first {
@@ -2498,8 +2508,7 @@ button.read-more-dark-btn {
 .card-image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .card-header__subtitle {
@@ -2557,4 +2566,15 @@ button.read-more-dark-btn {
   .services-section__subtitle {
     text-align: center;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.three-items-slider .case-studies__swiper-wrapper {
+  margin-bottom: 0;
+}
+@media (min-width: 1280px) {
+  .three-items-slider .case-studies__swiper-wrapper {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

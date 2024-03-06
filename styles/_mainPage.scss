@@ -163,6 +163,11 @@
 }
 
 .services {
+  //todo temp fix
+  .container {
+    overflow: hidden;
+  }
+
   h2 {
     color: var(--clr-text-primary);
     text-align: center;
@@ -289,6 +294,11 @@
 }
 
 .certifications {
+  //todo temp fix
+  .container {
+    overflow: hidden;
+  }
+
   h2 {
     color: var(--clr-text-primary);
     text-align: center;
@@ -494,6 +504,11 @@
 }
 
 .case-studies {
+  //todo temp fix
+  .container {
+    overflow: hidden;
+  }
+
   &__title {
     color: var(--clr-text-primary);
     text-align: center;
@@ -655,6 +670,11 @@
 }
 
 .reference {
+  //todo temp fix
+  .container {
+    overflow: hidden;
+  }
+
   h2 {
     text-align: center;
     margin-bottom: 40px;
@@ -1122,7 +1142,8 @@
           width: 100%;
         }
         &:nth-child(2) {
-          max-width: 494px;
+          // max-width: 494px;
+          max-width: 340px;
           width: 100%;
         }
       }
@@ -1136,6 +1157,7 @@
 
         .reviews-widget {
           align-self: center;
+          max-width: 186px;
         }
       }
       @include md {

@@ -22,3 +22,13 @@
     }
   }
 }
+
+.three-items-slider {
+  .case-studies__swiper-wrapper {
+    margin-bottom: 0;
+
+    @include before-lg {
+      justify-content: center;
+    }    
+  }
+}
