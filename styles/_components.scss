@@ -40,6 +40,47 @@ button {
   }
 }
 
+.hero-second {
+  &__header {
+    background: var(--clr-background-gradient);
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100% - var(--header-height));
+      padding-top: calc(var(--header-height) + var(--section-spacing-small));
+      padding-bottom: var(--section-spacing-small);
+    }
+
+    &-title {
+      max-width: 880px;
+      text-align: center;
+    }
+
+    &-subtitle {
+      text-align: center;
+      max-width: 686px;
+      color: var(--clr-white60);
+      margin-top: 20px;
+
+      @include xlm {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 40px;
+    @include before-xlm {
+      width: 160px;
+    }
+    @include xlm {
+      margin-top: 20px;
+    }
+  }
+}
+
 .gray-section {
   &__header {
     display: flex;
@@ -108,6 +149,12 @@ button {
     @include md {
       padding: 24px;
     }
+
+    &-with-link {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 
   &-item__inner {
@@ -155,6 +202,13 @@ button {
   }
 
   &-text {
+  }
+
+  &-link {
+    margin-top: 8px;
+    color: var(--clr-blue-primary);
+    font-family: var(--ff-primary-bold);
+    line-height: 20.7px;
   }
 }
 
@@ -485,6 +539,55 @@ button {
     }
     &::after {
       background-position: right;
+    }
+  }
+}
+
+.global-skills {
+  --gap: 64px;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 64px;
+
+    @include xlm {
+      margin-bottom: 16px;
+      gap: 8px;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px 40px;
+
+    @include sm {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    @include xlm {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
+  &__item {
+    --item-gap: 12px;
+
+    @include xlm {
+      --item-gap: 8px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--item-gap);
+
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: var(--item-gap);
     }
   }
 }

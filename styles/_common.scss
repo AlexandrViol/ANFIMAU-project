@@ -136,6 +136,17 @@ html {
   padding-top: 0;
 }
 
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.mt-24 {
+  margin-top: 24px;
+  @include xlm {
+    margin-top: 16px;
+  }
+}
+
 .text-white60 {
   color: var(--clr-white60);
 }
