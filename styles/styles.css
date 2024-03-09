@@ -359,6 +359,11 @@ button.read-more-dark-btn {
   --btn-clr: var(--clr-white);
   --btn-bg: var(--clr-white05);
 }
+button.back-to-home-btn {
+  --btn-clr: var(--clr-white);
+  --btn-bg: var(--clr-blue-primary);
+  width: auto;
+}
 
 .hero-second__header {
   background: var(--clr-background-gradient);
@@ -2610,5 +2615,40 @@ button.read-more-dark-btn {
 @media (min-width: 1280px) {
   .three-items-slider .case-studies__swiper-wrapper {
     justify-content: center;
+  }
+}
+
+.error-section h1 {
+  font-size: 96px;
+  line-height: 144px;
+}
+.error-section__container {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  background-image: url(../img/errors/errors-bg.svg);
+  background-origin: 0 0;
+  background-repeat: no-repeat;
+  background-position: 60% center;
+  background-size: 82%;
+  background-origin: border-box;
+}
+@media (max-width: 768px) {
+  .error-section__container {
+    background-size: 150%;
+    background-position: 45% 40%;
+  }
+}
+@media (max-width: 568px) {
+  .error-section__container {
+    background-position: 45% 39%;
+    background-size: 200%;
+  }
+  .error-section__container h2 {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

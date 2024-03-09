@@ -38,6 +38,12 @@ button {
     --btn-clr: var(--clr-white);
     --btn-bg: var(--clr-white05);
   }
+
+  &.back-to-home-btn {
+    --btn-clr: var(--clr-white);
+    --btn-bg: var(--clr-blue-primary);
+    width: auto;
+  }
 }
 
 .hero-second {
