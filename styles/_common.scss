@@ -127,11 +127,6 @@ html {
   background-color: var(--clr-gray1);
 }
 
-.rotate180 {
-  rotate: 180deg;
-  transform-origin: 0 0;
-}
-
 .pt-0 {
   padding-top: 0;
 }
@@ -179,10 +174,18 @@ html {
   max-width: 720px;
 }
 
+.width730 {
+  max-width: 730px;
+}
+
 .width768 {
   max-width: 768px;
 }
 
 .width800 {
   max-width: 800px;
+}
+
+.width850 {
+  max-width: 850px;
 }
