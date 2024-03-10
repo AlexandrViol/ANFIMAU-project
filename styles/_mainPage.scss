@@ -1199,6 +1199,11 @@
 
     li {
       color: var(--clr-white60);
+      transition: $transition;
+
+      &:hover {
+        color: var(--clr-white);
+      }
 
       &:not(:last-child) {
         margin-bottom: 8px;
