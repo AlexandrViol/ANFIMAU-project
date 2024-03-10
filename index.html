@@ -43,19 +43,87 @@
               >
                 How we work
               </a>
+              <div class="navigation__dropdown-wrapper">
+                <a
+                  onClick="closeNavigation()"
+                  class="navigation__link"
+                  href="#services"
+                >
+                  Services
+                </a>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 6L8 11L3 6"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <div>
+                  <a
+                    href="software-architecture-and-design.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Software architecture and design</a
+                  >
+                  <a
+                    href="cloud-development.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Cloud development</a
+                  >
+                  <a
+                    href="dev-ops-services.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >DevOps services</a
+                  >
+                  <a
+                    href="custom-software-development.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Custom software development</a
+                  >
+                  <a
+                    href="business-analysis-services.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Business analysis</a
+                  >
+                  <a
+                    href="data-analytics-services.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Data & analytics</a
+                  >
+                  <a
+                    href="process-management-coaching.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Process management & coaching</a
+                  >
+                </div>
+              </div>
               <a
                 onClick="closeNavigation()"
                 class="navigation__link"
-                href="#services"
+                href="#case"
               >
-                Services
+                Case studies
               </a>
               <a
                 onClick="closeNavigation()"
                 class="navigation__link"
-                href="#reviews"
+                href="our-team.html"
               >
-                Case studies
+                Our team
               </a>
             </div>
             <div class="navigation__right-section">
@@ -67,7 +135,7 @@
         </div>
       </div>
     </nav>
-    
+
     <header class="header">
       <video autoplay muted loop id="backgroundVideo">
         <source
@@ -201,7 +269,10 @@
         <h2>Services</h2>
         <div class="swiper services__swiper">
           <div class="swiper-wrapper services__swiper-wrapper">
-            <a class="swiper-slide services__swiper-slide" href="software-architecture-and-design.html">
+            <a
+              class="swiper-slide services__swiper-slide"
+              href="software-architecture-and-design.html"
+            >
               <img
                 src="./img/main-page/services-icons/software-icon.svg"
                 alt="icon"
@@ -214,7 +285,10 @@
                 environments.
               </p>
             </a>
-            <a class="swiper-slide services__swiper-slide" href="cloud-development.html">
+            <a
+              class="swiper-slide services__swiper-slide"
+              href="cloud-development.html"
+            >
               <img
                 src="./img/main-page/services-icons/cloud-icon.svg"
                 alt="icon"
@@ -227,7 +301,10 @@
                 and design cloud solutions.
               </p>
             </a>
-            <a class="swiper-slide services__swiper-slide" href="dev-ops-services.html">
+            <a
+              class="swiper-slide services__swiper-slide"
+              href="dev-ops-services.html"
+            >
               <img
                 src="./img/main-page/services-icons/devops_icon.svg"
                 alt="icon"
@@ -240,7 +317,10 @@
                 DevOps, and others.
               </p>
             </a>
-            <a class="swiper-slide services__swiper-slide" href="custom-software-development.html">
+            <a
+              class="swiper-slide services__swiper-slide"
+              href="custom-software-development.html"
+            >
               <img
                 src="./img/main-page/services-icons/custom_icon.svg"
                 alt="icon"
@@ -252,7 +332,10 @@
                 migrating, and reengineering legacy systems.
               </p>
             </a>
-            <a class="swiper-slide services__swiper-slide" href="business-analysis-services.html">
+            <a
+              class="swiper-slide services__swiper-slide"
+              href="business-analysis-services.html"
+            >
               <img
                 src="./img/main-page/services-icons/business-icon.svg"
                 alt="icon"
@@ -278,7 +361,10 @@
                 innovation, and gain a competitive edge.
               </p>
             </a>
-            <a class="swiper-slide services__swiper-slide" href="process-management-coaching.html">
+            <a
+              class="swiper-slide services__swiper-slide"
+              href="process-management-coaching.html"
+            >
               <img
                 src="./img/main-page/services-icons/process-icon.svg"
                 alt="icon"
@@ -560,7 +646,7 @@
       </div>
     </section>
 
-    <section class="case-studies section-small">
+    <section class="case-studies section-small" id="case">
       <div class="container case-studies__container">
         <h2 class="case-studies__title">Case studies</h2>
         <p class="case-studies__subtitle">
@@ -1047,18 +1133,26 @@
                     <a href="dev-ops-services.html">Dev ops</a>
                   </li>
                   <li>
-                    <a href="custom-software-development.html">Custom software development</a>
+                    <a href="custom-software-development.html"
+                      >Custom software development</a
+                    >
                   </li>
                 </div>
                 <div>
                   <li>
-                    <a href="business-analysis-services.html">Business analysis</a>
+                    <a href="business-analysis-services.html"
+                      >Business analysis</a
+                    >
                   </li>
                   <li>
-                    <a href="data-analytics-services.html">Data &#38; analytics</a>
+                    <a href="data-analytics-services.html"
+                      >Data &#38; analytics</a
+                    >
                   </li>
                   <li>
-                    <a href="process-management-coaching.html">Process management &#38; coaching</a>
+                    <a href="process-management-coaching.html"
+                      >Process management &#38; coaching</a
+                    >
                   </li>
                 </div>
               </ul>
