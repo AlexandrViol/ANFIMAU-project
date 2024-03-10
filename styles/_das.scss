@@ -1,0 +1,178 @@
+.das-header {
+  &__cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    @include sm {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .left-col {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &__container {
+    align-items: flex-start;
+  }
+}
+
+.das__small-title {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.das__medium-title {
+  font-size: 36px;
+  line-height: 46px;
+
+  margin-bottom: 20px;
+  max-width: 100%;
+  text-align: left;
+
+  @include xlm {
+    max-width: 375px;
+    margin-bottom: 0;
+  }
+}
+
+.das__big-title {
+  font-size: 44px;
+  line-height: 59px;
+
+  margin-bottom: 40px;
+
+  @include xlm {
+    max-width: 375px;
+    margin-bottom: 8px;
+  }
+}
+
+.offerings-title {
+  margin-bottom: 60px;
+  @include sm {
+    margin-bottom: 40px;
+  }
+  @include xlm {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+
+  @include sm {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  @include xlm {
+    gap: 16px;
+  }
+}
+
+.mda-services {
+  --gap: 40px;
+  @include sm {
+    --gap: 20px;
+  }
+  @include xlm {
+    --gap: 16px;
+  }
+  margin-bottom: var(--gap);
+
+  .col-left,
+  .col-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-left {
+    gap: 12px;
+  }
+
+  .col-right {
+    gap: var(--gap);
+  }
+}
+
+.das-white-wrapper {
+  padding: 60px;
+  border-radius: 20px;
+  border: 1px solid var(--clr-gray2);
+  background-color: var(--clr-white);
+
+  @include md {
+    padding: 25px;
+  }
+
+  @include xlm {
+    padding: 16px;
+  }
+
+  &.pt-pb-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include md {
+      padding: 25px;
+    }
+
+    @include xlm {
+      padding: 16px;
+    }
+  }
+}
+
+.our-service-include {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include before-lg {
+    flex-basis: 470px;
+  }
+
+  @include before-sm {
+    margin: 52.5px 0;
+  }
+
+  @include before-xlm {
+    margin: 25px 0;
+  }
+
+  @include xlm {
+    gap: 16px;
+    margin: 0;
+  }
+}
+
+.platforms-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include sm {
+    gap: 20px;
+  }
+  @include xlm {
+    gap: 16px;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 27px;
+
+    @include xlm {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+}
