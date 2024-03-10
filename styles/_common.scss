@@ -189,3 +189,31 @@ html {
 .width850 {
   max-width: 850px;
 }
+
+.d-flex {
+  display: flex;
+
+  @include lg {
+    flex-direction: column;
+  }
+}
+
+.f-grow {
+  flex-grow: 1;
+}
+
+.medium-gap {
+  gap: 40px !important;
+
+  @include xlm {
+    gap: 16px !important;
+  }
+}
+
+.large-gap {
+  gap: 60px;
+
+  @include xlm {
+    gap: 16px;
+  }
+}
