@@ -28,13 +28,19 @@
 
 .das__medium-title {
   font-size: 36px;
-  line-height: 46px;
+  line-height: 54px;
 
-  margin-bottom: 20px;
-  max-width: 100%;
+  margin-bottom: 40px;
+  max-width: 550px;
   text-align: left;
 
+  @include sm {
+    margin-bottom: 20px;
+  }
+
   @include xlm {
+    font-family: var(--ff-secondary-bold);
+    line-height: 46px;
     max-width: 375px;
     margin-bottom: 0;
   }
@@ -63,20 +69,6 @@
   }
 }
 
-.grid-col-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
-
-  @include sm {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  @include xlm {
-    gap: 16px;
-  }
-}
-
 .mda-services {
   --gap: 40px;
   @include sm {
@@ -87,6 +79,10 @@
   }
   margin-bottom: var(--gap);
 
+  &__title {
+    margin-bottom: 0;
+  }
+
   .col-left,
   .col-right {
     display: flex;
@@ -95,6 +91,9 @@
 
   .col-left {
     gap: 12px;
+    @include xlm {
+      gap: 8px;
+    }
   }
 
   .col-right {
@@ -144,12 +143,12 @@
     margin: 52.5px 0;
   }
 
-  @include before-xlm {
+  @include sm {
     margin: 25px 0;
   }
 
   @include xlm {
-    gap: 16px;
+    gap: 8px;
     margin: 0;
   }
 }
@@ -174,5 +173,17 @@
       font-size: 28px;
       line-height: 34px;
     }
+  }
+}
+
+.ai-ml-development {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.das-title-pt-xlm {
+  @include xlm {
+    padding-top: 32px;
   }
 }
