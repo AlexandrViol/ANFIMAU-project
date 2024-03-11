@@ -2736,6 +2736,14 @@ button.back-to-home-btn {
   }
 }
 
+@media (min-width: 1280px) {
+  .four-items-slider .swiper-wrapper {
+    width: 100% !important;
+  }
+  .four-items-slider .swiper-wrapper .swiper-slide:nth-child(4) {
+    margin-right: 0 !important;
+  }
+}
 .error-section h1 {
   font-size: 96px;
   line-height: 144px;
