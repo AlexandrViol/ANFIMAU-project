@@ -211,8 +211,36 @@ html {
 }
 
 .large-gap {
+  gap: 60px !important;
+
+  @include xlm {
+    gap: 16px !important;
+  }
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 60px;
 
+  @include sm {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  @include xlm {
+    gap: 16px;
+  }
+}
+
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+
+  @include sm {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
   @include xlm {
     gap: 16px;
   }
