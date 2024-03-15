@@ -110,6 +110,14 @@ html {
   padding: 0 16px;
 }
 
+.half-screen-height {
+  min-height: 60svh;
+
+  @include xlm {
+    min-height: 85svh;
+  }
+}
+
 .section-small {
   padding: var(--section-spacing-small) 0;
 }
