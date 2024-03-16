@@ -133,7 +133,7 @@
   }
 
   &__link {
-    font-family: "PoppinsRegular", sans-serif;
+    font-family: var(--ff-secondary-regular);
     font-size: 14px;
     line-height: normal;
     transition: $transition;

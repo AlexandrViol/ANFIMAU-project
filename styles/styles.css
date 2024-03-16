@@ -12,6 +12,15 @@ html {
   padding: 0 16px;
 }
 
+.half-screen-height {
+  min-height: 60svh;
+}
+@media (max-width: 568px) {
+  .half-screen-height {
+    min-height: 85svh;
+  }
+}
+
 .section-small {
   padding: var(--section-spacing-small) 0;
 }
@@ -1301,7 +1310,7 @@ button.back-to-home-btn {
   }
 }
 .navigation__link {
-  font-family: "PoppinsRegular", sans-serif;
+  font-family: var(--ff-secondary-regular);
   font-size: 14px;
   line-height: normal;
   transition: all 0.2s ease-in-out;
