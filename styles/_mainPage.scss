@@ -111,6 +111,7 @@
 
     img {
       max-width: 426px;
+      border-radius: 20px;
 
       @include md {
         width: 100%;
@@ -831,6 +832,7 @@
   &-image {
     grid-area: image;
     border-radius: 20px;
+    max-width: 420px;
     overflow: hidden;
     position: relative;
 
@@ -961,7 +963,6 @@
 
     @include lg {
       position: static;
-      max-width: 100%;
       padding-top: 16px;
     }
   }
