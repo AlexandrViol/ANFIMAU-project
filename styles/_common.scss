@@ -150,6 +150,13 @@ html {
   }
 }
 
+.mb-40 {
+  margin-bottom: 40px;
+  @include xlm {
+    margin-bottom: 16px;
+  }
+}
+
 .text-white60 {
   color: var(--clr-white60);
 }
@@ -206,8 +213,17 @@ html {
   }
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .f-grow {
   flex-grow: 1;
+}
+
+.small-gap {
+  gap: var(--primary-gap);
 }
 
 .medium-gap {
@@ -221,6 +237,10 @@ html {
 .large-gap {
   gap: 60px !important;
 
+  @include sm {
+    gap: 40px !important;
+  }
+
   @include xlm {
     gap: 16px !important;
   }
@@ -229,27 +249,19 @@ html {
 .grid-col-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
 
   @include sm {
     grid-template-columns: 1fr;
-    gap: 40px;
   }
-  @include xlm {
-    gap: 16px;
-  }
+  @extend .large-gap;
 }
 
 .grid-col-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
 
   @include sm {
     grid-template-columns: 1fr;
-    gap: 40px;
   }
-  @include xlm {
-    gap: 16px;
-  }
+  @extend .large-gap;
 }
