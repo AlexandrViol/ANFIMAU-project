@@ -106,12 +106,12 @@
   }
 
   &-image {
-    border-radius: 20px;
+    border-radius: var(--border-radius-primary);
     overflow: hidden;
 
     img {
       max-width: 426px;
-      border-radius: 20px;
+      border-radius: var(--border-radius-primary);
 
       @include md {
         width: 100%;
@@ -177,7 +177,7 @@
 
   &__swiper-slide {
     color: var(--clr-text-primary);
-    border-radius: 20px;
+    border-radius: var(--border-radius-primary);
     border: 1px solid var(--clr-gray2);
     padding: 32px;
     background: var(--clr-gray1);
@@ -417,7 +417,7 @@
     width: 100%;
     background: var(--clr-white);
     border: 1px solid var(--clr-gray2);
-    border-radius: 20px;
+    border-radius: var(--border-radius-primary);
     padding: 20px;
 
     & > img {
@@ -525,7 +525,7 @@
 
   &__swiper-slide {
     color: var(--clr-text-primary);
-    border-radius: 20px;
+    border-radius: var(--border-radius-primary);
     border: 1px solid var(--clr-gray2);
     padding: 32px;
     background: var(--clr-gray1);
@@ -641,7 +641,7 @@
     opacity: 1;
     width: 20px;
     height: 4px;
-    border-radius: 20px;
+    border-radius: var(--border-radius-primary);
 
     &-active {
       background-color: var(--clr-blue-primary);
@@ -727,7 +727,7 @@
     width: 100%;
     background: var(--clr-white);
     border: 1px solid var(--clr-gray2);
-    border-radius: 20px;
+    border-radius: var(--border-radius-primary);
     padding: 32px;
 
     & > img {
@@ -777,7 +777,7 @@
     width: 100%;
     max-width: 1020px;
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: var(--border-radius-primary);
     overflow: hidden;
 
     &:before {
@@ -831,7 +831,7 @@
 
   &-image {
     grid-area: image;
-    border-radius: 20px;
+    border-radius: var(--border-radius-primary);
     max-width: 420px;
     overflow: hidden;
     position: relative;
@@ -953,7 +953,7 @@
 
   &__image {
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: var(--border-radius-primary);
 
     max-width: 610px;
     position: absolute;
