@@ -230,7 +230,7 @@ button {
   &-item {
     background-color: var(--clr-gray1);
     border: 1px solid var(--clr-gray2);
-    border-radius: 20px;
+    border-radius: var(--border-radius-primary);
     padding: 32px;
 
     @include md {
@@ -246,7 +246,7 @@ button {
     &__static {
       background-color: var(--clr-gray1);
       border: 1px solid var(--clr-gray2);
-      border-radius: 20px;
+      border-radius: var(--border-radius-primary);
       padding: 32px;
 
       display: flex;
@@ -430,7 +430,7 @@ button {
     flex-direction: column;
     gap: 12px;
     padding: 32px;
-    border-radius: 20px;
+    border-radius: var(--border-radius-primary);
     background-color: var(--clr-gray1);
     border: 1px solid var(--clr-gray2);
     margin-bottom: 40px;
@@ -497,7 +497,7 @@ button {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--stack-container-gap);
 
-    @include xlm {
+    @include sm {
       grid-template-columns: 1fr;
       --stack-container-gap: 16px;
     }
@@ -505,16 +505,19 @@ button {
 
   &-section {
     padding: calc(var(--stack-container-gap) * 2);
-    border-radius: 20px;
+    border-radius: var(--border-radius-primary);
     background-color: var(--clr-gray1);
     border: 1px solid var(--clr-gray2);
 
-    @include xlm {
+    @include sm {
       padding: 24px var(--stack-container-gap);
     }
 
     &__title {
       margin-bottom: var(--stack-container-gap);
+      @include md {
+        font-size: 18px;
+      }
     }
 
     &.full-width {
@@ -549,7 +552,7 @@ button {
     gap: var(--stack-container-gap);
 
     @include lg {
-      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(90px, 90px));
     }
 
     @include xlm {
@@ -746,6 +749,14 @@ button {
       }
     }
 
+    &.col-3 {
+      grid-template-columns: repeat(3, 1fr);
+
+      @include sm {
+        grid-template-columns: 1fr;
+      }
+    }
+
     &.col-4 {
       grid-template-columns: repeat(4, 1fr);
 
@@ -825,6 +836,100 @@ button {
 
   .grid-text {
     grid-area: text;
+  }
+}
+
+.cards {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--primary-gap);
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include sm {
+      grid-template-columns: 1fr;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 32px;
+      background-color: var(--clr-white);
+      border: 1px solid var(--clr-gray2);
+      border-radius: var(--border-radius-primary);
+
+      span {
+        font-size: 24px;
+        font-family: var(--ff-secondary-semiBold);
+        line-height: 36px;
+      }
+    }
+  }
+}
+
+.grid-image-title-second {
+  display: grid;
+  grid-template-columns: 534px 1fr;
+  grid-template-rows: 82.5px auto auto 82.5px;
+  gap: 0 60px;
+
+  @include lg {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  @include md {
+    gap: 16px;
+  }
+
+  .grid-image {
+    max-width: 534px;
+    overflow: hidden;
+    border-radius: var(--border-radius-primary);
+    grid-row: 1 / -1;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @include lg {
+      grid-row: 2 /3;
+    }
+  }
+
+  .grid-title {
+    grid-row: 2 / 3;
+
+    @include lg {
+      grid-row: 1 /2;
+    }
+  }
+
+  .grid-subtitle {
+    font-family: var(--ff-secondary-semiBold);
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 8px;
+
+    @include lg {
+      font-size: 16px;
+      line-height: 20.7px;
+    }
+  }
+
+  .grid-text {
+    grid-row: 3 / 4;
+    color: var(--clr-white60);
+    display: flex;
+    flex-direction: column;
+    gap: var(--primary-gap);
   }
 }
 

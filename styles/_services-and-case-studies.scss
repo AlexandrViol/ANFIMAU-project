@@ -1,4 +1,4 @@
-.services {
+.services, .case-studies {
   &-section {
     &__header {
       display: flex;
@@ -16,6 +16,16 @@
     }
 
     &__subtitle {
+      &.big-bold {
+        font-size: 18px;
+        line-height: 27px;
+        font-family: var(--ff-secondary-bold);
+
+        @include xlm {
+          font-size: 16px;
+          line-height: 20.7px;
+        }
+      }
       @include before-xlm {
         text-align: center;
       }
@@ -150,7 +160,7 @@
 
 .das-white-wrapper {
   padding: 60px;
-  border-radius: 20px;
+  border-radius: var(--border-radius-primary);
   border: 1px solid var(--clr-gray2);
   background-color: var(--clr-white);
 

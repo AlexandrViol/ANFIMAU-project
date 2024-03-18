@@ -30,6 +30,7 @@
       rgba(76, 83, 88, 0.45) 131.64%
     ),
     #24272b;
+  --border-radius-primary: 20px;
 
   // ----HEADER----//
   --header-height: 95px;
@@ -70,5 +71,5 @@
 @import "./aboutPage";
 @import "./howWeWorkPage";
 @import "./ourTeam";
-@import "./services";
+@import "./services-and-case-studies";
 @import "./errorPages";
