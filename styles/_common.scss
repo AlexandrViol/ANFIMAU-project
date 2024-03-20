@@ -97,6 +97,29 @@ $MEDIA: (
   }
 }
 
+* {
+  ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      transition: $transition;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: var(--clr-background-secondary);
+      border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background: var(--clr-text-primary);
+  }
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px;
