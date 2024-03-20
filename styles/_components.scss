@@ -215,6 +215,21 @@ button {
       }
     }
 
+    &.col-4 {
+      grid-template-columns: repeat(4, 1fr);
+
+      @include lg {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      @include md {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include sm {
+        grid-template-columns: 1fr;
+      }
+    }
+
     &__static {
       display: grid;
       gap: 20px;
@@ -274,6 +289,14 @@ button {
     @include md {
       flex-direction: column;
       gap: 24px;
+    }
+
+    &.full-height {
+      height: 100%;
+
+      p {
+        margin-top: auto;
+      }
     }
 
     &.row {
@@ -517,6 +540,56 @@ button {
       margin-bottom: var(--stack-container-gap);
       @include md {
         font-size: 18px;
+      }
+    }
+
+    &.col-5 {
+      grid-column: -1 / 1;
+
+      .stack-row {
+        grid-template-columns: repeat(5, 98px);
+
+        @include lg {
+          grid-template-columns: repeat(auto-fit, minmax(98px, 1fr));
+        }
+
+        @include xlm {
+          gap: 16px;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .stack-icon {
+          width: 98px;
+
+          @include xlm {
+            width: 60px;
+          }
+        }
+      }
+    }
+
+    &.col-6 {
+      grid-column: -1 / 1;
+
+      .stack-row {
+        grid-template-columns: repeat(6, 98px);
+
+        @include lg {
+          grid-template-columns: repeat(auto-fit, minmax(98px, 1fr));
+        }
+
+        @include xlm {
+          gap: 16px;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .stack-icon {
+          width: 98px;
+
+          @include xlm {
+            width: 60px;
+          }
+        }
       }
     }
 
@@ -851,6 +924,13 @@ button {
 
     @include sm {
       grid-template-columns: 1fr;
+    }
+
+    &.col-2 {
+      grid-template-columns: repeat(2, 1fr);
+      @include sm {
+        grid-template-columns: 1fr;
+      }
     }
 
     .card {

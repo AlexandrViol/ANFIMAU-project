@@ -140,6 +140,16 @@ html {
   background-color: var(--clr-gray1);
 }
 
+.fz-24-22 {
+  font-size: 24px;
+  line-height: 36px;
+
+  @include md {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
 .pt-0 {
   padding-top: 0;
 }
@@ -171,6 +181,17 @@ html {
   }
 }
 
+.big-bold {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: var(--ff-secondary-bold);
+
+  @include xlm {
+    font-size: 16px;
+    line-height: 20.7px;
+  }
+}
+
 .text-white60 {
   color: var(--clr-white60);
 }
@@ -193,6 +214,14 @@ html {
 
 .width546 {
   max-width: 546px;
+}
+
+.width590 {
+  max-width: 590px;
+}
+
+.width650 {
+  max-width: 650px;
 }
 
 .width690 {
