@@ -90,13 +90,13 @@ button {
 .case-studies {
   &__header {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 
     .backgroundImage {
       position: absolute;
       object-fit: cover;
       width: 100vw;
-      height: 90vh;
+      height: 100vh;
       top: 0;
       left: 0;
 
@@ -104,9 +104,39 @@ button {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center 70%;
 
         @include xlm {
           object-position: 20% center;
+        }
+
+        &.electrical-grid-img-pos {
+          object-position: center 10%;
+          @include xlm {
+            object-position: 20% center;
+          }
+        }
+
+        &.algorithmic-and-manual-power-img-pos {
+          object-position: center 20%;
+
+          @include xlm {
+            object-position: 5% 10%;
+          }
+        }
+
+        &.finops-solutions-cloud-infrastructure-img-pos {
+          object-position: center 20%;
+        }
+
+        &.improving-customer-engagement-img-pos {
+          object-position: center 60%;
+          @include xlm {
+            object-position: 45% center;
+          }
+        }
+        &.electricity-auctions-img-pos {
+          object-position: 10% top;
         }
       }
       &::after {
@@ -543,6 +573,31 @@ button {
       }
     }
 
+    &.col-4 {
+      grid-column: -1 / 1;
+
+      .stack-row {
+        grid-template-columns: repeat(4, 98px);
+
+        @include lg {
+          grid-template-columns: repeat(auto-fit, minmax(98px, 1fr));
+        }
+
+        @include xlm {
+          gap: 16px;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .stack-icon {
+          width: 98px;
+
+          @include xlm {
+            width: 60px;
+          }
+        }
+      }
+    }
+
     &.col-5 {
       grid-column: -1 / 1;
 
@@ -819,6 +874,16 @@ button {
 
       @include sm {
         grid-template-columns: 1fr;
+      }
+
+      &.list-large-gap {
+        gap: 20px 60px;
+        @include md {
+          gap: 20px 40px;
+        }
+        @include xlm {
+          gap: 16px;
+        }
       }
     }
 
