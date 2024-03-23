@@ -99,11 +99,39 @@ html {
   margin-bottom: var(--primary-gap);
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+@media (max-width: 568px) {
+  .mt-40 {
+    margin-top: 16px;
+  }
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
 @media (max-width: 568px) {
   .mb-40 {
+    margin-bottom: 16px;
+  }
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+@media (max-width: 1024px) {
+  .mb-60 {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .mb-60 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 568px) {
+  .mb-60 {
     margin-bottom: 16px;
   }
 }
