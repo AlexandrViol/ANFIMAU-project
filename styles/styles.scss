@@ -53,21 +53,11 @@
   }
 }
 
-// $textPrimary: #111112;
-// $white: #fff;
-// $white60: rgba(255, 255, 255, 0.6);
-// $gray1: #f2f2f5;
-// $gray2: #dfdfeb;
-// $bluePrimary: #1e63ec;
-// $backgroundDark: #24272b;
-
 @import "./resetBrowserStyles";
 @import "./typography";
 @import "./components";
 @import "./navigation";
 @import "./swiper-bundle.css";
-// @import "./swiperCustom";
-
 @import "./mainPage";
 @import "./aboutPage";
 @import "./howWeWorkPage";

@@ -1290,3 +1290,36 @@ button {
     opacity: 1;
   }
 }
+
+.contact-us__page {
+  padding-top: 166px;
+
+  @include lg {
+    padding-top: 84px;
+  }
+
+  h2 {
+    color: var(--clr-text-primary);
+  }
+
+  & .contact-us__content-item {
+    border-bottom: 1px solid var(--clr-gray2);
+
+    &:first-child {
+      border-top: 1px solid var(--clr-gray2);
+
+      &::before {
+        background-color: var(--clr-gray2);
+      }
+    }
+
+    &::after {
+      background-color: var(--clr-gray2);
+    }
+
+    & > div p,
+    a {
+      color: var(--clr-text-primary);
+    }
+  }
+}
