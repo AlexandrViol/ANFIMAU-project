@@ -207,6 +207,10 @@
       margin-top: 20px;
     }
   }
+
+  &--black {
+    background: var(--clr-background-gradient);
+  }
 }
 
 .is_scrolled .navigation {
