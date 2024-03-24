@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ANFIMAU | Cloudera data platform migration</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/svg+xml" />
+    <link href="styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="container">
+        <div class="navigation__content-wrapper">
+          <a href="./" class="navigation__logo">
+            <img src="img/Logo_dark.svg" alt="ANFIMAU INDUSTRY SOLUTIONS" />
+          </a>
+          <input
+            class="navigation__toggle"
+            id="navigation__toggle"
+            type="checkbox"
+          />
+          <label class="navigation__button" for="navigation__toggle">
+            <div class="navigation__line"></div>
+            <div class="navigation__line"></div>
+            <div class="navigation__line"></div>
+          </label>
+          <div class="navigation__links-wrapper">
+            <div class="navigation__left-section">
+              <a
+                onClick="closeNavigation()"
+                class="navigation__link"
+                href="./about-us.html"
+              >
+                About
+              </a>
+              <a
+                onClick="closeNavigation()"
+                class="navigation__link"
+                href="./how-we-work.html"
+              >
+                How we work
+              </a>
+              <div class="navigation__dropdown-wrapper">
+                <a
+                  onClick="closeNavigation()"
+                  class="navigation__link"
+                  href="#services"
+                >
+                  Services
+                </a>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 6L8 11L3 6"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <div>
+                  <a
+                    href="software-architecture-and-design.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Software architecture and design</a
+                  >
+                  <a
+                    href="cloud-development.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Cloud development</a
+                  >
+                  <a
+                    href="dev-ops-services.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >DevOps services</a
+                  >
+                  <a
+                    href="custom-software-development.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Custom software development</a
+                  >
+                  <a
+                    href="business-analysis-services.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Business analysis</a
+                  >
+                  <a
+                    href="data-analytics-services.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Data & analytics</a
+                  >
+                  <a
+                    href="process-management-coaching.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Process management & coaching</a
+                  >
+                </div>
+              </div>
+              <a
+                onClick="closeNavigation()"
+                class="navigation__link"
+                href="#case"
+              >
+                Case studies
+              </a>
+              <a
+                onClick="closeNavigation()"
+                class="navigation__link"
+                href="our-team.html"
+              >
+                Our team
+              </a>
+            </div>
+            <div class="navigation__right-section">
+              <a href="#feedback">
+                <button class="contact-btn">Contact us</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="case-studies__header">
+      <div class="backgroundImage">
+        <img
+          src="img/case-studies/cloudera-data-platform-migration.webp"
+          alt="Cloudera data platform migration banner"
+        />
+      </div>
+      <div class="container case-studies__header-container">
+        <h1 class="case-studies__header-title">
+          Cloudera data platform migration
+        </h1>
+        <button class="contact-btn case-studies__btn">Contact us</button>
+      </div>
+    </header>
+
+    <section class="gray-section section-small bg-gray">
+      <div class="container gray-section__container">
+        <div class="mb-40">
+          <h2 class="title-black">Overview</h2>
+        </div>
+
+        <ul class="cards__container col-2">
+          <li class="card">
+            <p>
+              Our client, leader in the Oil & Gas industry, currently owns a
+              on-prem hosted data platform based on Cloudera that provides
+              business services within the company to internal business units on
+              delivering data analytical solutions.
+            </p>
+          </li>
+          <li class="card">
+            <p>
+              Due to company digital transformation, cloud strategy as one of
+              the pillars and predicted data growth, the client has to migrate
+              on-premise data platform to the Microsoft Azure leveraging PaaS
+              offerings with minimum refactoring of existing analytical
+              applications and decommission on-prem workloads afterwards.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-small">
+      <div class="container">
+        <div class="flex-space-between">
+          <h2 class="title-black">Challenge</h2>
+
+          <div class="flex-col small-gap width590">
+            <p>On-prem workloads to be decommissioned in 18 month.</p>
+            <p>
+              Big number of analytical products, data ingestion components, data
+              volume and platform capabilities to be migrated and modernized.
+            </p>
+            <ul class="unordered-list-with-mark">
+              <li>
+                Hosts 55+ ingestion components to acquire data in a batch
+                incremental mode from internal & external systems through
+                variety of interfaces: Oracle DBs, MS SQL DBs, Sharepoint, Web
+                APIs, NAS, SFTP.
+              </li>
+              <li>
+                Hosts 25+ descriptive and predictive analytical products
+                exposing custom reports via Spotfire and PowerBI to enable data
+                driven decisions for areas like drilling and completions, well
+                productivity, product performance analytics, drilling cost
+                prediction and other industry areas.
+              </li>
+              <li>
+                Hosts 8+ TB of structured, semi-structured and unstructured raw
+                and analytical data.
+              </li>
+              <li>
+                Provides data exploratory tools for data analysts, data
+                scientists & auditors following strong access security model
+                based on company policies.
+              </li>
+            </ul>
+            <p>
+              Migration to Azure-based data platform should go with minimum
+              re-factoring of existing data transformation and business logic,
+              absence of business disruption, data quality issues and
+              performance degradation.
+            </p>
+            <p>
+              Network connectivity issues with on-prem data sources and
+              reporting systems to be connected with.
+            </p>
+            <p>
+              High dependency on cloudera technology stack (e.g. oozie, impala,
+              hdfs, sqoop, etc.) thus leading to challenges during target Azure
+              technology selection, modernization and migration approaches.
+            </p>
+            <p>
+              There is a need to solve existing issues in data inconsistency and
+              overheads to Ops team resulted because of scheduled-based
+              triggering approach for executing ingestion component and
+              analytical product pipelines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gray-section section-small bg-gray">
+      <div class="container gray-section__container">
+        <div class="mb-40 flex-col small-gap">
+          <h2 class="title-black">Approach</h2>
+
+          <div class="grid-col-2">
+            <p>
+              Engagement started with the discovery phase focused on deep
+              understanding of existing platform architecture state, preparing
+              target architecture as well as conducting 360 analysis of existing
+              analytical data products. The goal of analysis was to divide
+              analytical solutions to different complexity buckets, agree on
+              migration priority with business and select candidates for MVP to
+              start with.
+            </p>
+            <p>
+              As a result of analysis, migration platform architecture based on
+              Azure PaaS was prepared with a list of PoCs to be executed and
+              list of first analytical products from each complexity bucket to
+              be migrated as a first step. The goal of such an iterative
+              MVP-based approach was to test out defined platform architecture
+              using migration of analytical products with different complexity
+              to identify any potential issues and define required accelerators
+              to streamline the migration at scale.
+            </p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="mt-40 mb-40">
+          MVP execution resulted into useful feedbacks that were incorporated
+          into platform architecture to facilitate migration efforts and
+          increase quality of the migration program, specifically:
+        </p>
+
+        <div class="feature__container large-gap">
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/speedometer.svg"
+                alt="feature speedometer icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Validation of Azure PaaS for data platform migration
+              </h3>
+              <p class="feature-text">
+                Performance tests helped to confidently finalize Azure PaaS
+                technologies to be used as a core for migration data platform.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img src="./img/feature-icons/parts.svg" alt="parts icon" />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Ingestion framework for SQL & oracle data extraction
+              </h3>
+              <p class="feature-text">
+                Recurrent patterns for data ingestion components were identified
+                which resulted into delivery of custom ingestion framework that
+                can generate ADF-based data ingestion components based on
+                configuration files to extract data in batch full & incremental
+                modes from SQL & Oracle data sources into ADLS Gen2 Data Lake.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/search.svg"
+                alt="feature search icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Automated migration accelerator development
+              </h3>
+              <p class="feature-text">
+                Recurrent patterns for analytical products migration steps were
+                identified which resulted into creation of custom accelerator to
+                automate migration routine for data pipelines of analytical
+                products (e.g. generation of adf pipelines to wrap oozie
+                workflows execution, auto-refactoring of source code to be
+                compliant with HDInsight, etc.).
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/cloud.svg"
+                alt="feature cloud icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">Data quality validation strategy</h3>
+              <p class="feature-text">
+                Understanding of baseline architecture and finalization of Azure
+                technologies for target platform helped to define scalable
+                approach for data quality validation during migration based on
+                approach of automated data comparison between on-prem data
+                assets and migrated data assets.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="big-bold mt-40 mb-40">
+          As a result, finalized Azure data platform architecture was utilizing:
+        </p>
+
+        <div class="feature__container large-gap">
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/services/computer.svg"
+                alt="feature computer icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Hub-and-spoke data architecture implementation
+              </h3>
+              <p class="feature-text">
+                Hub-and-Spoke approach for data platform following by Azure
+                resources and data isolation for each analytical solution within
+                separate Resource Groups and Subscriptions supporting costs
+                segregation, dedicated security perimeters and clear ownership
+                model.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img src="./img/feature-icons/part.svg" alt="part icon" />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Custom accelerators for CI/CD and data quality
+              </h3>
+              <p class="feature-text">
+                Custom accelerators for automated creation of ingestion
+                components, migration of analytical product components,
+                validation of data quality, generation of CI/CD pipelines, etc.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/update-frame.svg"
+                alt="feature update-frame icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Express route integration for enhanced data transfer
+              </h3>
+              <p class="feature-text">
+                Express Route for on-prem connectivity for robust and fast
+                network channel for data movements from client on-prem
+                environment.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/file-with-search.svg"
+                alt="feature file-with-search icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Azure HD insight for optimized data workloads
+              </h3>
+              <p class="feature-text">
+                Usage of Azure HDInsight as PaaS technology for running data
+                processing workloads based for existing data pipeline components
+                thus leading to reuse of existing business and transformation
+                logic and decreased migration efforts.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/roadmap.svg"
+                alt="feature roadmap icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Event-driven data pipeline execution
+              </h3>
+              <p class="feature-text">
+                Event-based execution of data pipelines for data ingestion
+                components and data analytical solutions based on data
+                availability and internal dependency graph.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-small">
+      <div class="container">
+        <div class="services-section__header width720">
+          <h2 class="title-black">Achievements</h2>
+        </div>
+
+        <div class="feature__container">
+          <div class="feature-item">
+            <div class="feature-item__inner">
+              <div class="feature-icon">
+                <img
+                  src="./img/feature-icons/clock.svg"
+                  alt="feature clock icon"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature-title">
+                  Expedited MVP delivery and migration completion
+                </h3>
+                <p class="feature-text">
+                  Delivered MVP in 4 month time frame, planned migration was
+                  completed in 16 month, on-prem platform was decommissioned per
+                  client plans.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__inner">
+              <div class="feature-icon">
+                <img
+                  src="./img/feature-icons/rocket.svg"
+                  alt="feature rocket icon"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature-title">
+                  Development of migration accelerators
+                </h3>
+                <p class="feature-text">
+                  Developed 4 accelerators to to speed-up migration of various
+                  aspects in governed way.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__inner">
+              <div class="feature-icon">
+                <img
+                  src="./img/feature-icons/laptop.svg"
+                  alt="feature laptop icon"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature-title">Advanced capabilities deployment</h3>
+                <p class="feature-text">
+                  Delivered new capabilities that were not available in on-prem
+                  version of the platform such as granular security model on all
+                  layers, smart monitoring, event-based execution of data
+                  pipelines, granular billing model, platform events, data
+                  lineage capturing, on-demand compute infrastructure
+                  provisioning, data ingestion as a service, etc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-small pb-0">
+      <div class="container">
+        <div class="services-section__header">
+          <h2 class="title-black">Tech stack</h2>
+        </div>
+
+        <div class="stack__container">
+          <div class="stack-section full-width">
+            <h3 class="stack-section__title">Azure services</h3>
+            <ul class="stack-row">
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/data-lake-gen2.svg"
+                    alt="Dala lake gen2 icon"
+                  />
+                </div>
+                <span>Data lake storage gen2</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/key-vault.svg"
+                    alt="key vault icon"
+                  />
+                </div>
+                <span>Key vault</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/functions.svg"
+                    alt="functions icon"
+                  />
+                </div>
+                <span>Functions</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/Monitor.svg"
+                    alt="Monitor icon"
+                  />
+                </div>
+                <span>Monitor</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/sql-manager-instance.svg"
+                    alt="sql-manager-instance icon"
+                  />
+                </div>
+                <span>SQL Managed instance</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/sql.svg"
+                    alt="sql icon"
+                  />
+                </div>
+                <span>SQL</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/data-factory.svg"
+                    alt="Data factory icon"
+                  />
+                </div>
+                <span>Data factory</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/sql-data-warehouse.svg"
+                    alt="SQL data warehouse icon"
+                  />
+                </div>
+                <span>SQL data warehouse</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/devOps-services.svg"
+                    alt="devops services icon"
+                  />
+                </div>
+                <span>DevOps services</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/event-grid.svg"
+                    alt="Event grid icon"
+                  />
+                </div>
+                <span>Event grid</span>
+              </li>
+
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/policy.svg"
+                    alt="policy icon"
+                  />
+                </div>
+                <span>Policy</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/express-route.svg"
+                    alt="express route icon"
+                  />
+                </div>
+                <span>ExpressRoute</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-section full-width">
+            <h3 class="stack-section__title">Big data</h3>
+            <ul class="stack-row">
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/big-data/databricks.svg"
+                    alt="databricks icon"
+                  />
+                </div>
+                <span>Databricks</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/big-data/apache-oozie.svg"
+                    alt="Apache Oozie icon"
+                  />
+                </div>
+                <span>Apache Oozie</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/big-data/apache-hive.svg"
+                    alt="Apache hive icon"
+                  />
+                </div>
+                <span>Apache hive</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/big-data/apache-spark.svg"
+                    alt="Apache spark icon"
+                  />
+                </div>
+                <span>Apache spark</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/big-data/cloudera.svg"
+                    alt="Cloudera icon"
+                  />
+                </div>
+                <span>Cloudera</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/big-data/apache-hadoop.svg"
+                    alt="Apache hadoop icon"
+                  />
+                </div>
+                <span>Apache hadoop</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-section">
+            <h3 class="stack-section__title">DevOps</h3>
+            <ul class="stack-row">
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img src="./img/stack/devops/jfrog.svg" alt="JFrog icon" />
+                </div>
+                <span>JFrog</span>
+              </li>
+            </ul>
+          </div>
+          <div class="stack-section">
+            <h3 class="stack-section__title">Programming languages</h3>
+            <ul class="stack-row">
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/programming-languages/java.svg"
+                    alt="Java icon"
+                  />
+                </div>
+                <span>Java</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/programming-languages/python.svg"
+                    alt="Python icon"
+                  />
+                </div>
+                <span>Python</span>
+              </li>
+            </ul>
+          </div>
+          <div class="stack-section">
+            <h3 class="stack-section__title">Business Intelligence</h3>
+            <ul class="stack-row">
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/business-intelligence/power-bi.svg"
+                    alt="power bi icon"
+                  />
+                </div>
+                <span>Power BI</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/business-intelligence/sportfire.svg"
+                    alt="sportfire bi icon"
+                  />
+                </div>
+                <span>Sportfire</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-section">
+            <h3 class="stack-section__title">Infrastructure automation</h3>
+            <ul class="stack-row">
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/infrastructure-automation/ansible.svg"
+                    alt="Ansible icon"
+                  />
+                </div>
+                <span>Ansible</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/infrastructure-automation/powershell.svg"
+                    alt="Powershell icon"
+                  />
+                </div>
+                <span>Powershell</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- todo slider -->
+    <section class="case-studies section-big" id="case">
+      <div class="container case-studies__container">
+        <h2 class="case-studies__title">Case studies</h2>
+        <p class="case-studies__subtitle">
+          We are well-versed in the dynamic world of development across a
+          variety of industries.
+        </p>
+        <div>
+          <div class="swiper case-studies__swiper">
+            <div class="swiper-wrapper case-studies__swiper-wrapper">
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/algorithmic.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>
+                  Algorithmic and manual power trading platform to boost
+                  efficiency
+                </p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/gas.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Gas Logistics, supplies, capacity planning</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/electricity.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Electricity auctions</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/finops.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>FinOps Solutions, cloud infrastructure cost optimization</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/healthcare-monitoring.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Healthcare monitoring system modernization</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/data-source.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Data source on-boarding as a service</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/road.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Road safety improvement</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/cloudera.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Cloudera data platform migration</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/healthcare.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>
+                  Healthcare information management system to streamline
+                  clinical workflows
+                </p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/improving.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Improving customer engagement</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/data.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Data landscape consolidation</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/data-intelligence.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Data intelligence system migration</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/healthcare-information.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Analytical data exposure</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/brand.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Brand tracking analytical product</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-buttons case-studies__swiper-buttons">
+            <div class="swiper-button-prev">
+              <svg
+                width="49"
+                height="48"
+                viewBox="0 0 49 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="48.666"
+                  width="48"
+                  height="48"
+                  rx="24"
+                  transform="rotate(90 48.666 0)"
+                  fill="#F1F2F7"
+                />
+                <path
+                  d="M17.166 27L24.666 19.5L32.166 27"
+                  stroke="#1C2321"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg
+                width="49"
+                height="48"
+                viewBox="0 0 49 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="48.666"
+                  width="48"
+                  height="48"
+                  rx="24"
+                  transform="rotate(90 48.666 0)"
+                  fill="#F1F2F7"
+                />
+                <path
+                  d="M17.166 27L24.666 19.5L32.166 27"
+                  stroke="#1C2321"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us section-small bg-dark">
+      <div class="container contact-us__container">
+        <div class="contact-us__header">
+          <h2 class="contact-us__title">Contact us</h2>
+          <h4>Anfimau Industry Solutions GmbH</h4>
+          <p>Managing director: Mikhail Anfimau</p>
+          <div class="contact-us__image">
+            <img
+              src="./img/main-page/contact-us.webp"
+              alt="contact us"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <address class="contact-us__content">
+          <div class="contact-us__content-item">
+            <span>Location</span>
+            <div>
+              <p>Mergenthalerallee 15-21</p>
+              <p>65760 Eschborn</p>
+              <p>Germany</p>
+            </div>
+          </div>
+          <div class="contact-us__content-item">
+            <span>E-mail</span>
+            <div>
+              <a href="mailto:info@anfimau.de">info@anfimau.de</a>
+            </div>
+          </div>
+          <div class="contact-us__content-item">
+            <span>Tax number</span>
+            <div>
+              <p>040 228 55754</p>
+            </div>
+          </div>
+          <div class="contact-us__content-item">
+            <span>VAT ID</span>
+            <div>
+              <p>DE345344498</p>
+            </div>
+          </div>
+          <div class="contact-us__content-item">
+            <span>BIC</span>
+            <div>
+              <p>COBADEFFXXX</p>
+            </div>
+          </div>
+          <div class="contact-us__content-item">
+            <span>IBAN</span>
+            <div>
+              <p>DE16500400000657474300</p>
+            </div>
+          </div>
+          <div class="contact-us__content-item">
+            <span>Trade registry</span>
+            <div>
+              <p>HRB 123580</p>
+            </div>
+          </div>
+        </address>
+      </div>
+    </section>
+
+    <footer class="footer bg-footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <div class="footer-nav__top">
+            <div class="col about-us__col">
+              <h5 class="col-title">
+                <a href="#about-us">About</a>
+              </h5>
+              <ul>
+                <div>
+                  <li>
+                    <a href="about-us.html">About us</a>
+                  </li>
+                  <li>
+                    <a href="#">History</a>
+                  </li>
+                  <li>
+                    <a href="#">Technologies</a>
+                  </li>
+                  <li>
+                    <a href="#">Industries</a>
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <a href="#">Certifications</a>
+                  </li>
+                  <li>
+                    <a href="#">Reference Letters</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col services__col">
+              <h5 class="col-title">
+                <a href="#services">Services</a>
+              </h5>
+              <ul>
+                <div>
+                  <li>
+                    <a href="software-architecture-and-design.html"
+                      >Software architecture and design</a
+                    >
+                  </li>
+                  <li>
+                    <a href="cloud-development.html">Cloud development</a>
+                  </li>
+                  <li>
+                    <a href="dev-ops-services.html">Dev ops</a>
+                  </li>
+                  <li>
+                    <a href="custom-software-development.html"
+                      >Custom software development</a
+                    >
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <a href="business-analysis-services.html"
+                      >Business analysis</a
+                    >
+                  </li>
+                  <li>
+                    <a href="data-analytics-services.html"
+                      >Data &#38; analytics</a
+                    >
+                  </li>
+                  <li>
+                    <a href="process-management-coaching.html"
+                      >Process management &#38; coaching</a
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col how-we-work__col">
+              <h5 class="col-title">
+                <a href="how-we-work.html">How we work</a>
+              </h5>
+            </div>
+            <div class="col reviews__col">
+              <h5 class="col-title">
+                <a href="#reviews">Reviews</a>
+              </h5>
+            </div>
+          </div>
+          <div class="footer-nav__bottom">
+            <div class="col column-first">
+              <img
+                class="footer-logo"
+                src="./img/Logo_dark.svg"
+                alt="ANFIMAU INDUSTRY SOLUTIONS"
+              />
+              <ul>
+                <div class="info">
+                  <li>
+                    <a href="site-notice.html">Site notice</a>
+                  </li>
+                  <li>
+                    <a href="privacy-policy.html">Privacy policy</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col column-second">
+              <div class="social-media__wrapper">
+                <h5 class="col-title">Social media</h5>
+                <div class="footer__social-media">
+                  <a
+                    href="https://www.xing.com/profile/Mikhail_Anfimau"
+                    target="_blank"
+                    class="icon"
+                  >
+                    <img src="./img/xing-logo.svg" alt="xing logo" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/mikhailanfimau"
+                    target="_blank"
+                    class="icon"
+                  >
+                    <img src="./img/linkedin-logo.svg" alt="linkedin logo" />
+                  </a>
+                </div>
+              </div>
+              <div class="reviews-widget">
+                <script
+                  type="text/javascript"
+                  src="https://widget.clutch.co/static/js/widget.js"
+                ></script>
+                <div
+                  class="clutch-widget"
+                  data-url="https://widget.clutch.co"
+                  data-widget-type="2"
+                  data-height="45"
+                  data-nofollow="true"
+                  data-expandifr="true"
+                  data-scale="100"
+                  data-clutchcompany-id="2290057"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <p class="copy">Copyright &copy; 2024 Mikhail Anfimau</p>
+        </nav>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__content-wrapper">
+        <div class="modal__text"></div>
+        <img class="modal__image" />
+        <div class="modal__close">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.166 18.1664L29.8333 29.8336"
+              stroke="#1932E0"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M29.834 18.1664L18.1667 29.8336"
+              stroke="#1932E0"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <rect
+              x="1"
+              y="1"
+              width="46"
+              height="46"
+              rx="23"
+              stroke="#1932E0"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document
+      .querySelector(".navigation__button")
+      .addEventListener("click", () => {
+        if (document.getElementById("navigation__toggle").checked) {
+          document.querySelector("html").style.overflow = "auto";
+        } else {
+          document.querySelector("html").style.overflow = "hidden";
+        }
+      });
+    function closeNavigation() {
+      document.getElementById("navigation__toggle").checked = false;
+      document.querySelector("html").style.overflow = "auto";
+    }
+  </script>
+
+  <script src="scripts/header_is_scrolled.js"></script>
+  <script type="module">
+    import Swiper from "./scripts/swiper-bundle.esm.browser.min.js";
+
+    const caseStudies__swiper = new Swiper(".case-studies__swiper", {
+      speed: 400,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      direction: "horizontal",
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      slidesPerView: 1,
+      grid: {
+        rows: 1,
+      },
+      slidesPerGroup: 1,
+      breakpoints: {
+        1280: {
+          slidesPerView: 4,
+          grid: {
+            rows: 2,
+          },
+          slidesPerGroup: 4,
+        },
+      },
+    });
+  </script>
+</html>

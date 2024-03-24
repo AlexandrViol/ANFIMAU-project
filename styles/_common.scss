@@ -99,24 +99,24 @@ $MEDIA: (
 
 * {
   ::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
-      border-radius: 4px;
-      transition: $transition;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    transition: $transition;
   }
 
   ::-webkit-scrollbar-track {
-      background: transparent;
-      border-radius: 4px;
+    background: transparent;
+    border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb {
-      background: var(--clr-background-secondary);
-      border-radius: 4px;
+    background: var(--clr-background-secondary);
+    border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-      background: var(--clr-text-primary);
+    background: var(--clr-text-primary);
   }
 }
 
@@ -197,8 +197,31 @@ html {
   margin-bottom: var(--primary-gap);
 }
 
+.mt-40 {
+  margin-top: 40px;
+  @include xlm {
+    margin-top: 16px;
+  }
+}
+
 .mb-40 {
   margin-bottom: 40px;
+  @include xlm {
+    margin-bottom: 16px;
+  }
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+
+  @include md {
+    margin-bottom: 40px;
+  }
+
+  @include sm {
+    margin-bottom: 20px;
+  }
+
   @include xlm {
     margin-bottom: 16px;
   }

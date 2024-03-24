@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ANFIMAU | Analytical data exposure</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/svg+xml" />
+    <link href="styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="container">
+        <div class="navigation__content-wrapper">
+          <a href="./" class="navigation__logo">
+            <img src="img/Logo_dark.svg" alt="ANFIMAU INDUSTRY SOLUTIONS" />
+          </a>
+          <input
+            class="navigation__toggle"
+            id="navigation__toggle"
+            type="checkbox"
+          />
+          <label class="navigation__button" for="navigation__toggle">
+            <div class="navigation__line"></div>
+            <div class="navigation__line"></div>
+            <div class="navigation__line"></div>
+          </label>
+          <div class="navigation__links-wrapper">
+            <div class="navigation__left-section">
+              <a
+                onClick="closeNavigation()"
+                class="navigation__link"
+                href="./about-us.html"
+              >
+                About
+              </a>
+              <a
+                onClick="closeNavigation()"
+                class="navigation__link"
+                href="./how-we-work.html"
+              >
+                How we work
+              </a>
+              <div class="navigation__dropdown-wrapper">
+                <a
+                  onClick="closeNavigation()"
+                  class="navigation__link"
+                  href="#services"
+                >
+                  Services
+                </a>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 6L8 11L3 6"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <div>
+                  <a
+                    href="software-architecture-and-design.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Software architecture and design</a
+                  >
+                  <a
+                    href="cloud-development.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Cloud development</a
+                  >
+                  <a
+                    href="dev-ops-services.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >DevOps services</a
+                  >
+                  <a
+                    href="custom-software-development.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Custom software development</a
+                  >
+                  <a
+                    href="business-analysis-services.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Business analysis</a
+                  >
+                  <a
+                    href="data-analytics-services.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Data & analytics</a
+                  >
+                  <a
+                    href="process-management-coaching.html"
+                    class="navigation__link"
+                    onClick="closeNavigation()"
+                    >Process management & coaching</a
+                  >
+                </div>
+              </div>
+              <a
+                onClick="closeNavigation()"
+                class="navigation__link"
+                href="#case"
+              >
+                Case studies
+              </a>
+              <a
+                onClick="closeNavigation()"
+                class="navigation__link"
+                href="our-team.html"
+              >
+                Our team
+              </a>
+            </div>
+            <div class="navigation__right-section">
+              <a href="#feedback">
+                <button class="contact-btn">Contact us</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="case-studies__header">
+      <div class="backgroundImage">
+        <img
+          src="img/case-studies/analytical-data-exposure.webp"
+          alt="Analytical data exposure banner"
+        />
+      </div>
+      <div class="container case-studies__header-container">
+        <h1 class="case-studies__header-title">Analytical data exposure</h1>
+        <button class="contact-btn case-studies__btn">Contact us</button>
+      </div>
+    </header>
+
+    <section class="gray-section section-small bg-gray">
+      <div class="container gray-section__container">
+        <div class="mb-40">
+          <h2 class="title-black">Overview</h2>
+        </div>
+
+        <ul class="cards__container col-2">
+          <li class="card">
+            <p>
+              Our client, a leading provider of legal information services,
+              offers legal departments and law firms web-based analytics
+              services with reporting tools for department performance
+              assessment, expense analysis, and legal budget analysis. In
+              addition it provides access to aggregated data from more than
+              thousands of legal departments and tens of thousands of law firms
+              around the world to compare your own legal departments data with
+              the best-performing ones and identify areas for optimizations.
+            </p>
+          </li>
+          <li class="card">
+            <p>
+              As part of a new business initiative, the customer aims to enable
+              a Data Exposure solution as an extension to an existing web-based
+              analytical service to provide clients capabilities to access data
+              using their own BI tools or export data into own systems via
+              automated data processes.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-small">
+      <div class="container">
+        <div class="flex-space-between">
+          <h2 class="title-black">Challenge</h2>
+
+          <div class="flex-col small-gap width590">
+            <p>
+              The initiative for a new business offering arises from the need to
+              meet specific client requests for customized reporting needs which
+              cannot be accommodated by the existing web-based analytical
+              reporting modules.
+            </p>
+            <p>
+              Data exposure solution should be multi-tenant addressing strong
+              security requirements for data storage and isolation, support
+              infrastructure costs segregation per client (tenant) and utilize
+              Azure PaaS technologies to be compliant with customer technology
+              strategy.
+            </p>
+            <p>
+              Solution should support two selective data exposure patterns to
+              end-clients:
+            </p>
+            <ul class="unordered-list-with-mark">
+              <li>
+                BI Pattern: Highly performant data exposure via protocols
+                supported by most popular BI tools used by clients (such as
+                PowerBI, Tableau, Qlik) and optimized for custom reporting
+                needs.
+              </li>
+              <li>
+                Integration Pattern: Low-cost data exposure via HTTPs-based
+                protocol for clients to connect and extract data into own
+                reporting solutions via external automated data pipelines.
+              </li>
+            </ul>
+            <p>
+              Enablement of new data exposure channels should not affect
+              performance of existing web-based analytical service while
+              ensuring data consistency and will be offered to clients as
+              add-ons to the main offerings.
+            </p>
+            <p>
+              Provisioning and management of data exposure capability for
+              clients should be fully automated with minimum overhead to
+              customer IT.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gray-section section-small bg-gray">
+      <div class="container gray-section__container">
+        <div class="mb-40 flex-col small-gap">
+          <h2 class="title-black">Approach</h2>
+
+          <div class="grid-col-2">
+            <p>
+              Engagement started with a discovery phase that included detailed
+              design preparation considering solution FRs, NFRs, identified ASRs
+              followed by PoCs execution to assess performance, project
+              infrastructure costs and other non-functional aspects.
+            </p>
+            <p>
+              Architecture approach prepared as part of the discovery phase
+              along with PoC results and phased delivery plan was socialized to
+              the customer to get the sign-off and kick-off delivery phase.
+            </p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="mt-40 mb-40">
+          The delivered solution is based on Azure PaaS technologies and
+          leverages following approaches:
+        </p>
+
+        <div class="feature__container large-gap">
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/shield-check.svg"
+                alt="feature shield-check icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Multi-tenant architecture & security
+              </h3>
+              <p class="feature-text">
+                Multi-tenant architecture with dedicated infrastructure
+                resources per tenant to address strong security & customer SLA
+                requirements and support costs chargebacks per tenant.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img src="./img/services/computer.svg" alt="computer icon" />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Secure data connectivity & replication
+              </h3>
+              <p class="feature-text">
+                Data exposure tier that supports secure connectivity by clients
+                leveraging AAD & secure data transfer protocols, provides
+                eventually consistent read only data storages storing replicas
+                optimized for data exchange and incremental data processing and
+                leveraging technologies suitable for required data exposure
+                patterns.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/cloud-with-arrow.svg"
+                alt="feature cloud-with-arrow icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Analytical product migration strategy
+              </h3>
+              <p class="feature-text">
+                Recurrent patterns for analytical products migration steps were
+                identified which resulted into creation of custom accelerator to
+                automate migration routine for data pipelines of analytical
+                products (e.g. generation of adf pipelines to wrap oozie
+                workflows execution, auto-refactoring of source code to be
+                compliant with HDInsight, etc.).
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/update-frame.svg"
+                alt="feature update frame icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Incremental data pipeline management
+              </h3>
+              <p class="feature-text">
+                Data pipeline templates with support of incremental data
+                processing to organize data movement to target data storage for
+                each data exposure pattern.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/services/headphones.svg"
+                alt="feature headphones icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Data schema versioning and compatibility
+              </h3>
+              <p class="feature-text">
+                Reliable data schema enforcement with backward compatibility
+                support.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/parts.svg"
+                alt="feature parts icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">Dynamic data processing activation</h3>
+              <p class="feature-text">
+                Event-based triggering of data processing pipelines based on new
+                data availability.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item__inner row">
+            <div class="feature-icon">
+              <img
+                src="./img/feature-icons/laptop.svg"
+                alt="feature laptop icon"
+              />
+            </div>
+            <div class="feature__content">
+              <h3 class="feature-title">
+                Administrative control & infrastructure management
+              </h3>
+              <p class="feature-text">
+                Control plane for the customer admins to enable end-to-end
+                tenant management and full automation of infrastructure
+                resources provisioning and data pipeline deployments based on
+                templates required for client selected data exposure pattern.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-small">
+      <div class="container">
+        <div class="services-section__header width720">
+          <h2 class="title-black">Achievements</h2>
+        </div>
+
+        <div class="feature__container">
+          <div class="feature-item">
+            <div class="feature-item__inner">
+              <div class="feature-icon">
+                <img
+                  src="./img/feature-icons/clock.svg"
+                  alt="feature clock icon"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature-title">Milestone completion</h3>
+                <p class="feature-text">
+                  All planned features have been delivered according to agreed
+                  delivery milestones.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__inner">
+              <div class="feature-icon">
+                <img
+                  src="./img/feature-icons/speedometer.svg"
+                  alt="feature speedometer icon"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature-title">Reliability testing</h3>
+                <p class="feature-text">
+                  Performance tests were passed for different use-cases and real
+                  usage patterns.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__inner">
+              <div class="feature-icon">
+                <img
+                  src="./img/feature-icons/medal.svg"
+                  alt="feature medal icon"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature-title">Customer satisfaction</h3>
+                <p class="feature-text">
+                  Positive feedback was provided by first tenants that were
+                  onboarded to Data Exposure capability during beta period
+                  before rolling out to market.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-small pb-0">
+      <div class="container">
+        <div class="services-section__header">
+          <h2 class="title-black">Tech stack</h2>
+        </div>
+
+        <div class="stack__container">
+          <div class="stack-section full-width">
+            <h3 class="stack-section__title">Azure services</h3>
+            <ul class="stack-row">
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img src="./img/stack/azure-services/ad.svg" alt="AD icon" />
+                </div>
+                <span>AD</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/key-vault.svg"
+                    alt="key vault icon"
+                  />
+                </div>
+                <span>Key vault</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/Monitor.svg"
+                    alt="Monitor icon"
+                  />
+                </div>
+                <span>Monitor</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/sql-manager-instance.svg"
+                    alt="SQL Managed instance icon"
+                  />
+                </div>
+                <span>SQL Managed instance</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/sql.svg"
+                    alt="sql icon"
+                  />
+                </div>
+                <span>SQL</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/devOps-services.svg"
+                    alt="DevOps services icon"
+                  />
+                </div>
+                <span>DevOps services</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/app-service-2.svg"
+                    alt="App service icon"
+                  />
+                </div>
+                <span>App service</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/azure-services/blob.svg"
+                    alt="Blob icon"
+                  />
+                </div>
+                <span>Blob</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-section">
+            <h3 class="stack-section__title">Cloud</h3>
+            <ul class="stack-row">
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img src="./img/stack/cloud/azure.svg" alt="azure icon" />
+                </div>
+                <span>Azure</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-section">
+            <h3 class="stack-section__title">Infrastructure automation</h3>
+            <ul class="stack-row">
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/infrastructure-automation/ansible.svg"
+                    alt="Ansible icon"
+                  />
+                </div>
+                <span>Ansible</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-section">
+            <h3 class="stack-section__title">Code quality tools</h3>
+            <ul class="stack-row">
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/code-quality-tools/foftyfy.svg"
+                    alt="foftyfy icon"
+                  />
+                </div>
+                <span>foftyfy</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-section">
+            <h3 class="stack-section__title">Frameworks</h3>
+            <ul class="stack-row">
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/frameworks/net-core.svg"
+                    alt="net core icon"
+                  />
+                </div>
+                <span>.NET core</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-section">
+            <h3 class="stack-section__title">Artifact management</h3>
+            <ul class="stack-row">
+              <li class="stack-item">
+                <div class="stack-icon">
+                  <img
+                    src="./img/stack/artifact-management/nexus.svg"
+                    alt="Nexus Repository icon"
+                  />
+                </div>
+                <span>Nexus Repository</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- todo slider -->
+    <section class="case-studies section-big" id="case">
+      <div class="container case-studies__container">
+        <h2 class="case-studies__title">Case studies</h2>
+        <p class="case-studies__subtitle">
+          We are well-versed in the dynamic world of development across a
+          variety of industries.
+        </p>
+        <div>
+          <div class="swiper case-studies__swiper">
+            <div class="swiper-wrapper case-studies__swiper-wrapper">
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/algorithmic.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>
+                  Algorithmic and manual power trading platform to boost
+                  efficiency
+                </p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/gas.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Gas Logistics, supplies, capacity planning</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/electricity.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Electricity auctions</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/finops.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>FinOps Solutions, cloud infrastructure cost optimization</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/healthcare-monitoring.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Healthcare monitoring system modernization</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/data-source.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Data source on-boarding as a service</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/road.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Road safety improvement</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/cloudera.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Cloudera data platform migration</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/healthcare.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>
+                  Healthcare information management system to streamline
+                  clinical workflows
+                </p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/improving.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Improving customer engagement</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/data.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Data landscape consolidation</p>
+              </a>
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/data-intelligence.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Data intelligence system migration</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/healthcare-information.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Analytical data exposure</p>
+              </a>
+
+              <a class="swiper-slide case-studies__swiper-slide" href="#">
+                <img
+                  src="./img/main-page/case-studies/brand.svg"
+                  alt="icon"
+                  class="case-studies__slide-icon"
+                />
+                <p>Brand tracking analytical product</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-buttons case-studies__swiper-buttons">
+            <div class="swiper-button-prev">
+              <svg
+                width="49"
+                height="48"
+                viewBox="0 0 49 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="48.666"
+                  width="48"
+                  height="48"
+                  rx="24"
+                  transform="rotate(90 48.666 0)"
+                  fill="#F1F2F7"
+                />
+                <path
+                  d="M17.166 27L24.666 19.5L32.166 27"
+                  stroke="#1C2321"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg
+                width="49"
+                height="48"
+                viewBox="0 0 49 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="48.666"
+                  width="48"
+                  height="48"
+                  rx="24"
+                  transform="rotate(90 48.666 0)"
+                  fill="#F1F2F7"
+                />
+                <path
+                  d="M17.166 27L24.666 19.5L32.166 27"
+                  stroke="#1C2321"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us section-small bg-dark">
+      <div class="container contact-us__container">
+        <div class="contact-us__header">
+          <h2 class="contact-us__title">Contact us</h2>
+          <h4>Anfimau Industry Solutions GmbH</h4>
+          <p>Managing director: Mikhail Anfimau</p>
+          <div class="contact-us__image">
+            <img
+              src="./img/main-page/contact-us.webp"
+              alt="contact us"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <address class="contact-us__content">
+          <div class="contact-us__content-item">
+            <span>Location</span>
+            <div>
+              <p>Mergenthalerallee 15-21</p>
+              <p>65760 Eschborn</p>
+              <p>Germany</p>
+            </div>
+          </div>
+          <div class="contact-us__content-item">
+            <span>E-mail</span>
+            <div>
+              <a href="mailto:info@anfimau.de">info@anfimau.de</a>
+            </div>
+          </div>
+          <div class="contact-us__content-item">
+            <span>Tax number</span>
+            <div>
+              <p>040 228 55754</p>
+            </div>
+          </div>
+          <div class="contact-us__content-item">
+            <span>VAT ID</span>
+            <div>
+              <p>DE345344498</p>
+            </div>
+          </div>
+          <div class="contact-us__content-item">
+            <span>BIC</span>
+            <div>
+              <p>COBADEFFXXX</p>
+            </div>
+          </div>
+          <div class="contact-us__content-item">
+            <span>IBAN</span>
+            <div>
+              <p>DE16500400000657474300</p>
+            </div>
+          </div>
+          <div class="contact-us__content-item">
+            <span>Trade registry</span>
+            <div>
+              <p>HRB 123580</p>
+            </div>
+          </div>
+        </address>
+      </div>
+    </section>
+
+    <footer class="footer bg-footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <div class="footer-nav__top">
+            <div class="col about-us__col">
+              <h5 class="col-title">
+                <a href="#about-us">About</a>
+              </h5>
+              <ul>
+                <div>
+                  <li>
+                    <a href="about-us.html">About us</a>
+                  </li>
+                  <li>
+                    <a href="#">History</a>
+                  </li>
+                  <li>
+                    <a href="#">Technologies</a>
+                  </li>
+                  <li>
+                    <a href="#">Industries</a>
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <a href="#">Certifications</a>
+                  </li>
+                  <li>
+                    <a href="#">Reference Letters</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col services__col">
+              <h5 class="col-title">
+                <a href="#services">Services</a>
+              </h5>
+              <ul>
+                <div>
+                  <li>
+                    <a href="software-architecture-and-design.html"
+                      >Software architecture and design</a
+                    >
+                  </li>
+                  <li>
+                    <a href="cloud-development.html">Cloud development</a>
+                  </li>
+                  <li>
+                    <a href="dev-ops-services.html">Dev ops</a>
+                  </li>
+                  <li>
+                    <a href="custom-software-development.html"
+                      >Custom software development</a
+                    >
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <a href="business-analysis-services.html"
+                      >Business analysis</a
+                    >
+                  </li>
+                  <li>
+                    <a href="data-analytics-services.html"
+                      >Data &#38; analytics</a
+                    >
+                  </li>
+                  <li>
+                    <a href="process-management-coaching.html"
+                      >Process management &#38; coaching</a
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col how-we-work__col">
+              <h5 class="col-title">
+                <a href="how-we-work.html">How we work</a>
+              </h5>
+            </div>
+            <div class="col reviews__col">
+              <h5 class="col-title">
+                <a href="#reviews">Reviews</a>
+              </h5>
+            </div>
+          </div>
+          <div class="footer-nav__bottom">
+            <div class="col column-first">
+              <img
+                class="footer-logo"
+                src="./img/Logo_dark.svg"
+                alt="ANFIMAU INDUSTRY SOLUTIONS"
+              />
+              <ul>
+                <div class="info">
+                  <li>
+                    <a href="site-notice.html">Site notice</a>
+                  </li>
+                  <li>
+                    <a href="privacy-policy.html">Privacy policy</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col column-second">
+              <div class="social-media__wrapper">
+                <h5 class="col-title">Social media</h5>
+                <div class="footer__social-media">
+                  <a
+                    href="https://www.xing.com/profile/Mikhail_Anfimau"
+                    target="_blank"
+                    class="icon"
+                  >
+                    <img src="./img/xing-logo.svg" alt="xing logo" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/mikhailanfimau"
+                    target="_blank"
+                    class="icon"
+                  >
+                    <img src="./img/linkedin-logo.svg" alt="linkedin logo" />
+                  </a>
+                </div>
+              </div>
+              <div class="reviews-widget">
+                <script
+                  type="text/javascript"
+                  src="https://widget.clutch.co/static/js/widget.js"
+                ></script>
+                <div
+                  class="clutch-widget"
+                  data-url="https://widget.clutch.co"
+                  data-widget-type="2"
+                  data-height="45"
+                  data-nofollow="true"
+                  data-expandifr="true"
+                  data-scale="100"
+                  data-clutchcompany-id="2290057"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <p class="copy">Copyright &copy; 2024 Mikhail Anfimau</p>
+        </nav>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__content-wrapper">
+        <div class="modal__text"></div>
+        <img class="modal__image" />
+        <div class="modal__close">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.166 18.1664L29.8333 29.8336"
+              stroke="#1932E0"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M29.834 18.1664L18.1667 29.8336"
+              stroke="#1932E0"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <rect
+              x="1"
+              y="1"
+              width="46"
+              height="46"
+              rx="23"
+              stroke="#1932E0"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document
+      .querySelector(".navigation__button")
+      .addEventListener("click", () => {
+        if (document.getElementById("navigation__toggle").checked) {
+          document.querySelector("html").style.overflow = "auto";
+        } else {
+          document.querySelector("html").style.overflow = "hidden";
+        }
+      });
+    function closeNavigation() {
+      document.getElementById("navigation__toggle").checked = false;
+      document.querySelector("html").style.overflow = "auto";
+    }
+  </script>
+
+  <script src="scripts/header_is_scrolled.js"></script>
+  <script type="module">
+    import Swiper from "./scripts/swiper-bundle.esm.browser.min.js";
+
+    const caseStudies__swiper = new Swiper(".case-studies__swiper", {
+      speed: 400,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      direction: "horizontal",
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      slidesPerView: 1,
+      grid: {
+        rows: 1,
+      },
+      slidesPerGroup: 1,
+      breakpoints: {
+        1280: {
+          slidesPerView: 4,
+          grid: {
+            rows: 2,
+          },
+          slidesPerGroup: 4,
+        },
+      },
+    });
+  </script>
+</html>
