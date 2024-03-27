@@ -595,6 +595,7 @@
               loading="lazy"
             />
           </div>
+          <div class="certifications__bottom-item"></div>
         </div>
       </div>
     </section>
@@ -656,7 +657,7 @@
         <div>
           <div class="swiper case-studies__swiper">
             <div class="swiper-wrapper case-studies__swiper-wrapper">
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="electrical-grid-control-center.html">
                 <img
                   src="./img/main-page/case-studies/electrical.svg"
                   alt="icon"
@@ -667,7 +668,7 @@
                   systems
                 </p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="algorithmic-and-manual-power.html">
                 <img
                   src="./img/main-page/case-studies/algorithmic.svg"
                   alt="icon"
@@ -678,7 +679,7 @@
                   efficiency
                 </p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="gas-logistics-supplies-capacity-planning.html">
                 <img
                   src="./img/main-page/case-studies/gas.svg"
                   alt="icon"
@@ -686,7 +687,7 @@
                 />
                 <p>Gas Logistics, supplies, capacity planning</p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="electricity-auctions.html">
                 <img
                   src="./img/main-page/case-studies/electricity.svg"
                   alt="icon"
@@ -694,7 +695,7 @@
                 />
                 <p>Electricity auctions</p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="finops-solutions-cloud-infrastructure.html">
                 <img
                   src="./img/main-page/case-studies/finops.svg"
                   alt="icon"
@@ -702,7 +703,7 @@
                 />
                 <p>FinOps Solutions, cloud infrastructure cost optimization</p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="healthcare-information-management.html">
                 <img
                   src="./img/main-page/case-studies/healthcare-information.svg"
                   alt="icon"
@@ -713,7 +714,7 @@
                   clinical workflows
                 </p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="improving-customer-engagement.html">
                 <img
                   src="./img/main-page/case-studies/improving.svg"
                   alt="icon"
@@ -721,7 +722,7 @@
                 />
                 <p>Improving customer engagement</p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="data-landscape-consolidation.html">
                 <img
                   src="./img/main-page/case-studies/data.svg"
                   alt="icon"
@@ -729,7 +730,7 @@
                 />
                 <p>Data landscape consolidation</p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="brand-tracking-analytical-product.html">
                 <img
                   src="./img/main-page/case-studies/brand.svg"
                   alt="icon"
@@ -737,7 +738,7 @@
                 />
                 <p>Brand tracking analytical product</p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="healthcare-monitoring-system-modernization.html">
                 <img
                   src="./img/main-page/case-studies/healthcare-monitoring.svg"
                   alt="icon"
@@ -745,7 +746,7 @@
                 />
                 <p>Healthcare monitoring system modernization</p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="data-source-on-boarding-as-a-service.html">
                 <img
                   src="./img/main-page/case-studies/data-source.svg"
                   alt="icon"
@@ -753,7 +754,7 @@
                 />
                 <p>Data source on-boarding as a service</p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="road-safety-improvement.html">
                 <img
                   src="./img/main-page/case-studies/road.svg"
                   alt="icon"
@@ -761,7 +762,7 @@
                 />
                 <p>Road safety improvement</p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="cloudera-data-platform-migration.html">
                 <img
                   src="./img/main-page/case-studies/cloudera.svg"
                   alt="icon"
@@ -769,7 +770,7 @@
                 />
                 <p>Cloudera data platform migration</p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="healthcare-information-management.html">
                 <img
                   src="./img/main-page/case-studies/healthcare-information.svg"
                   alt="icon"
@@ -780,7 +781,7 @@
                   clinical workflows
                 </p>
               </a>
-              <a class="swiper-slide case-studies__swiper-slide" href="#">
+              <a class="swiper-slide case-studies__swiper-slide" href="data-intelligence-system-migration.html">
                 <img
                   src="./img/main-page/case-studies/data-intelligence.svg"
                   alt="icon"
@@ -1315,12 +1316,10 @@
     import Swiper from "./scripts/swiper-bundle.esm.browser.min.js";
 
     const services__swiper = new Swiper(".services__swiper", {
-      enabled: true,
       speed: 400,
-      spaceBetween: 20,
+      spaceBetween: 16,
       direction: "horizontal",
       slidesPerView: 1,
-      freeMode: true,
       breakpoints: {
         1280: {
           spaceBetween: 0,
@@ -1332,11 +1331,9 @@
 
     const certifications__swiper = new Swiper(".certifications__swiper", {
       speed: 400,
-      spaceBetween: 0,
-      freeMode: true,
+      spaceBetween: 16,
       slidesPerView: 1,
       direction: "horizontal",
-
       breakpoints: {
         1280: {
           spaceBetween: 20,
@@ -1348,7 +1345,7 @@
 
     const caseStudies__swiper = new Swiper(".case-studies__swiper", {
       speed: 400,
-      spaceBetween: 20,
+      spaceBetween: 16,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -1364,6 +1361,7 @@
       slidesPerGroup: 1,
       breakpoints: {
         1280: {
+          spaceBetween: 20,
           slidesPerView: 4,
           grid: {
             rows: 2,
@@ -1375,11 +1373,9 @@
 
     const reference__swiper = new Swiper(".reference__swiper", {
       speed: 400,
-      spaceBetween: 0,
-      freeMode: true,
+      spaceBetween: 16,
       slidesPerView: 1,
       direction: "horizontal",
-
       breakpoints: {
         1280: {
           spaceBetween: 20,

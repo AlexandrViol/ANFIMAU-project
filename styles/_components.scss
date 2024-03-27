@@ -1103,9 +1103,6 @@ button {
     max-height: 90vh;
     height: 100%;
     border-radius: 4px;
-    // @include lg {
-    //   max-height: 90vh;
-    // }
   }
   &__content-wrapper,
   #caption {
@@ -1128,7 +1125,7 @@ button {
     cursor: pointer;
     @include lg {
       right: 0;
-      top: -64px;
+      top: 0;
     }
 
     & svg {
