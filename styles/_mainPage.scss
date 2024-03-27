@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background: var(--clr-background-gradient);
 
   h1 {
@@ -31,7 +31,7 @@
     position: absolute;
     object-fit: cover;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     top: 0;
     left: 0;
   }
@@ -164,15 +164,30 @@
 }
 
 .services {
-  //todo temp fix
   .container {
     overflow: hidden;
+
+    @include lg {
+      overflow: visible;
+      padding: 0 48px 0 16px;
+    }
   }
 
   h2 {
     color: var(--clr-text-primary);
     text-align: center;
     margin-bottom: 40px;
+
+    @include lg {
+      margin-bottom: 16px;
+      text-align: left;
+    }
+  }
+
+  &__swiper {
+    @include lg {
+      overflow: visible;
+    }
   }
 
   &__swiper-slide {
@@ -186,8 +201,19 @@
     height: 364px;
     max-width: 400px;
 
+    @include lg {
+      padding: 24px;
+      height: auto;
+      margin-bottom: 0 !important;
+      max-width: unset;
+    }
+
     &:not(:nth-child(3n + 3)) {
       margin-right: 20px;
+
+      @include lg {
+        margin-right: 16px;
+      }
     }
 
     &:not(:last-child) {
@@ -201,6 +227,12 @@
       top: 32px;
       opacity: 0;
       transition: $transition;
+
+      @include lg {
+        opacity: 1;
+        top: 24px;
+        right: 24px;
+      }
     }
 
     &:hover {
@@ -214,6 +246,12 @@
 
   &__slide-icon {
     margin-bottom: 56px;
+
+    @include lg {
+      margin-bottom: 24px;
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__slide-text {
@@ -223,16 +261,16 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin-top: 12px;
+
+    @include lg {
+      margin-top: 8px;
+    }
   }
 
   @media (min-width: 1280px) {
     &__swiper-wrapper {
       display: flex;
       flex-wrap: wrap;
-    }
-
-    &__swiper-slide {
-      // padding: 10px;
     }
   }
 }
@@ -295,15 +333,24 @@
 }
 
 .certifications {
-  //todo temp fix
   .container {
     overflow: hidden;
+
+    @include lg {
+      overflow: visible;
+      padding: 0 48px 0 16px;
+    }
   }
 
   h2 {
     color: var(--clr-text-primary);
     text-align: center;
     margin-bottom: 40px;
+
+    @include lg {
+      margin-bottom: 16px;
+      text-align: left;
+    }
   }
 
   &__container {
@@ -311,14 +358,10 @@
       flex-direction: column;
     }
   }
-  // &__title {
-  //   margin: 0;
-  //   text-align: left;
-  // }
 
   &__left-part {
     width: 100%;
-    // max-width: 720px;
+
     @include lg {
       max-width: unset;
     }
@@ -345,45 +388,23 @@
     margin-top: 80px;
 
     @include lg {
-      max-width: unset;
-      border-left: none;
-      padding-left: 0;
-      margin-top: 32px;
-      display: flex;
-      align-items: center;
+      margin-top: 16px;
       flex-wrap: wrap;
+      width: calc(100% + 32px);
     }
   }
 
   &__bottom-item {
-    // @include lg {
-    //   flex-direction: column;
-    //   margin-bottom: 32px;
-    //   width: 33%;
-    //   justify-content: center;
-    //   padding: 0 10px;
-    // }
-    // @include sm {
-    //   width: 50%;
-    // }
-    // @include xm {
-    //   width: 100%;
-    // }
-
-    // &:last-child {
-    //   margin-bottom: 0;
-    //   @include lg {
-    //     margin-bottom: 32px;
-    //   }
-    //   @include xm {
-    //     margin-bottom: 0;
-    //   }
-    // }
+    @include lg {
+      &:last-child {
+        width: 100px;
+      }
+    }
 
     & > img {
       width: 100px;
       height: 100px;
-      // margin-right: 24px;
+
       @include lg {
         margin: 0 0 12px 0;
       }
@@ -395,7 +416,7 @@
     display: flex;
     align-items: center;
     @include lg {
-      overflow: inherit;
+      overflow: visible;
       margin-top: 20px;
     }
   }
@@ -403,13 +424,11 @@
   &__swiper-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    // grid-column-gap: 20px;
     grid-row-gap: 20px;
-    // width: 720px;
-    // height: 604px;
+
     @include lg {
-      height: 288px;
       display: flex;
+      height: 216px;
     }
   }
 
@@ -419,6 +438,14 @@
     border: 1px solid var(--clr-gray2);
     border-radius: var(--border-radius-primary);
     padding: 20px;
+
+    @include lg {
+      gap: 12px;
+      width: auto;
+      margin: 0 12px 0 0;
+      margin-bottom: 0 !important;
+      max-width: unset;
+    }
 
     & > img {
       width: auto;
@@ -432,15 +459,8 @@
       font-size: 16px;
       line-height: 25px;
       text-align: center;
-      // max-width: 250px;
       margin: 0 auto;
       color: var(--clr-text-primary);
-    }
-
-    @include lg {
-      gap: 12px;
-      width: auto;
-      margin: 0 12px 0 0;
     }
   }
 }
@@ -500,27 +520,58 @@
 }
 
 .case-studies {
-  //todo temp fix
+  @include lg {
+    padding-top: 56px;
+    padding-bottom: 0;
+  }
+
   .container {
     overflow: hidden;
+
+    @include lg {
+      overflow: visible;
+      padding: 0 48px 0 16px;
+    }
   }
 
   &__title {
     color: var(--clr-text-primary);
     text-align: center;
     margin-bottom: 16px;
+
+    @include lg {
+      text-align: left;
+      margin-bottom: 8px;
+    }
   }
 
   &__subtitle {
     max-width: 420px;
     text-align: center;
     margin: 0 auto;
+
+    @include lg {
+      text-align: left;
+      margin: 0;
+      max-width: 340px;
+    }
+  }
+
+  &__swiper {
+    @include lg {
+      overflow: visible;
+    }
   }
 
   &__swiper-wrapper {
     flex-direction: row !important;
     margin-top: 40px;
     margin-bottom: 80px;
+
+    @include lg {
+      margin-top: 16px;
+      margin-bottom: 56px;
+    }
   }
 
   &__swiper-slide {
@@ -534,16 +585,13 @@
     margin-top: 0 !important;
     height: 246px;
     margin-bottom: 20px;
-    // height: 364px;
-    // max-width: 400px;
 
-    // &:not(:nth-child(4n + 4)) {
-    //   margin-right: 20px;
-    // }
-
-    // &:not(:last-child) {
-    //   margin-bottom: 20px;
-    // }
+    @include lg {
+      padding: 24px;
+      height: auto;
+      margin-bottom: 0 !important;
+      max-width: unset;
+    }
 
     &:after {
       content: url(../img/arror_link_icon.svg);
@@ -552,6 +600,12 @@
       top: 32px;
       opacity: 0;
       transition: $transition;
+
+      @include lg {
+        opacity: 1;
+        top: 24px;
+        right: 24px;
+      }
     }
 
     &:hover {
@@ -576,6 +630,12 @@
 
   &__slide-icon {
     margin-bottom: 32px;
+
+    @include lg {
+      margin-bottom: 24px;
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__slide-text {
@@ -585,6 +645,10 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin-top: 12px;
+
+    @include lg {
+      margin-top: 8px;
+    }
   }
 
   &__swiper-buttons {
@@ -652,73 +716,68 @@
       display: none;
     }
   }
-
-  @media (min-width: 1280px) {
-    // &__swiper-wrapper {
-    //   display: flex;
-    //   flex-wrap: wrap;
-    // }
-
-    &__swiper-slide {
-      // padding: 10px;
-    }
-  }
 }
 
 .reference {
-  //todo temp fix
+  @include lg {
+    padding-top: 0;
+    padding-bottom: 56px;
+  }
+
   .container {
     overflow: hidden;
+
+    @include lg {
+      overflow: visible;
+      padding: 0 48px 0 16px;
+    }
   }
 
   h2 {
     text-align: center;
     margin-bottom: 40px;
+
+    @include lg {
+      margin-bottom: 16px;
+      text-align: left;
+      width: calc(100% + 32px);
+    }
   }
 
   &__main-btn {
     display: block;
     margin: 40px auto 0;
+
+    @include lg {
+      margin: 16px auto 0;
+      width: calc(100% + 32px);
+      max-width: 360px;
+    }
+
+    @media (min-width: 400px) and (max-width: 1240px) {
+      width: 100%;
+      transform: translateX(16px);
+      max-width: 360px;
+    }
   }
-
-  // &__container {
-  //   @include lg {
-  //     flex-direction: column;
-  //   }
-  // }
-  // &__title {
-  //   margin: 0;
-  //   text-align: left;
-  // }
-
-  // & > img {
-  //   width: 100px;
-  //   height: 100px;
-  //   // margin-right: 24px;
-  //   @include lg {
-  //     margin: 0 0 12px 0;
-  //   }
-  // }
 
   &__swiper {
     margin-top: 40px;
     display: flex;
     align-items: center;
+
     @include lg {
-      overflow: inherit;
-      margin-top: 20px;
+      overflow: visible;
+      margin-top: 0;
     }
   }
 
   &__swiper-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    // grid-column-gap: 20px;
     grid-row-gap: 20px;
-    // width: 720px;
-    // height: 604px;
+
     @include lg {
-      height: 288px;
       display: flex;
     }
   }
@@ -729,6 +788,13 @@
     border: 1px solid var(--clr-gray2);
     border-radius: var(--border-radius-primary);
     padding: 32px;
+
+    @include lg {
+      padding: 24px;
+      height: auto;
+      margin-bottom: 0 !important;
+      max-width: unset;
+    }
 
     & > img {
       width: auto;
@@ -752,15 +818,8 @@
       font-size: 16px;
       line-height: 25px;
       text-align: center;
-      // max-width: 250px;
       margin: 0 auto;
       color: var(--clr-text-primary);
-    }
-
-    @include lg {
-      gap: 12px;
-      width: auto;
-      margin: 0 12px 0 0;
     }
   }
 }
@@ -768,9 +827,19 @@
 .reviews {
   background-color: var(--clr-gray1);
 
+  @include lg {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   h2 {
     text-align: center;
     margin: 0 auto 40px;
+
+    @include lg {
+      text-align: left;
+      margin: 0 auto 16px;
+    }
   }
 
   .clutch-widget {
@@ -795,10 +864,6 @@
       top: 50%;
       transform: translate(100%, -50%);
     }
-
-    // & + iframe {
-    //   display: none !important;
-    // }
   }
 }
 
@@ -1154,8 +1219,8 @@
           max-width: 421px;
           width: 100%;
         }
+
         &:nth-child(2) {
-          // max-width: 494px;
           max-width: 340px;
           width: 100%;
         }
@@ -1173,6 +1238,7 @@
           max-width: 186px;
         }
       }
+      
       @include md {
         &.column-first {
           flex-direction: column;
