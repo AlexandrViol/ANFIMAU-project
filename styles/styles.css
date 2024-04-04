@@ -2653,24 +2653,6 @@ button.back-to-home-btn {
     width: calc(100% + 32px);
   }
 }
-.reference__main-btn {
-  display: block;
-  margin: 40px auto 0;
-}
-@media (max-width: 1280px) {
-  .reference__main-btn {
-    margin: 16px auto 0;
-    width: calc(100% + 32px);
-    max-width: 360px;
-  }
-}
-@media (min-width: 400px) and (max-width: 1240px) {
-  .reference__main-btn {
-    width: 100%;
-    transform: translateX(16px);
-    max-width: 360px;
-  }
-}
 .reference__swiper {
   margin-top: 40px;
   display: flex;
@@ -2889,6 +2871,12 @@ button.back-to-home-btn {
 
 .contact-us {
   --offset: 22px;
+  padding-bottom: 120px;
+}
+@media (max-width: 1280px) {
+  .contact-us {
+    padding-bottom: 24px;
+  }
 }
 .contact-us__container {
   padding-top: var(--offset);

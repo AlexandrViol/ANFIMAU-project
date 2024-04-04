@@ -744,23 +744,6 @@
     }
   }
 
-  &__main-btn {
-    display: block;
-    margin: 40px auto 0;
-
-    @include lg {
-      margin: 16px auto 0;
-      width: calc(100% + 32px);
-      max-width: 360px;
-    }
-
-    @media (min-width: 400px) and (max-width: 1240px) {
-      width: 100%;
-      transform: translateX(16px);
-      max-width: 360px;
-    }
-  }
-
   &__swiper {
     margin-top: 40px;
     display: flex;
@@ -988,6 +971,11 @@
 
 .contact-us {
   --offset: 22px;
+  padding-bottom: 120px;
+
+  @include lg {
+    padding-bottom: 24px;
+  }
 
   &__container {
     padding-top: var(--offset);
