@@ -28,8 +28,31 @@
   .case-studies__swiper-wrapper {
     margin-bottom: 0;
 
+    @include lg {
+      margin-bottom: 56px;
+    }
+
     @include before-lg {
       justify-content: center;
+    }
+  }
+
+  &.cloud-development-page {
+    @include lg {
+      margin-bottom: 56px;
+    }
+
+    .case-studies__title {
+      max-width: 600px;
+      margin: 0 auto 16px;
+
+      @include lg {
+        margin: 0 0 8px;
+      }
+    }
+
+    .case-studies__subtitle {
+      max-width: 590px;
     }
   }
 }
@@ -309,3 +332,5 @@
     }
   }
 }
+
+
