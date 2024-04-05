@@ -1217,11 +1217,11 @@ button.back-to-home-btn {
 
 .dots-bg {
   position: relative;
-  pointer-events: none;
 }
 @media (min-width: 1280px) {
   .dots-bg::before, .dots-bg::after {
     content: "";
+    pointer-events: none;
     position: absolute;
     left: 0;
     top: 0;
@@ -3519,10 +3519,32 @@ button.back-to-home-btn {
 .three-items-slider .case-studies__swiper-wrapper {
   margin-bottom: 0;
 }
+@media (max-width: 1280px) {
+  .three-items-slider .case-studies__swiper-wrapper {
+    margin-bottom: 56px;
+  }
+}
 @media (min-width: 1280px) {
   .three-items-slider .case-studies__swiper-wrapper {
     justify-content: center;
   }
+}
+@media (max-width: 1280px) {
+  .three-items-slider.cloud-development-page {
+    margin-bottom: 56px;
+  }
+}
+.three-items-slider.cloud-development-page .case-studies__title {
+  max-width: 600px;
+  margin: 0 auto 16px;
+}
+@media (max-width: 1280px) {
+  .three-items-slider.cloud-development-page .case-studies__title {
+    margin: 0 0 8px;
+  }
+}
+.three-items-slider.cloud-development-page .case-studies__subtitle {
+  max-width: 590px;
 }
 
 @media (min-width: 1280px) {

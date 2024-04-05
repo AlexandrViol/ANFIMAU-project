@@ -758,13 +758,12 @@ button {
 
 .dots-bg {
   position: relative;
-  pointer-events: none;
 
   @include before-lg {
     &::before,
     &::after {
       content: "";
-
+      pointer-events: none;
       position: absolute;
       left: 0;
       top: 0;
